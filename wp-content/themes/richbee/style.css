@@ -1,13 +1,13 @@
 /*
-Theme Name: Richbee
+Theme Name: WP RichBee Theme
 Theme URI: https://afterimagedesigns.com/wp-bootstrap-starter/
 Author: Afterimage Designs
 Author URI: https://afterimagedesigns.com/
-Description:
-Version: 9.9.9
+Description:  The best WordPress starter theme based on the most powerful frameworks in the world: "_s" (by Automattic, the main people behind WordPress development), Twitter Bootstrap (the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web) and Font Awesome (or Fontawesome, a full suite of 675+ pictographic icons for easy scalable vector graphics on websites). This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want. Your feedback on how we can continuously improve this WordPress Starter Theme Bootstrap will be highly appreciated. Page templates includes Right-sidebar (default page template), Left-Sidebar, Full-Width, Blank with container, Blank without container Page. Other features - Currently using Bootstrap v4.0.0 , Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with Elementor Page Builder. This theme will be an active project which we will update from time to time. Check this page regularly for the updates.
+Version: 3.2.7
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: richbee
+Text Domain: wp-bootstrap-starter
 Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
 */
 /*--------------------------------------------------------------
@@ -37,6 +37,7 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic');
 body {
   margin: 0;
   -webkit-font-smoothing: auto;
@@ -858,6 +859,520 @@ object {
 
 .wp-caption-text {
   text-align: center;
+}
+
+/*--------------------------------------------------------------
+# main-landing
+--------------------------------------------------------------*/
+
+.site-header{
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+.navbar-brand > a{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999999;
+}
+
+.navbar-nav li{
+  margin-right: 30px;
+}
+
+.menu-item a{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999999 !important;
+  font-family: Source Sans Pro;
+}
+
+.navbar-brand .site-title-info{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0F0F0F;
+}
+
+.navbar-brand .site-title{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #0F0F0F;
+}
+
+h2.new{
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 36px !important;
+  line-height: 45px !important;
+  color: #0F0F0F !important;
+  padding: 0 !important;
+}
+
+h2.sub{
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  color: #0F0F0F !important;
+}
+
+.text--secondary{
+  color: #999999;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+p{
+  color: #0F0F0F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.input-landing{
+  background: #F9F9F9;
+  border: 1px solid #F0F0F0;
+  box-sizing: border-box;
+  border-radius: 120px !important;
+  padding: 17px 27px;
+  height: 58px;
+}
+
+.input-landing::placeholder{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #C2C2C2;
+}
+
+.first-block button{
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #F6F6F6;
+  height: 50px;
+}
+
+.first-block a{
+  font-size: 12px;
+  line-height: 14px;
+  color: #999999;
+  text-decoration: underline;
+}
+
+.first-block input{
+  height: 50px;
+}
+
+.first-block .input-group-append{
+  right: 0;
+}
+
+button{
+  height: 50px;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #ffffff;;
+  font-family: "Source Sans Pro";
+}
+
+.text-inverse{
+  color: #F6F6F6;
+}
+
+.btn-input-landing{
+  background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+  border-radius: 120px !important;
+  padding: 12px 27px;
+}
+
+.card-body-primary{
+  background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+  box-shadow: 0px 5px 15px rgba(123, 125, 252, 0.35);
+  border-radius: 20px;
+}
+
+.site-footer{
+  background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+  color: #f6f6f6 !important;
+}
+
+.footer-menu {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+}
+
+.footer-container{
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.footer-email{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.footer-container .more-info{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.credits{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.footer-phone{
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.sep{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer-name{
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.card-body-warning{
+  background: linear-gradient(180deg, #FED670 0%, #FCD07B 100%);
+  box-shadow: 0px 5px 15px rgba(254, 214, 112, 0.35);
+  border-radius: 20px;
+}
+
+.second-block .card-body-primary, .card-body-warning{
+  width: 150px;
+  height: 150px;
+  padding: 43px;
+  margin: auto;
+}
+
+.second-block p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.second-block h3{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.second-block .bg-ellipse{
+  right: 20px;
+  top: 20px;
+}
+
+.second-block .card-body{
+  padding-top: 2.8rem;
+}
+
+.second-block .card-body{
+  z-index: 1;
+}
+
+.second-block .richbee{
+  z-index: 2;
+  top: -4%;
+}
+
+.second-block .card{
+  position: relative;
+}
+
+.bg-ellipse{
+  position: absolute;
+  right: 0;
+  top: -5px;
+  z-index: 1;
+}
+
+.second-block .card{
+  border-radius: 20px;
+}
+
+.second-block .card{
+  transition: 150ms;
+}
+
+.second-block .card:hover{
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  z-index: 5;
+}
+
+.bg-left-landing{
+  background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+  border-radius: 40px 40px 40px 40px;
+  position: absolute;
+  left: 0;
+  height: 400px;
+  width: 315px;
+  z-index: -1;
+}
+
+.bg-right-landing{
+  background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+  border-radius: 40px 40px 40px 40px;
+  position: absolute;
+  right: 0;
+  height: 400px;
+  width: 315px;
+  z-index: -1;
+}
+
+.third-block p {
+  color: #5C5C5C;;
+}
+
+.third-block p.text--secondary{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #999999 !important;
+}
+
+.third-block .description{
+  font-size: 18px;
+  line-height: 137.7%;
+  color: #5C5C5C !important;
+}
+
+.third-block .bg-ellipse{
+  right: -15%;
+}
+
+.third-block a{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7085FE;
+}
+
+.third-block a img{
+  margin-left: 10px;
+}
+
+.fourth-block{
+  background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+  width: 100%;
+}
+
+.fourth-block .right-side h2, .right-side p{
+  color: #F7F7F7 !important;
+}
+
+.fourth-block a{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #F6F6F6;
+}
+
+.fourth-block .padding{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.fourth-block .bg-ellipse:first-of-type{
+  left: 0;
+  right: unset;
+  top: 20%;
+}
+
+.fourth-block .bg-ellipse:last-of-type{
+  left: 0;
+  right: unset;
+  top: 46%;
+}
+
+.fourth-block .left-side .card img{
+  right: -6%;
+  top: -6%;
+}
+
+.fourth-block .right-side img{
+  bottom: -11.8%;
+}
+
+.fourth-block .card-body{
+  padding: 50px 70px;
+}
+
+.fourth-block .card{
+  height: 580px;
+  width: 500px;
+}
+
+.fourth-block .right-side p{
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.fifth-block p{
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #0F0F0F;
+}
+
+.fifth-block h3{
+  font-size: 24px;
+  line-height: 30px;
+  color: #0F0F0F;
+}
+
+.fifth-block .bg-ellipse{
+  right: -15%;
+  top: 22%;
+}
+
+.fifth-block label{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0F0F0F;
+}
+
+.fifth-block .btn-input-landing{
+  padding: 12px 48px;
+}
+
+.sixth-block h2{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #0F0F0F;
+}
+
+.sixth-block p{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0F0F0F;
+}
+
+.sixth-block .number{
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 91px;
+  color: #7085FE;
+}
+
+.sixth-block img{
+  right: 0;
+}
+
+.sixth-block .girl{
+  z-index: 1;
+  margin-bottom: -4px;
+}
+
+.sixth-block button{
+  box-shadow: 0px 5px 10px rgba(112, 133, 254, 0.35);
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
+
+.sixth-block .lines{
+  display: none;
+  left: 0;
+}
+
+.sixth-block .paper{
+  display: none;
+  right: 0;
+}
+
+.footer-container .second-card{
+  text-align: right;
+}
+
+#content.site-content{
+  padding-bottom: 0;
+}
+
+@media screen
+  and (min-width: 1200px)
+{
+  .container {
+    max-width: 1165px;
+  }
+  .sixth-block .lines{
+    display: block;
+    left: -7%;
+    bottom: 35%;
+  }
+  .sixth-block .paper{
+    display: block;
+  }
+  .sixth-block .fourth-card{
+    margin-top: 12%;
+    padding: 0;
+  }
+  .sixth-block .fourth-card .col{
+    padding: 0;
+  }
+  .sixth-block .third-card{
+    margin-top: 27%;
+    padding: 0;
+  }
+  .sixth-block .third-card .col{
+    padding: 0;
+  }
+  .sixth-block .second-card{
+    padding: 0;
+    margin-top: 9%;
+  }
+  .sixth-block .second-card .col{
+    padding: 0;
+  }
+  .sixth-block .second-card .row{
+    position: relative;
+    left: 25%;
+  }
+  .sixth-block .first-card{
+    padding: 0;
+  }
+  .sixth-block .first-card .col{
+    padding: 0 7px;
+  }
+  .sixth-block .row-girl{
+    margin-top: -20%;
+  }
+}
+
+@media screen
+and (max-width: 991px)
+{
+  .footer-container .second-card{
+    text-align: center;
+  }
+  .footer-container .first-card{
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------

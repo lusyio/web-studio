@@ -15,6 +15,8 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 
@@ -32,6 +34,7 @@
                         </a>
                     <?php else : ?>
                         <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+                        <p class="site-title-info m-0">Агентство интернет-маркетинга</p>
                     <?php endif; ?>
 
                 </div>
@@ -44,7 +47,7 @@
                 'theme_location'    => 'primary',
                 'container'       => 'div',
                 'container_id'    => 'main-nav',
-                'container_class' => 'collapse navbar-collapse justify-content-end',
+                'container_class' => 'collapse navbar-collapse justify-content-center',
                 'menu_id'         => false,
                 'menu_class'      => 'navbar-nav',
                 'depth'           => 3,
@@ -52,6 +55,7 @@
                 'walker'          => new wp_bootstrap_navwalker()
                 ));
                 ?>
+
 
             </nav>
         </div>
