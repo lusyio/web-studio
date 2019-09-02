@@ -10,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page-templates/main-landing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="421" column="41" selection-start-line="421" selection-start-column="41" selection-end-line="421" selection-end-column="41" />
+            <state relative-caret-position="-1025">
+              <caret line="425" column="29" lean-forward="true" selection-start-line="425" selection-start-column="29" selection-end-line="425" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="1747" column="27" lean-forward="true" selection-start-line="1747" selection-start-column="27" selection-end-line="1747" selection-end-column="27" />
+            <state relative-caret-position="105">
+              <caret line="916" column="21" lean-forward="true" selection-start-line="916" selection-start-column="21" selection-end-line="916" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -63,9 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>after</find>
-      <find>col-sm-12 offset-sm-1 col-md-12 offset-md-1 col-lg-5 offset-lg-1 col-xl-6 offset-xl-0 right-side</find>
-      <find>col-11 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0</find>
       <find>radi</find>
       <find>slideme</find>
       <find>bg-left-lan</find>
@@ -93,6 +90,9 @@
       <find>.fourth-block .right-side img</find>
       <find>style.css</find>
       <find>swiper-</find>
+      <find>recall-block</find>
+      <find>menu-item</find>
+      <find>font-size: 14px;</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -108,8 +108,8 @@
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/page-templates/main-landing.php" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -208,12 +208,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567407259707</updated>
-      <workItem from="1567407263621" duration="20602000" />
+      <workItem from="1567407263621" duration="21343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20602000" />
+    <option name="totallyTimeSpent" value="21343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="775" y="23" width="1143" height="977" extended-state="0" />
@@ -254,13 +254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="1747" column="27" lean-forward="true" selection-start-line="1747" selection-start-column="27" selection-end-line="1747" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -288,8 +281,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page-templates/main-landing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="421" column="41" selection-start-line="421" selection-start-column="41" selection-end-line="421" selection-end-column="41" />
+        <state relative-caret-position="-1025">
+          <caret line="425" column="29" lean-forward="true" selection-start-line="425" selection-start-column="29" selection-end-line="425" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="916" column="21" lean-forward="true" selection-start-line="916" selection-start-column="21" selection-end-line="916" selection-end-column="21" />
         </state>
       </provider>
     </entry>
