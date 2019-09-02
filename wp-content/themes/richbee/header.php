@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 <?php wp_head(); ?>
 </head>
 
@@ -56,8 +56,12 @@
                 'walker'          => new wp_bootstrap_navwalker()
                 ));
                 ?>
-
-
+                <div class="navbar-brand recall-block">
+                <a class="ml-2" href="#"><img src="/wp-content/themes/richbee/svg/telegram-header.svg" alt=""></a>
+                <a class="ml-2" href="#"><img src="/wp-content/themes/richbee/svg/whatsapp-header.svg" alt=""></a>
+                <a class="header-phone ml-4" href="#">8 (495) 265-45-65</a>
+                <p class="m-0 recall"><a href="#">Обратный звонок</a></p>
+                </div>
             </nav>
         </div>
 	</header>

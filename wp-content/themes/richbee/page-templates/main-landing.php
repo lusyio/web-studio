@@ -271,7 +271,39 @@ Template Post Type: post, page, product
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="card mt-4 mb-5">
+                                <div class="card mt-5 mb-5">
+                                    <img class="position-absolute"
+                                         src="/wp-content/themes/richbee/images/Rectangle%209.png" alt="">
+                                    <div class="card-body">
+                                        <h3 class="mt-0">
+                                            С 0 до 800.000 оборотки в месяц
+                                        </h3>
+                                        <p>
+                                            Компания: ООО “Нанострой”
+                                        </p>
+                                        <p class="mb-0">
+                                            Ниша: Отопление
+                                        </p>
+                                        <p>
+                                            Услуга: Монтаж теплого плинтуса
+                                        </p>
+                                        <p class="mt-4">
+                                            Задача: запустить продажу нового вида отопления “Теплый плинтус”. Выйти на
+                                            точку
+                                            самоокупаемости
+                                            и довести оборот компании до 500.000 в месяц
+                                        </p>
+                                        <p class="mt-5">
+                                            Что сделали:
+                                        </p>
+                                        <p class="mt-5">
+                                            Результаты:
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card mt-5 mb-5">
                                     <img class="position-absolute"
                                          src="/wp-content/themes/richbee/images/Rectangle%209.png" alt="">
                                     <div class="card-body">
@@ -334,19 +366,20 @@ Template Post Type: post, page, product
                             </p>
                         </div>
                     </div>
-                    <img
-                            src="/wp-content/themes/richbee/svg/undraw_all_the_data_h4ki.svg" alt="">
+                    <img src="/wp-content/themes/richbee/svg/undraw_all_the_data_h4ki.svg" alt="">
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.next',
+            prevEl: '.prev',
         },
+        loop: true,
     });
 </script>
 <div class="container">
@@ -378,20 +411,22 @@ Template Post Type: post, page, product
                         <h3>
                             Какая услуга вас интересует?
                         </h3>
-                        <div style="z-index: 0;position: relative;display: inline-block;">
-                            <input id="site" type="radio" name="service">
-                            <label for="site">
-                                Мне нужен сайт
+                        <div>
+                            <label>
+                                <input id="site" type="radio" name="service">
+                                <span>Мне нужен сайт</span>
                             </label>
                         </div>
-                        <div class="mt-2" style="z-index: 0;position: relative;display: inline-block;">
-                            <input id="client" type="radio" name="service">
-                            <label for="client">Мне нужено привлеч клиентов
+                        <div>
+                            <label>
+                                <input id="client" type="radio" name="service">
+                                <span>Мне нужно привлечь клиентов</span>
                             </label>
                         </div>
-                        <div class="mt-2" style="z-index: 0;position: relative;display: inline-block;">
-                            <input id="marketing" type="radio" name="service">
-                            <label for="marketing">Я хочу заказать комплексный маркетинг
+                        <div>
+                            <label>
+                                <input id="marketing" type="radio" name="service">
+                                <span>Я хочу заказать комплексный маркетинг</span>
                             </label>
                         </div>
                         <div class="mt-4">
