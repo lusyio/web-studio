@@ -896,6 +896,10 @@ object {
     box-shadow: none !important;
 }
 
+.navbar-toggler{
+    border: 0;
+}
+
 .navbar-brand > a {
     font-family: Source Sans Pro;
     font-style: normal;
@@ -1026,7 +1030,7 @@ body {
     cursor: pointer;
 }
 
-.radio-block label span {
+.radio-block label {
     font-size: 18px;
     line-height: 21px;
     color: #0F0F0F;
@@ -1041,7 +1045,7 @@ body {
 }
 
 /* Input */
-.radio-block label > input {
+.radio-block input {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -1063,14 +1067,14 @@ body {
 }
 
 /* Span */
-.radio-block label > span {
+.radio-block label {
     display: inline-block;
     width: 100%;
     cursor: pointer;
 }
 
 /* Circle */
-.radio-block label > span::before {
+.radio-block label::before {
     content: "";
     display: inline-block;
     box-sizing: border-box;
@@ -1085,7 +1089,7 @@ body {
 }
 
 /* Check */
-.radio-block label > span::after {
+.radio-block label::after {
     content: "";
     display: block;
     position: absolute;
@@ -1100,15 +1104,15 @@ body {
 }
 
 /* Checked */
-.radio-block label > input:checked {
+.radio-block input:checked {
     background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
 }
 
-.radio-block label > input:checked + span::before {
+.radio-block input:checked + label::before {
     border-color: #7085FE;
 }
 
-.radio-block label > input:checked + span::after {
+.radio-block input:checked + label::after {
     transform: translate(5px, 5px) scale(1);
 }
 
@@ -1126,31 +1130,31 @@ body {
 }
 
 /* Active */
-.radio-block label > input:active {
+.radio-block input:active {
     opacity: 1;
     transform: scale(0);
     transition: transform 0s, opacity 0s;
 }
 
-.radio-block label > input:active + span::before {
+.radio-block input:active + label::before {
     border-color: rgb(33, 150, 243);
 }
 
 /* Disabled */
-.radio-block label > input:disabled {
+.radio-block input:disabled {
     opacity: 0;
 }
 
-.radio-block label > input:disabled + span {
+.radio-block input:disabled + label {
     color: rgba(0, 0, 0, 0.38);
     cursor: initial;
 }
 
-.radio-block label > input:disabled + span::before {
+.radio-block input:disabled + label::before {
     border-color: currentColor;
 }
 
-.radio-block label > input:disabled + span::after {
+.radio-block input:disabled + label::after {
     background-color: currentColor;
 }
 

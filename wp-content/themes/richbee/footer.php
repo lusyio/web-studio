@@ -27,8 +27,8 @@
                 </div>
                 <div class="col-12 col-lg-4 second-card">
                     <div>
-                        <a href="#"><img src="/wp-content/themes/wp-richbee-theme/svg/telegram.svg" alt=""></a>
-                        <a class="ml-2" href="#"><img src="/wp-content/themes/wp-richbee-theme/svg/whatsapp.svg" alt=""></a>
+                        <a href="#"><img src="/wp-content/themes/richbee/svg/telegram.svg" alt=""></a>
+                        <a class="ml-2" href="#"><img src="/wp-content/themes/richbee/svg/whatsapp.svg" alt=""></a>
                     </div>
                     <div class="mt-3">
                         <a class="footer-phone" href="#">8 (495) 265-45-65</a>
