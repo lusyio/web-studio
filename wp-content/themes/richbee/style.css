@@ -909,7 +909,7 @@ object {
     margin-right: 30px;
 }
 
-.menu-item a {
+.site-header .menu-item a {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -1186,6 +1186,19 @@ body {
     font-size: 18px;
     line-height: 23px;
     font-weight: 300;
+    color: #f6f6f6
+}
+
+.menu-item:last-of-type .sep{
+    display: none;
+}
+
+.footer-menu ul{
+    padding: 0;
+}
+
+.footer-menu li{
+    display: inline-block;
 }
 
 .footer-container {

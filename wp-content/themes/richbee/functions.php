@@ -371,3 +371,13 @@ remove_action( 'wp_head', 'wp_bootstrap_starter_pingback_header' );
  * Удаляем стили для #page-sub-header из  header'а
  */
 remove_action( 'wp_head', 'wp_bootstrap_starter_customizer_css');
+
+//области вставки меню
+function register_my_menus() {
+    register_nav_menus(
+        array(
+            'second' => __( 'second' ),
+        )
+    );
+}
+add_action( 'init', 'register_my_menus' );

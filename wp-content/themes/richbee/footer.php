@@ -23,17 +23,7 @@
                         <?php echo '<a class="footer-name mr-3" href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                         <a class="credits" href="https://afterimagedesigns.com/wp-bootstrap-starter/" target="_blank" title="WordPress Technical Support" alt="Bootstrap WordPress Theme">Агенство интернет-маркетинга</a>
                     </div><!-- close .site-info -->
-                    <div class="mt-4 footer-menu">
-                        <a href="#">Услуги</a>
-                        <span class="sep"> | </span>
-                        <a href="#">Портфолио</a>
-                        <span class="sep"> | </span>
-                        <a href="#">Кейсы</a>
-                        <span class="sep"> | </span>
-                        <a href="#">Блог</a>
-                        <span class="sep"> | </span>
-                        <a href="#">Контакты</a>
-                    </div>
+                    <?php wp_nav_menu(array( 'theme_location' => 'second', 'after' => '<span class="sep"> | </span>', 'container_class' => 'mt-4 footer-menu' )); ?>
                 </div>
                 <div class="col-12 col-lg-4 second-card">
                     <div>
