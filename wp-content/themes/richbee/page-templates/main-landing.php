@@ -32,13 +32,13 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-12 col-lg-6">
-            <img src="/wp-content/themes/wp-richbee-theme/images/undraw_wall_post_83ul.jpg" alt="">
+            <img src="/wp-content/themes/richbee/images/undraw_wall_post_83ul.jpg" alt="">
         </div>
     </div>
 </div>
 
 <div class="container position-relative second-block mb-5">
-    <img class="position-absolute richbee" src="/wp-content/themes/wp-richbee-theme/images/RICHBEE.png" alt="">
+    <img class="position-absolute richbee" src="/wp-content/themes/richbee/images/RICHBEE.png" alt="">
     <h2 class="new mb-5">
         Можем разработать сайт...
     </h2>
@@ -46,10 +46,10 @@ Template Post Type: post, page, product
         <div class="col-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
-                    <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.2.png" alt="">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
                         <div class="card-body-primary text-center">
-                            <img src="/wp-content/themes/wp-richbee-theme/svg/website.svg" alt="">
+                            <img src="/wp-content/themes/richbee/svg/website.svg" alt="">
                         </div>
                         <h3 class="text-center mt-5">
                             Квиз-лендинг
@@ -64,10 +64,10 @@ Template Post Type: post, page, product
         <div class="col-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
-                    <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.2.png" alt="">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
                         <div class="card-body-primary text-center">
-                            <img src="/wp-content/themes/wp-richbee-theme/svg/landing-page.svg" alt="">
+                            <img src="/wp-content/themes/richbee/svg/landing-page.svg" alt="">
                         </div>
                         <h3 class="text-center mt-5">
                             Лендинг
@@ -82,10 +82,10 @@ Template Post Type: post, page, product
         <div class="col-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
-                    <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.2.png" alt="">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
                         <div class="card-body-primary text-center">
-                            <img src="/wp-content/themes/wp-richbee-theme/svg/browser.svg" alt="">
+                            <img src="/wp-content/themes/richbee/svg/browser.svg" alt="">
                         </div>
                         <h3 class="text-center mt-5">
                             Корпоративный сайт
@@ -100,10 +100,10 @@ Template Post Type: post, page, product
         <div class="col-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
-                    <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.2.png" alt="">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
                         <div class="card-body-primary text-center">
-                            <img src="/wp-content/themes/wp-richbee-theme/svg/shopping.svg" alt="">
+                            <img src="/wp-content/themes/richbee/svg/shopping.svg" alt="">
                         </div>
                         <h3 class="text-center mt-5">
                             Интернет-магазин
@@ -127,10 +127,10 @@ Template Post Type: post, page, product
         <div class="col-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
-                    <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.1.png" alt="">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
                     <div class="card-body">
                         <div class="card-body-warning text-center">
-                            <img src="/wp-content/themes/wp-richbee-theme/svg/analysis.svg" alt="">
+                            <img src="/wp-content/themes/richbee/svg/analysis.svg" alt="">
                         </div>
                         <h3 class="text-center mt-5">
                             SEO оптимизация
@@ -145,10 +145,10 @@ Template Post Type: post, page, product
         <div class="col-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
-                    <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.1.png" alt="">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
                     <div class="card-body">
                         <div class="card-body-warning text-center">
-                            <img src="/wp-content/themes/wp-richbee-theme/svg/monitoring.svg" alt="">
+                            <img src="/wp-content/themes/richbee/svg/monitoring.svg" alt="">
                         </div>
                         <h3 class="text-center mt-5">
                             Яндекс Директ
@@ -175,11 +175,11 @@ Template Post Type: post, page, product
         </div>
     </div>
     <div class="row position-relative mt-5">
-        <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.13.png" alt="">
+        <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.13.png" alt="">
         <div class="col-12 col-lg-6">
             <div class="bg-left-landing">
             </div>
-            <img src="/wp-content/themes/wp-richbee-theme/images/macbook-pro-clay.png" alt="">
+            <img src="/wp-content/themes/richbee/images/macbook-pro-clay.png" alt="">
         </div>
         <div class="col-11 offset-1 col-lg-5 offset-lg-0">
             <h2 class="new">
@@ -196,7 +196,7 @@ Template Post Type: post, page, product
                 Получилось в итоге очень хорошо! Нам нравится, заказчику тоже. Очень хорошая история. Очень.
             </p>
             <a href="#">Подробнее
-                <img src="/wp-content/themes/wp-richbee-theme/svg/back.svg" alt="">
+                <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
             </a>
         </div>
     </div>
@@ -216,21 +216,21 @@ Template Post Type: post, page, product
                 Получилось в итоге очень хорошо! Нам нравится, заказчику тоже. Очень хорошая история. Очень.
             </p>
             <a href="#">Подробнее
-                <img src="/wp-content/themes/wp-richbee-theme/svg/back.svg" alt="">
+                <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
             </a>
         </div>
         <div class="col-lg-6 col-12">
             <div class="bg-right-landing">
             </div>
-            <img src="/wp-content/themes/wp-richbee-theme/images/macbook-pro-clay.png" alt="">
+            <img src="/wp-content/themes/richbee/images/macbook-pro-clay.png" alt="">
         </div>
     </div>
     <div class="row position-relative mt-5">
-        <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.13.png" alt="">
+        <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.13.png" alt="">
         <div class="col-12 col-lg-6">
             <div class="bg-left-landing">
             </div>
-            <img src="/wp-content/themes/wp-richbee-theme/images/macbook-pro-clay.png" alt="">
+            <img src="/wp-content/themes/richbee/images/macbook-pro-clay.png" alt="">
         </div>
         <div class="col-11 offset-1 col-lg-5 offset-lg-0">
             <h2 class="new">
@@ -247,7 +247,7 @@ Template Post Type: post, page, product
                 Получилось в итоге очень хорошо! Нам нравится, заказчику тоже. Очень хорошая история. Очень.
             </p>
             <a href="#">Подробнее
-                <img src="/wp-content/themes/wp-richbee-theme/svg/back.svg" alt="">
+                <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
             </a>
         </div>
     </div>
@@ -262,15 +262,15 @@ Template Post Type: post, page, product
 </div>
 </div><!-- .container -->
 <div class="fourth-block position-relative mt-5 mb-5 ">
-    <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.6.png" alt="">
-    <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.6.png" alt="">
+    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.6.png" alt="">
+    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.6.png" alt="">
     <div class="container">
         <div class="padding">
             <div class="row">
                 <div class="col-6 left-side">
                     <div class="card mt-4 mb-5">
                         <img class="position-absolute"
-                             src="/wp-content/themes/wp-richbee-theme/images/Rectangle%209.png" alt="">
+                             src="/wp-content/themes/richbee/images/Rectangle%209.png" alt="">
                         <div class="card-body">
                             <h3 class="mt-0">
                                 С 0 до 800.000 оборотки в месяц
@@ -300,7 +300,7 @@ Template Post Type: post, page, product
                     <div class="row mt-5">
                         <div class="col-6">
                             <a href="#">
-                                <img class="rotate mr-1" src="/wp-content/themes/wp-richbee-theme/svg/back-white.svg"
+                                <img class="rotate mr-1" src="/wp-content/themes/richbee/svg/back-white.svg"
                                      alt="">
                                 Предыдущий проект
                             </a>
@@ -308,7 +308,7 @@ Template Post Type: post, page, product
                         <div class="col-6 text-center">
                             <a href="#" class="mr-2">
                                 Следующий проект
-                                <img class="ml-1" src="/wp-content/themes/wp-richbee-theme/svg/back-white.svg" alt="">
+                                <img class="ml-1" src="/wp-content/themes/richbee/svg/back-white.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -328,7 +328,7 @@ Template Post Type: post, page, product
                         </div>
                     </div>
                     <img class="position-absolute"
-                         src="/wp-content/themes/wp-richbee-theme/images/undraw_all_the_data_h4ki.png" alt="">
+                         src="/wp-content/themes/richbee/images/undraw_all_the_data_h4ki.png" alt="">
                 </div>
             </div>
         </div>
@@ -351,9 +351,9 @@ Template Post Type: post, page, product
                 </div>
             </div>
             <div class="row position-relative">
-                <img class="bg-ellipse" src="/wp-content/themes/wp-richbee-theme/images/Group%203.66.png" alt="">
+                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.66.png" alt="">
                 <div class="col-12 col-lg-6">
-                    <img src="/wp-content/themes/wp-richbee-theme/images/undraw_mobile_marketing_iqbr.png" alt="">
+                    <img src="/wp-content/themes/richbee/images/undraw_mobile_marketing_iqbr.png" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <p class="mr-1 mb-0 mt-">
@@ -399,9 +399,9 @@ Template Post Type: post, page, product
                     </h2>
                 </div>
             </div>
-            <img class="position-absolute paper" src="/wp-content/themes/wp-richbee-theme/images/Group%2022.png" alt="">
+            <img class="position-absolute paper" src="/wp-content/themes/richbee/images/Group%2022.png" alt="">
             <div class="row">
-                <img class="position-absolute lines" src="/wp-content/themes/wp-richbee-theme/images/Group%2010.png"
+                <img class="position-absolute lines" src="/wp-content/themes/richbee/images/Group%2010.png"
                      alt="">
                 <div class="col-12 col-lg-6 col-xl-3 first-card">
                     <div class="row">
@@ -472,7 +472,7 @@ Template Post Type: post, page, product
             </div>
             <div class="row row-girl">
                 <div class="col-12 col-lg-3 text-center">
-                    <img class="position-relative girl" src="/wp-content/themes/wp-richbee-theme/images/Group%209.png"
+                    <img class="position-relative girl" src="/wp-content/themes/richbee/images/Group%209.png"
                          alt="">
                     <button class="position-relative btn w-100 btn-input-landing text-inverse">
                         Оставить заявку
@@ -481,7 +481,7 @@ Template Post Type: post, page, product
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="/wp-content/themes/wp-richbee-theme/images/Group%202.png" alt="">
+                    <img src="/wp-content/themes/richbee/images/Group%202.png" alt="">
                 </div>
             </div>
         </div>
