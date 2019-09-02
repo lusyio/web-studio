@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page-templates/main-landing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="269" column="42" selection-start-line="269" selection-start-column="42" selection-end-line="269" selection-end-column="42" />
+            <state relative-caret-position="189">
+              <caret line="354" column="45" lean-forward="true" selection-start-line="354" selection-start-column="45" selection-end-line="354" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="1542" column="3" lean-forward="true" selection-start-line="1542" selection-start-column="3" selection-end-line="1542" selection-end-column="3" />
+            <state relative-caret-position="195">
+              <caret line="1125" column="1" lean-forward="true" selection-start-line="1125" selection-start-column="1" selection-end-line="1125" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -46,7 +46,16 @@
       <find>.fourth-block .left-side .card img</find>
       <find>col-6 col-md-12 offset-md-1 col-lg-5 offset-lg-1 col-xl-6 offset-xl-0 right-side</find>
       <find>after</find>
+      <find>col-sm-12 offset-sm-1 col-md-12 offset-md-1 col-lg-5 offset-lg-1 col-xl-6 offset-xl-0 right-side</find>
+      <find>col-11 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0</find>
+      <find>radi</find>
       <find>slideme</find>
+      <find>bg-left-lan</find>
+      <find>Название проекта</find>
+      <find>input-group-append</find>
+      <find>first-block</find>
+      <find>rad</find>
+      <find>pure</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -58,8 +67,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/page-templates/main-landing.php" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -86,11 +95,6 @@
               <item name="richbee" type="b2602c69:ProjectViewProjectNode" />
               <item name="richbee" type="462c0819:PsiDirectoryNode" />
               <item name="page-templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="richbee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="richbee" type="462c0819:PsiDirectoryNode" />
-              <item name="svg" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -133,12 +137,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567407259707</updated>
-      <workItem from="1567407263621" duration="8179000" />
+      <workItem from="1567407263621" duration="12215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8179000" />
+    <option name="totallyTimeSpent" value="12215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="775" y="23" width="1143" height="977" extended-state="0" />
@@ -169,17 +173,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/svg/shopping.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="1542" column="3" lean-forward="true" selection-start-line="1542" selection-start-column="3" selection-end-line="1542" selection-end-column="3" />
+        <state relative-caret-position="195">
+          <caret line="1125" column="1" lean-forward="true" selection-start-line="1125" selection-start-column="1" selection-end-line="1125" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page-templates/main-landing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="269" column="42" selection-start-line="269" selection-start-column="42" selection-end-line="269" selection-end-column="42" />
+        <state relative-caret-position="189">
+          <caret line="354" column="45" lean-forward="true" selection-start-line="354" selection-start-column="45" selection-end-line="354" selection-end-column="45" />
         </state>
       </provider>
     </entry>

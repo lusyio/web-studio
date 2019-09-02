@@ -20,7 +20,7 @@ Template Post Type: post, page, product
                 <div class="input-group mb-3">
                     <input type="text" class="form-control input-landing" placeholder="+7 (000) 000-00-00"
                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <div class="input-group-append position-absolute">
+                    <div class="input-group-append">
                         <button class="btn btn-input-landing text-inverse" type="button" id="button-addon2">
                             Получить консультацию
                         </button>
@@ -43,7 +43,7 @@ Template Post Type: post, page, product
         Можем разработать сайт...
     </h2>
     <div class="row">
-        <div class="col-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
@@ -61,7 +61,7 @@ Template Post Type: post, page, product
                 </div>
             </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
@@ -79,7 +79,7 @@ Template Post Type: post, page, product
                 </div>
             </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
@@ -97,7 +97,7 @@ Template Post Type: post, page, product
                 </div>
             </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
@@ -124,7 +124,7 @@ Template Post Type: post, page, product
         </div>
     </div>
     <div class="row">
-        <div class="col-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
@@ -142,7 +142,7 @@ Template Post Type: post, page, product
                 </div>
             </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
@@ -176,12 +176,12 @@ Template Post Type: post, page, product
     </div>
     <div class="row position-relative mt-5">
         <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.13.png" alt="">
-        <div class="col-12 order-sm-2 order-md-2 order-lg-0 order-xl-0 col-lg-6 col-xl-6">
+        <div class="col-12 order-2 order-sm-2 order-md-2 order-lg-0 order-xl-0 col-lg-6 col-xl-6">
             <div class="bg-left-landing">
             </div>
             <img src="/wp-content/themes/richbee/images/macbook-pro-clay.png" alt="">
         </div>
-        <div class="col-11 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
+        <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
             <h2 class="new">
                 Название проекта
             </h2>
@@ -201,7 +201,7 @@ Template Post Type: post, page, product
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-11 offset-1 col-lg-5 offset-lg-1">
+        <div class="col-11 order-2 offset-1 col-lg-5 offset-lg-1">
             <h2 class="new">
                 Название проекта
             </h2>
@@ -227,12 +227,12 @@ Template Post Type: post, page, product
     </div>
     <div class="row position-relative mt-5">
         <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.13.png" alt="">
-        <div class="col-12 order-sm-2 order-md-2 order-lg-0 order-xl-0 col-lg-6 col-xl-6">
+        <div class="col-12  order-1 order-sm-2 order-md-2 order-lg-0 order-xl-0 col-lg-6 col-xl-6">
             <div class="bg-left-landing">
             </div>
             <img src="/wp-content/themes/richbee/images/macbook-pro-clay.png" alt="">
         </div>
-        <div class="col-11 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
+        <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
             <h2 class="new">
                 Название проекта
             </h2>
@@ -328,7 +328,7 @@ Template Post Type: post, page, product
                         </div>
                     </div>
                     <img
-                         src="/wp-content/themes/richbee/svg/undraw_all_the_data_h4ki.svg" alt="">
+                            src="/wp-content/themes/richbee/svg/undraw_all_the_data_h4ki.svg" alt="">
                 </div>
             </div>
         </div>
@@ -359,21 +359,27 @@ Template Post Type: post, page, product
                     <p class="mr-1 mb-0 mt-">
                         Оставьте заявку, чтобы узнать точную cтоимость и получить коммерческое предложение
                     </p>
-                    <div class="ml-4">
+                    <div class="ml-4 radio-block">
                         <h3>
                             Какая услуга вас интересует?
                         </h3>
                         <div>
-                            <input class="mr-2" id="site" type="radio" name="service">
-                            <label for="site">Мне нужен сайт</label>
+                            <label>
+                                <input id="site" type="radio" name="service">
+                                <span>Мне нужен сайт</span>
+                            </label>
                         </div>
-                        <div>
-                            <input class="mr-2" id="client" type="radio" name="service">
-                            <label for="client">Мне нужено привлеч клиентов</label>
+                        <div class="mt-2">
+                            <label>
+                                <input id="client" type="radio" name="service">
+                                <span>Мне нужено привлеч клиентов</span>
+                            </label>
                         </div>
-                        <div>
-                            <input class="mr-2" id="marketing" type="radio" name="service">
-                            <label for="marketing">Я хочу заказать комплексный маркетинг</label>
+                        <div class="mt-2">
+                            <label>
+                                <input id="marketing" type="radio" name="service">
+                                <span>Я хочу заказать комплексный маркетинг</span>
+                            </label>
                         </div>
                         <div class="mt-4">
                             <button class="btn btn-input-landing text-inverse">
