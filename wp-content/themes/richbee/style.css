@@ -891,7 +891,6 @@ object {
 # main-landing
 --------------------------------------------------------------*/
 
-
 .site-header {
     background-color: #ffffff !important;
     box-shadow: none !important;
@@ -922,6 +921,10 @@ object {
 
 .navbar-nav li {
     margin-right: 30px;
+}
+
+#main-nav{
+    margin-bottom: 14px;
 }
 
 .site-header .menu-item a {
