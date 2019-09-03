@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page-templates/main-landing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="125" column="48" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+            <state relative-caret-position="45">
+              <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -49,11 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="1793" lean-forward="true" selection-start-line="1793" selection-end-line="1793" />
+            <state relative-caret-position="172">
+              <caret line="1153" lean-forward="true" selection-start-line="1153" selection-end-line="1153" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/left-sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#6#44#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>компа</find>
       <find>footer-menu</find>
       <find>radio</find>
       <find>script</find>
@@ -89,8 +100,9 @@
       <find>rel=</find>
       <find>first-block</find>
       <find>Rectangle</find>
-      <find>.recall-block</find>
       <find>css</find>
+      <find>.recall-block</find>
+      <find>radio-blo</find>
       <find>квиз</find>
     </findStrings>
     <replaceStrings>
@@ -113,7 +125,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="775" />
     <option name="y" value="23" />
     <option name="width" value="1143" />
@@ -132,6 +144,17 @@
             <path>
               <item name="richbee" type="b2602c69:ProjectViewProjectNode" />
               <item name="richbee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="richbee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="richbee" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="richbee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="richbee" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="richbee" type="b2602c69:ProjectViewProjectNode" />
@@ -184,12 +207,12 @@
       <option name="presentableId" value="Default" />
       <updated>1567407259707</updated>
       <workItem from="1567407263621" duration="21946000" />
-      <workItem from="1567493919495" duration="4452000" />
+      <workItem from="1567493919495" duration="5677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26398000" />
+    <option name="totallyTimeSpent" value="27623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="775" y="23" width="1143" height="977" extended-state="0" />
@@ -261,17 +284,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page-templates/main-landing.php">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="125" column="48" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+        <state relative-caret-position="172">
+          <caret line="1153" lean-forward="true" selection-start-line="1153" selection-end-line="1153" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/page-templates/main-landing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="1793" lean-forward="true" selection-start-line="1793" selection-end-line="1793" />
+        <state relative-caret-position="45">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/left-sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#6#44#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
