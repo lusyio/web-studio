@@ -896,13 +896,13 @@ object {
     box-shadow: none !important;
 }
 
-.recall-block a img{
+.recall-block a img {
     padding: 5px;
     border-radius: 50%;
     transition: 200ms;
 }
 
-.recall-block a:hover img{
+.recall-block a:hover img {
     background: #7282fd14
 }
 
@@ -923,7 +923,7 @@ object {
     margin-right: 30px;
 }
 
-#main-nav{
+#main-nav {
     margin-bottom: 14px;
 }
 
@@ -1011,6 +1011,10 @@ p {
     text-align: center;
     color: #F6F6F6;
     height: 50px;
+}
+
+.first-block a:hover {
+    color: #0F0F0F;
 }
 
 .first-block .input-group-append, .fifth-block .input-group-append, .caldera-front-modal-container .input-group-append {
@@ -1158,7 +1162,7 @@ body {
 }
 
 .radio-block label > input:active + span::before {
-    border-color: rgb(33, 150, 243);
+    border-color: #7085FE;
 }
 
 /* Disabled */
@@ -1437,7 +1441,7 @@ body {
 }
 
 .fourth-block a img {
-    transition: margin-left 250ms;
+    transition: margin-right 250ms;
     margin-left: .25rem;
 }
 
@@ -1448,7 +1452,7 @@ body {
 }
 
 .fourth-block a:hover img {
-    margin-left: 7%;
+    margin-right: 14%;
 }
 
 .fourth-block a:hover img.rotate {
@@ -1707,9 +1711,9 @@ and (max-width: 1200px) {
         max-width: 94%;
     }
 
-    .recall-block {
-        display: none;
-    }
+    /*.recall-block {*/
+    /*    display: none;*/
+    /*}*/
 }
 
 @media screen
@@ -1784,6 +1788,10 @@ and (max-width: 991px) {
 and (max-width: 768px) {
     .third-block .bg-left-landing {
         height: 340px;
+    }
+
+    .recall-block{
+        display: none;
     }
 
     .third-block .bg-right-landing {
