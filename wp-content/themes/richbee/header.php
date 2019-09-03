@@ -38,7 +38,13 @@
                     <?php endif; ?>
 
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-brand recall-block order-xl-3 order-lg-2 order-md-2">
+                    <a class="ml-2" href="#"><img src="/wp-content/themes/richbee/svg/telegram-header.svg" alt=""></a>
+                    <a class="ml-2" href="#"><img src="/wp-content/themes/richbee/svg/whatsapp-header.svg" alt=""></a>
+                    <a class="header-phone ml-4" href="#">8 (495) 265-45-65</a>
+                    <p class="m-0 recall"><a href="#">Обратный звонок</a></p>
+                </div>
+                <button class="navbar-toggler order-lg-3 order-md-3 order-xl-2" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -55,12 +61,6 @@
                 'walker'          => new wp_bootstrap_navwalker()
                 ));
                 ?>
-                <div class="navbar-brand recall-block">
-                <a class="ml-2" href="#"><img src="/wp-content/themes/richbee/svg/telegram-header.svg" alt=""></a>
-                <a class="ml-2" href="#"><img src="/wp-content/themes/richbee/svg/whatsapp-header.svg" alt=""></a>
-                <a class="header-phone ml-4" href="#">8 (495) 265-45-65</a>
-                <p class="m-0 recall"><a href="#">Обратный звонок</a></p>
-                </div>
             </nav>
         </div>
 	</header>

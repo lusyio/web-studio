@@ -21,7 +21,7 @@
                 <div class="col-12 col-lg-8 first-card">
                     <div class="site-info">
                         <?php echo '<a class="footer-name mr-3" href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
-                        <a class="credits" href="https://afterimagedesigns.com/wp-bootstrap-starter/" target="_blank" title="WordPress Technical Support" alt="Bootstrap WordPress Theme">Агенство интернет-маркетинга</a>
+                        <span class="credits">Агенство интернет-маркетинга</span>
                     </div><!-- close .site-info -->
                     <?php wp_nav_menu(array( 'theme_location' => 'second', 'after' => '<span class="sep"> | </span>', 'container_class' => 'mt-4 footer-menu' )); ?>
                 </div>

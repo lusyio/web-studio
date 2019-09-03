@@ -40,7 +40,7 @@ Template Post Type: post, page, product
 <div class="container position-relative second-block mb-5">
     <img class="position-absolute richbee" src="/wp-content/themes/richbee/images/RICHBEE.png" alt="">
     <h2 class="new mb-5">
-        Можем разработать сайт...
+        Можем разработать и продвинуть сайт
     </h2>
     <div class="row">
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
@@ -117,13 +117,24 @@ Template Post Type: post, page, product
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <h2 class="new">
-                ...и продвинуть его!
-            </h2>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
+            <a class="text-decoration-none" href="#">
+                <div class="card border-0">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
+                    <div class="card-body">
+                        <div class="card-body-primary text-center">
+                            <img src="/wp-content/themes/richbee/svg/browser.svg" alt="">
+                        </div>
+                        <h3 class="text-center mt-5">
+                            Разработка сервисов
+                        </h3>
+                        <p class="text-center">
+                            от 150.000 рублей
+                        </p>
+                    </div>
+                </div>
+            </a>
         </div>
-    </div>
-    <div class="row">
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
             <a class="text-decoration-none" href="#">
                 <div class="card border-0">
