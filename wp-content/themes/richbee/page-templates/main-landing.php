@@ -14,18 +14,8 @@ Template Post Type: post, page, product
                 Разработаем конверсионный сайт с продающим дизайном и приведем клиентов в бизнес
             </h2>
             <div>
-                <p>
-                    Ваш контактный телефон
-                </p>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control input-landing" placeholder="+7 (000) 000-00-00"
-                           aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-input-landing text-inverse" type="button" id="button-addon2">
-                            Получить консультацию
-                        </button>
-                    </div>
-                </div>
+                <p>Ваш контактный телефон</p>
+                <?php echo do_shortcode('[caldera_form id="CF5d6e63522b362"]'); ?>
             </div>
             <p class="text--secondary text-center">
                 Нажимая кнопку, вы даете согласие на <a href="#">обработку персональных данных</a>
@@ -408,32 +398,7 @@ Template Post Type: post, page, product
                         Оставьте заявку, чтобы узнать точную cтоимость и получить коммерческое предложение
                     </p>
                     <div class="ml-4 radio-block">
-                        <h3>
-                            Какая услуга вас интересует?
-                        </h3>
-                        <div>
-                            <label>
-                                <input id="site" type="radio" name="service">
-                                <span>Мне нужен сайт</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="client" type="radio" name="service">
-                                <span>Мне нужно привлечь клиентов</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input id="marketing" type="radio" name="service">
-                                <span>Я хочу заказать комплексный маркетинг</span>
-                            </label>
-                        </div>
-                        <div class="mt-4">
-                            <button class="btn btn-input-landing text-inverse">
-                                Так, а что дальше?
-                            </button>
-                        </div>
+                        <?php echo do_shortcode('[caldera_form id="CF5d6cd3f839ccc"]'); ?>
                     </div>
                 </div>
             </div>
@@ -528,9 +493,7 @@ Template Post Type: post, page, product
                 <div class="col-12 col-lg-3 text-center">
                     <img class="position-relative girl" src="/wp-content/themes/richbee/svg/Group%209.svg"
                          alt="">
-                    <button class="position-relative btn w-100 btn-input-landing text-inverse">
-                        Оставить заявку
-                    </button>
+                    <?php echo preg_replace('~"caldera-forms-modal"~', '"caldera-forms-modalposition-relative btn w-100 btn-input-landing text-inverse"', do_shortcode('[caldera_form_modal id="CF5d6e72157e3a8" type="button"]Оставить заявку[/caldera_form_modal]')); ?>
                 </div>
             </div>
             <div class="row">

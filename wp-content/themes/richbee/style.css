@@ -971,7 +971,7 @@ h2.sub {
     color: #0F0F0F !important;
 }
 
-.text--secondary {
+.text--secondary, .fifth-block .text--secondary {
     color: #999999;
     font-style: normal;
     font-weight: normal;
@@ -1003,7 +1003,9 @@ p {
     color: #C2C2C2;
 }
 
-.first-block button {
+.first-block button, .fifth-block button, .caldera-front-modal-container button,
+.first-block input[type=submit], .fifth-block input[type=submit], .caldera-front-modal-container input[type=submit],
+.first-block input[type=button], .fifth-block input[type=button], .caldera-front-modal-container input[type=button] {
     font-size: 0.875rem;
     line-height: 16px;
     text-align: center;
@@ -1011,27 +1013,27 @@ p {
     height: 50px;
 }
 
-.first-block .input-group-append {
+.first-block .input-group-append, .fifth-block .input-group-append, .caldera-front-modal-container .input-group-append {
     position: absolute;
 }
 
-.first-block .input-landing:focus {
+.first-block .input-landing:focus, .fifth-block .input-landing:focus, .caldera-front-modal-container .input-landing:focus {
     z-index: 2;
     box-shadow: none;
 }
 
-.first-block a {
+.first-block a, .fifth-block a {
     font-size: 12px;
     line-height: 14px;
     color: #999999;
     text-decoration: underline;
 }
 
-.first-block input {
+.first-block input, .fifth-block input, .caldera-front-modal-container input {
     height: 50px;
 }
 
-.first-block .input-group-append {
+.first-block .input-group-append, .fifth-block .input-group-append, .caldera-front-modal-container .input-group-append {
     right: 0;
 }
 
@@ -1811,13 +1813,14 @@ and (max-width: 576px) {
         display: none;
     }
 
-    .first-block .input-group-append {
+    .first-block .input-group-append, .fifth-block .input-group-append, .caldera-front-modal-container .input-group-append {
         position: relative;
         width: 100%;
         margin-top: 5%;
     }
-
-    .first-block .input-group-append button {
+    .first-block .input-group-append button, .fifth-block .input-group-append button, .caldera-front-modal-container .input-group-append button,
+    .first-block .input-group-append input[type=submit], .fifth-block .input-group-append input[type=submit], .caldera-front-modal-container .input-group-append input[type=submit],
+    .first-block .input-group-append input[type=button], .fifth-block .input-group-append input[type=button], .caldera-front-modal-container .input-group-append input[type=button] {
         margin: auto;
     }
 

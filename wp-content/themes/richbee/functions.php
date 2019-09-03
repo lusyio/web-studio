@@ -381,3 +381,116 @@ function register_my_menus() {
     );
 }
 add_action( 'init', 'register_my_menus' );
+
+/**
+ * Добавляем классы для инпутов Caldera forms
+ */
+
+add_filter( 'caldera_forms_field_attributes', function( $attrs, $field, $form ){
+    if( 'email' === Caldera_Forms_Field_Util::get_type( $field, $form ) || 'phone' === Caldera_Forms_Field_Util::get_type( $field, $form )){
+        $attrs[ 'class' ] .= ' form-control input-landing';
+    }
+    return $attrs;
+}, 20, 3 );
+
+/**
+ * Удаляем div-обертку radio-input'ов
+ */
+add_filter('caldera_forms_render_field_structure_type-radio', function ($field_structure) {
+    $field_structure['wrapper_before'] = '';
+    $field_structure['wrapper_after'] = '';
+    return $field_structure;
+});
+
+/**
+ * Оборачиваем текст radio-input'ов в <span>
+ */
+add_filter( 'caldera_forms_render_get_field_type-radio', function( $field )  {
+    if ($field['type'] == 'radio' && isset($field['config']['option'])) {
+        foreach ($field['config']['option'] as $key => $value) {
+            $field['config']['option'][$key]['label'] = '<span>' . $value['label'] . '</span>';
+        }
+    }
+    return $field;
+});
+
+/**
+ * Удаляем div-обертку полей для ввода и submit-ов
+ */
+add_filter('caldera_forms_render_field_structure', function ($field_structure) {
+    $elementIds = [
+        'fld_8791407',
+        'fld_1292397',
+        'fld_3805134',
+        'fld_6086802',
+        'fld_4575049',
+    ];
+    if (in_array($field_structure['id'], $elementIds)) {
+        $field_structure['wrapper_before'] = '';
+        $field_structure['wrapper_after'] = '';
+    }
+    if (in_array($field_structure['id'], $elementIds)) {
+        $field_structure['field_before'] = '';
+        $field_structure['field_after'] = '';
+    }
+    return $field_structure;
+});
+
+/**
+ * Получаем html-код submit-ов
+ */
+$submit_field = [];
+add_filter('caldera_forms_render_field_slug-email_wait', function ($field_html) {
+    global $submit_field;
+    $submit_field['email_wait'] = $field_html;
+    return $field_html;
+});
+add_filter('caldera_forms_render_field_slug-message_wait', function ($field_html) {
+    global $submit_field;
+    $submit_field['message_wait'] = $field_html;
+    return $field_html;
+});
+add_filter('caldera_forms_render_field_slug-call_wait', function ($field_html) {
+    global $submit_field;
+    $submit_field['call_wait'] = $field_html;
+    return $field_html;
+});
+
+/**
+ * Присоединяем submit'ы к текстовым полям
+ */
+add_filter('caldera_forms_render_field_structure', function ($field_structure) {
+    global $submit_field;
+    $submit_button = null;
+    if ($field_structure['id'] == 'fld_8791407') {
+        $submit_button = $submit_field['email_wait'];
+    }
+    if ($field_structure['id'] == 'fld_1292397') {
+        $submit_button = $submit_field['message_wait'];
+    }
+    if ($field_structure['id'] == 'fld_72245') {
+        $submit_button = $submit_field['call_wait'];
+    }
+    if (!is_null($submit_button)) {
+        $field_structure['field_before'] = '<div class="input-group mb-3">';
+        $field_structure['field_after'] = '<div class="input-group-append">' . $submit_button . '</div></div>';
+    }
+    return $field_structure;
+});
+
+add_filter('caldera_forms_render_field_structure', function ($field_structure) {
+    if ($field_structure['id'] == 'fld_5518090' || $field_structure['id'] == 'fld_9190050') {
+        $field_structure['wrapper_before'] = '';
+        $field_structure['wrapper_after'] = '';
+    }
+    if ($field_structure['id'] == 'fld_9190050') {
+        $field_structure['field_before'] = '<div class="input-group mb-3">';
+        $field_structure['field_after'] = '';
+    }
+    if ($field_structure['id'] == 'fld_5518090') {
+        $field_structure['field_before'] = '<div class="input-group-append">';
+        $field_structure['field_after'] = '</div></div>';
+    }
+
+    return $field_structure;
+});
