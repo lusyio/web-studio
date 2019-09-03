@@ -273,7 +273,7 @@ Template Post Type: post, page, product
                             <div class="swiper-slide">
                                 <div class="card mt-5 mb-5">
                                     <img class="position-absolute"
-                                         src="/wp-content/themes/richbee/images/Rectangle%209.png" alt="">
+                                         src="/wp-content/themes/richbee/svg/Rectangle%209.svg" alt="">
                                     <div class="card-body">
                                         <h3 class="mt-0">
                                             С 0 до 800.000 оборотки в месяц
@@ -305,7 +305,7 @@ Template Post Type: post, page, product
                             <div class="swiper-slide">
                                 <div class="card mt-5 mb-5">
                                     <img class="position-absolute"
-                                         src="/wp-content/themes/richbee/images/Rectangle%209.png" alt="">
+                                         src="/wp-content/themes/richbee/svg/Rectangle%209.svg" alt="">
                                     <div class="card-body">
                                         <h3 class="mt-0">
                                             С 0 до 800.000 оборотки в месяц

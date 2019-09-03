@@ -896,13 +896,13 @@ object {
     box-shadow: none !important;
 }
 
-.recall-block a img{
+.recall-block a img {
     padding: 5px;
     border-radius: 50%;
     transition: 200ms;
 }
 
-.recall-block a:hover img{
+.recall-block a:hover img {
     background: #7282fd14
 }
 
@@ -923,7 +923,7 @@ object {
     margin-right: 30px;
 }
 
-#main-nav{
+#main-nav {
     margin-bottom: 14px;
 }
 
@@ -1435,7 +1435,7 @@ body {
 }
 
 .fourth-block a img {
-    transition: margin-left 250ms;
+    transition: margin-right 250ms;
     margin-left: .25rem;
 }
 
@@ -1446,7 +1446,7 @@ body {
 }
 
 .fourth-block a:hover img {
-    margin-left: 7%;
+    margin-right: 14%;
 }
 
 .fourth-block a:hover img.rotate {
