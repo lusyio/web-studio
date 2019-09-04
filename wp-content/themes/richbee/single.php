@@ -12,18 +12,19 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <div class="singletopp"><?php $cat = get_the_category();
-                    echo $cat[0]->cat_name; ?></div>
                 <hr>
                 <?php the_tags('<p class="meta">', '<span class="sep"> | </span>', '</p>'); ?>
-                <h1 class="new mb-4"><?php the_title(); ?></h1>
+                <h1 class="new mb-4 position-relative"><?php the_title(); ?>
+                    <div class="singletopp"><?php $cat = get_the_category();
+                        echo $cat[0]->cat_name; ?></div>
+                </h1>
                 <div class="mb-5">
                     <?php echo get_the_post_thumbnail($id, $size, $attr); ?>
                 </div>
             </div>
         </div>
     </div>
-    <section id="primary" class="content-area col-sm-12 col-lg-8">
+    <section id="primary" class="content-area col-sm-12 col-lg-12">
 
         <main id="main" class="site-main" role="main">
             <div class="single-post">
@@ -49,5 +50,4 @@ get_header(); ?>
     </section><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

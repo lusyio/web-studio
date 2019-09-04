@@ -993,6 +993,38 @@ object {
     font-size: 30px;
 }
 
+.meta a{
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 16px;
+    color: #7085FE;
+}
+
+.meta .sep{
+    color: rgba(0,0,0,.3);
+}
+
+.meta{
+    font-size: 1.2rem;
+}
+
+.singletopp {
+    font-size: 3.5em;
+    color: #7184fd0d;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.single-post h1.new{
+    margin-top: 60px;
+}
+
 .single-post > ul, ol li{
     font-size: 18px;
     font-weight: 400;
@@ -1056,28 +1088,6 @@ p.new{
 .site-header {
     background-color: #ffffff !important;
     box-shadow: none !important;
-}
-
-.meta a{
-    font-weight: 300;
-    font-size: 1.2rem;
-    line-height: 16px;
-    color: #7085FE;
-}
-
-.meta .sep{
-    color: rgba(0,0,0,.3);
-}
-
-.meta{
-    font-size: 1.2rem;
-}
-
-.singletopp {
-    font-size: 6em;
-    color: #0F0F0F;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 .recall-block a img {
