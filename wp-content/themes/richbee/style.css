@@ -887,6 +887,169 @@ object {
     text-align: center;
 }
 
+
+
+/*--------------------------------------------------------------
+# single-post
+--------------------------------------------------------------*/
+
+.single-post > p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #333;
+}
+
+.single-post > p a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed #7685f8;
+    transition: 200ms;
+}
+
+.single-post > p a:hover {
+    border-bottom: 1px solid #7685f8;
+}
+
+.single-post > ul, ol{
+    padding: 15px 70px 20px;
+    margin: 0 0 30px;
+    border-left: 5px solid #161616;
+    background: white;
+}
+
+.single-post .btn-primary{
+    color: #fff;
+    padding: 12px 27px;
+    background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+    border: 0;
+    border-radius: 120px;
+    font-weight: normal;
+}
+
+.single-post .btn-primary:hover{
+    background: linear-gradient(180deg, #7f7ef7 0%, #7E7BFC 100%);
+    color: #F6F6F6;
+    border: 0;
+}
+
+.single-post > ul, ol li{
+    margin: 15px 0 15px 0;
+}
+
+.single-post > ul a{
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.single-post > ol a{
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.single-post > ul a:hover{
+    text-decoration: underline;
+}
+
+.single-post blockquote{
+    padding: 80px 60px;
+    margin: 0 0 20px;
+    border-top: 5px solid #7085FE;
+    font-style: italic;
+    text-align: center;
+    background: white;
+    border-bottom: 5px solid #7E7BFC;
+    position: relative;
+}
+
+.single-post .embed-responsive{
+    margin-bottom: 20px;
+}
+
+.single-post blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: 5px;
+    top: -25px;
+    color: #161616;
+}
+
+.single-post blockquote p{
+    font-weight: 400;
+    line-height: 1.8;
+    color: #333;
+    font-size: 22px !important;
+    margin-bottom: 15px;
+}
+
+.single-post > h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.single-post > ul, ol li{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.single-post > p img{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px 5px;
+    margin-bottom: 40px;
+}
+/*--------------------------------------------------------------
+# portfolio
+--------------------------------------------------------------*/
+
+h1.new{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #0F0F0F;
+}
+
+h3.gray{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #828282;
+}
+
+p.new{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 160%;
+    text-align: center;
+    color: #5C5C5C;
+}
+
+.card.rectangle{
+    border: 0;
+}
+
+.rectangle img{
+    border-radius: 38px;
+    border: 13px solid rgb(12, 12, 12);
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 40px 80px 0px rgba(8, 8, 8, 0.2);
+    max-width: 991px;
+    margin: auto;
+}
+
+.image-bg-fluid{
+    background-image: url(/wp-content/themes/richbee/images/Group%205.png);
+    height: 840px;
+}
+
 /*--------------------------------------------------------------
 # main-landing
 --------------------------------------------------------------*/
@@ -894,6 +1057,28 @@ object {
 .site-header {
     background-color: #ffffff !important;
     box-shadow: none !important;
+}
+
+.meta a{
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 16px;
+    color: #7085FE;
+}
+
+.meta .sep{
+    color: rgba(0,0,0,.3);
+}
+
+.meta{
+    font-size: 1.2rem;
+}
+
+.singletopp {
+    font-size: 6em;
+    color: #0F0F0F;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .recall-block a img {
@@ -1412,6 +1597,15 @@ body {
     width: 100%;
 }
 
+.fourth-block .div-ellipse{
+    top: 20%;
+    left: 0;
+}
+
+.fourth-block .div-ellipse img:last-of-type{
+    margin-top: 13px;
+}
+
 .fourth-block .right-side h2, .right-side p {
     color: #F7F7F7 !important;
 }
@@ -1659,6 +1853,7 @@ and (min-width: 1200px) {
     .sixth-block .fourth-card {
         margin-top: 12%;
         padding: 0;
+        z-index: 2;
     }
 
     .sixth-block .fourth-card .col {
@@ -1668,6 +1863,9 @@ and (min-width: 1200px) {
     .sixth-block .third-card {
         margin-top: 27%;
         padding: 0;
+        position: relative;
+        right: 3%;
+        z-index: 2;
     }
 
     .sixth-block .third-card .col {
@@ -1677,6 +1875,7 @@ and (min-width: 1200px) {
     .sixth-block .second-card {
         padding: 0;
         margin-top: 9%;
+        z-index: 2;
     }
 
     .sixth-block .second-card .col {
@@ -1690,6 +1889,7 @@ and (min-width: 1200px) {
 
     .sixth-block .first-card {
         padding: 0;
+        z-index: 2;
     }
 
     .sixth-block .first-card .col {
@@ -1711,9 +1911,6 @@ and (max-width: 1200px) {
         max-width: 94%;
     }
 
-    /*.recall-block {*/
-    /*    display: none;*/
-    /*}*/
 }
 
 @media screen
@@ -1814,6 +2011,10 @@ and (max-width: 768px) {
 @media screen
 and (max-width: 576px) {
     .bg-ellipse {
+        display: none;
+    }
+
+    .div-ellipse{
         display: none;
     }
 
