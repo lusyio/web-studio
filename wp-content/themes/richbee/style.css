@@ -1036,7 +1036,6 @@ p.new{
 }
 
 .rectangle img{
-    border-radius: 38px;
     border: 13px solid rgb(12, 12, 12);
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
