@@ -24,7 +24,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <section id="primary" class="content-area col-sm-12 col-lg-12">
+    <section id="primary" class="content-area col-sm-12 col-lg-8 offset-2">
 
         <main id="main" class="site-main" role="main">
             <div class="single-post">
