@@ -79,8 +79,9 @@
                         <div class="container">
                             <div class="row mb-5">
                                 <div class="col">
-                                    <h1 class="new p-0">
-                                        <?= get_the_title() ?>
+                                    <h1 class="new p-0 position-relative">
+                                        <?= get_the_title() ?><div class="singletopp"><?php $cat = get_the_category();
+                                            echo $cat[0]->cat_name; ?></div>
                                     </h1>
                                     <h3 class="gray mt-0 mb-5">
                                         <?= get_post_meta($post->ID, 'biscat', true); ?>
