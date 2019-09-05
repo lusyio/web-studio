@@ -1671,7 +1671,7 @@ body {
     color: #999999 !important;
 }
 
-.third-block .description {
+.third-block .description p {
     font-size: 18px;
     line-height: 137.7%;
     color: #5C5C5C !important;
