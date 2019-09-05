@@ -75,4 +75,8 @@ jQuery( function ( $ ) {
         }, 1000, 'swing');
     });
 
+    // Отключаем скролл при переходах по страницам форм Caldera Forms
+    jQuery(document).on( 'cf.pagenav', function (event, data) {
+        jQuery('html, body').stop();
+    } );
 });

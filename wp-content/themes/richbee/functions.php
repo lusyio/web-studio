@@ -494,3 +494,36 @@ add_filter('caldera_forms_render_field_structure', function ($field_structure) {
 
     return $field_structure;
 });
+
+/**
+ * Добавляем классы для обычных инпутов и инпутов с иконками в форме запроса на расчет стоимости
+ */
+
+add_filter('caldera_forms_render_field_structure_type-radio', function($field_structure) {
+    if ($field_structure['id'] === 'fld_4474812') {
+        $field_structure['field_before'] = '<div class="contact-type">';
+    }
+    if ($field_structure['id'] === 'fld_5156183') {
+        $field_structure['field_before'] = '<div class="service-type">';
+    }
+    return $field_structure;
+});
+
+add_filter( 'caldera_forms_magic_summary_should_use_label', function( $use, $field, $form ){
+    if( 'CF5d6cd3f839ccc' == $form[ 'ID' ] ){
+        return true;
+    }
+    return $use;
+}, 10, 3 );
+
+add_filter( 'caldera_forms_mailer', function( $mail, $data, $form ) {
+    if( 'CF5d6cd3f839ccc' == $form[ 'ID' ] ) {
+        $mail[ 'message' ] = preg_replace('~service~', 'Услуга для расчета:', $mail[ 'message' ]);
+        $mail[ 'message' ] = preg_replace('~contact-type~', 'Выбранный способ связи:', $mail[ 'message' ]);
+        $mail[ 'message' ] = preg_replace('~contact-phone~', 'Номер телефона:', $mail[ 'message' ]);
+        $mail[ 'message' ] = preg_replace('~contact-email~', 'E-mail:', $mail[ 'message' ]);
+    }
+
+    return $mail;
+
+}, 10, 3 );
