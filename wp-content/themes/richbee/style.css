@@ -1021,9 +1021,6 @@ object {
     z-index: -1;
 }
 
-.single-post h1.new{
-    margin-top: 60px;
-}
 
 .single-post > ul, ol li{
     font-size: 18px;
