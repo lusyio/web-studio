@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Portfolio
+Template Name: Tropicana Spa
 Template Post Type: post, page, product
 */
 ?>
@@ -8,26 +8,6 @@ Template Post Type: post, page, product
 <?php get_header(); ?>
 
 <div class="container">
-    <div class="row mb-5">
-        <div class="col">
-            <h1 class="new p-0">
-                <?= get_the_title() ?>
-            </h1>
-            <h3 class="gray mt-0 mb-5">
-                <?= get_post_meta($post->ID, 'biscat', true); ?>
-            </h3>
-            <div class="row">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <p class="new">
-                        <?= get_the_content() ?>
-                    </p>
-                </div>
-            </div>
-            <div class="card rectangle mt-5">
-                <img src="<?= get_the_post_thumbnail_url($post->ID, 'full') ?>" alt="">
-            </div>
-        </div>
-    </div>
     <div class="row">
         <div class="col mt-5">
             <h2 class="new text-center">
@@ -71,10 +51,6 @@ Template Post Type: post, page, product
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
-<div class="image-bg-fluid">
 </div>
 
 <?php get_footer(); ?>

@@ -263,8 +263,10 @@ Template Post Type: post, page, product
 </div>
 </div><!-- .container -->
 <div class="fourth-block position-relative mt-5 mb-5 ">
-    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.6.png" alt="">
-    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.6.png" alt="">
+    <div class="position-absolute div-ellipse">
+        <img class="d-block" src="/wp-content/themes/richbee/images/Group%203.6.png" alt="">
+        <img class="d-block" src="/wp-content/themes/richbee/images/Group%203.6.png" alt="">
+    </div>
     <div class="container">
         <div class="padding">
             <div class="row">
