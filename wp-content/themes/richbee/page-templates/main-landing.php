@@ -175,7 +175,7 @@ Template Post Type: post, page, product
             </h2>
         </div>
     </div>
-    <?php $catquery = new WP_Query('cat=19&posts_per_page=4'); ?>
+    <?php $catquery = new WP_Query('cat=19&posts_per_page=4 '); // portfolio ?>
     <?php $portfolio_counter = 1; ?>
     <?php $image_size = array(356, 212); // выбор размера превью, выводит ближайшую по размеру в большую сторону?>
     <?php while ($catquery->have_posts()) : $catquery->the_post(); ?>
