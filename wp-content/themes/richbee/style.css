@@ -1414,7 +1414,7 @@ body {
 }
 
 .radio-block .service-type label > input:focus {
-    opacity: 0.12;
+    opacity: 0;
 }
 
 .radio-block .service-type label:hover > input:focus {
