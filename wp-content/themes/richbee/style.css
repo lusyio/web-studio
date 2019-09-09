@@ -1224,6 +1224,10 @@ p {
     text-decoration: underline;
 }
 
+.first-block p.ml{
+    margin-left: 1.8rem;
+}
+
 .first-block input, .fifth-block input, .caldera-front-modal-container input {
     height: 50px;
 }
@@ -1826,6 +1830,8 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #0F0F0F;
+    margin-bottom: 30px;
+    margin-top: 38px;
 }
 
 .fifth-block .bg-ellipse {

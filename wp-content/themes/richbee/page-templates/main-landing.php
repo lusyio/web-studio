@@ -14,7 +14,7 @@ Template Post Type: post, page, product
                 Разработаем конверсионный сайт с продающим дизайном и приведем клиентов в бизнес
             </h2>
             <div>
-                <p>Ваш контактный телефон</p>
+                <p class="ml">Ваш контактный телефон</p>
                 <?php echo do_shortcode('[caldera_form id="CF5d6e63522b362"]'); ?>
             </div>
             <p class="text--secondary text-center">
@@ -417,7 +417,7 @@ Template Post Type: post, page, product
                     <img src="/wp-content/themes/richbee/svg/undraw_mobile_marketing_iqbr.svg" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <p class="mr-1 mb-0 mt-">
+                    <p class="mr-1 mb-0 mt-5">
                         Оставьте заявку, чтобы узнать точную cтоимость и получить коммерческое предложение
                     </p>
                     <div class="ml-4 radio-block">
