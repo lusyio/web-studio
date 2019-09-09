@@ -1551,8 +1551,8 @@ body {
 }
 
 .sep {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 17px;
+    margin-right: 17px;
 }
 
 .footer-name {
@@ -1600,9 +1600,8 @@ body {
     z-index: 1;
 }
 
-.second-block .richbee {
-    z-index: 2;
-    top: -4%;
+.richbee {
+    top: -7%;
 }
 
 .second-block .card {
@@ -1618,6 +1617,7 @@ body {
 
 .second-block .card {
     border-radius: 20px;
+    z-index: 2;
 }
 
 .second-block .card {
@@ -1653,6 +1653,22 @@ body {
     color: #5C5C5C;;
 }
 
+.third-block{
+    margin-top: 7.5rem;
+}
+
+.third-block .mt-custom{
+    margin-top: 5.5rem;
+}
+
+.third-block .mt-custom-2{
+    margin-top: 12.5rem;
+}
+
+.third-block .mt-custom-3{
+    margin-top: 6rem;
+}
+
 .third-block a img {
     transition: margin-left 250ms;
 }
@@ -1668,14 +1684,24 @@ body {
     color: #999999 !important;
 }
 
+.third-block .description{
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
 .third-block .description p {
     font-size: 18px;
     line-height: 137.7%;
     color: #5C5C5C !important;
 }
 
+.third-block .right-landing .img-inside{
+    margin-left: auto;
+}
+
 .third-block .bg-ellipse {
-    right: -15%;
+    right: -10%;
+    top: -5%;
 }
 
 .third-block a {
@@ -1709,6 +1735,7 @@ body {
 
 .fourth-block .right-side img {
     position: absolute;
+    bottom: -11.6%;
 }
 
 .fourth-block a {
@@ -1768,10 +1795,6 @@ body {
     top: -6%;
 }
 
-.fourth-block .right-side img {
-    bottom: -11%;
-}
-
 .fourth-block .card-body {
     padding: 50px 70px;
 }
@@ -1782,6 +1805,8 @@ body {
     max-height: 580px;
     max-width: 500px;
     z-index: 2;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
 }
 
 .fourth-block .right-side p {
@@ -1804,7 +1829,7 @@ body {
 }
 
 .fifth-block .bg-ellipse {
-    right: -15%;
+    right: -11%;
     top: 22%;
 }
 
@@ -1936,8 +1961,8 @@ body {
 }
 
 .img-inside{
-    max-width: 80%;
-    margin-top: 9%;
+    /*max-width: 80%;*/
+    margin-top: 7%;
 }
 
 .img-inside div.position-relative{
@@ -1963,13 +1988,26 @@ body {
 }
 
 @media screen
+and (max-width: 1376px){
+    .bg-right-landing{
+        border-radius: 40px 0px 0px 40px;
+    }
+
+    .bg-left-landing{
+        border-radius: 0px 40px 40px 0px;
+    }
+}
+
+@media screen
 and (min-width: 1200px) {
     .third-block .bg-left-landing {
         height: 400px;
+        left: -19%;
     }
 
     .third-block .bg-right-landing {
         height: 400px;
+        right: -19%;
     }
 
     .container {
@@ -2043,6 +2081,18 @@ and (max-width: 1199.7px) {
         margin-right: 0;
     }
 
+    .bg-left-landing{
+        left: -24%;
+    }
+
+    .img-inside{
+        margin-top: 10%;
+    }
+
+    .bg-right-landing{
+        right: -24%;
+    }
+
     .fourth-block .card {
         max-width: 94%;
     }
@@ -2068,6 +2118,14 @@ and (max-width: 991px) {
         max-width: 68% !important;
     }
 
+    .right-landing .img-inside img{
+        margin-left: 25%;
+    }
+
+    .right-landing .position-relative img{
+        margin-left: 28%;
+    }
+
     .third-block .col-12 img {
         max-width: 75%;
     }
@@ -2080,10 +2138,9 @@ and (max-width: 991px) {
         margin-top: 5%;
     }
 
-    /*.third-block .right-landing img {*/
-    /*    right: -25%;*/
-    /*    position: relative;*/
-    /*}*/
+    .img-inside{
+        margin-top: 4%;
+    }
 
     .fourth-block .card {
         max-width: 100%;
@@ -2140,6 +2197,10 @@ and (max-width: 767.8px) {
         display: none;
     }
 
+    .img-inside{
+        margin-top: 8%;
+    }
+
     .img-inside-mac {
         display: block;
         position: absolute;
@@ -2168,13 +2229,29 @@ and (max-width: 767.8px) {
 }
 
 @media screen
-and (max-width: 576px) {
+and (max-width: 575.7px) {
     .bg-ellipse {
         display: none;
     }
 
     .div-ellipse{
         display: none;
+    }
+
+    .right-landing .img-inside img{
+        margin-left: 0;
+    }
+
+    .right-landing .position-relative img{
+        margin-left: auto;
+    }
+
+    .bg-left-landing{
+        left: 0;
+    }
+
+    .bg-right-landing{
+        right: 0;
     }
 
     .img-inside{

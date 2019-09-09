@@ -28,10 +28,6 @@ Template Post Type: post, page, product
 </div>
 
 <div class="container position-relative second-block mb-5">
-    <img class="position-absolute richbee" src="/wp-content/themes/richbee/images/RICHBEE.png" alt="">
-    <h2 class="new mb-5">
-        Можем разработать и продвинуть сайт
-    </h2>
     <div class="row">
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
             <a class="text-decoration-none" href="#">
@@ -164,7 +160,8 @@ Template Post Type: post, page, product
     </div>
 </div>
 
-<div class="container mb-5 third-block">
+<div class="container mb-5 third-block position-relative">
+    <img class="position-absolute richbee" src="/wp-content/themes/richbee/images/RICHBEE.png" alt="">
     <div class="row">
         <div class="col">
             <h2 class="sub text-center">
@@ -175,12 +172,12 @@ Template Post Type: post, page, product
             </h2>
         </div>
     </div>
-    <?php $catquery = new WP_Query('cat=19&posts_per_page=4 '); // portfolio ?>
+    <?php $catquery = new WP_Query('cat=19&posts_per_page=4'); // portfolio  ?>
     <?php $portfolio_counter = 1; ?>
     <?php $image_size = array(356, 212); // выбор размера превью, выводит ближайшую по размеру в большую сторону?>
     <?php while ($catquery->have_posts()) : $catquery->the_post(); ?>
         <?php if ($portfolio_counter == 1): ?>
-            <div class="row position-relative mt-5">
+            <div class="row position-relative mt-custom">
                 <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.13.png" alt="">
                 <div class="col-12 order-2 order-sm-2 order-md-2 order-lg-0 order-xl-0 col-lg-6 col-xl-6">
                     <div class="bg-left-landing">
@@ -194,24 +191,24 @@ Template Post Type: post, page, product
                     </div>
                 </div>
                 <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
-                    <h2 class="new"><?php the_title(); ?></h2>
+                    <h2 class="new mt-0"><?php the_title(); ?></h2>
                     <p class="text--secondary">
                         <?php echo get_post_meta(get_the_ID(), 'website', true); ?>
                     </p>
-                    <div class="mt-4 description"><?php the_content(); ?></div>
+                    <div class="description"><?php the_content(); ?></div>
                     <a href="<?php the_permalink() ?>">Подробнее
                         <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
                     </a>
                 </div>
             </div>
         <?php elseif ($portfolio_counter == 2): ?>
-            <div class="row mt-5">
+            <div class="row mt-custom-2">
                 <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 col-lg-5 order-lg-1 offset-lg-1">
-                    <h2 class="new"><?php the_title(); ?></h2>
+                    <h2 class="new mt-0"><?php the_title(); ?></h2>
                     <p class="text--secondary">
                         <?php echo get_post_meta(get_the_ID(), 'website', true); ?>
                     </p>
-                    <div class="mt-4 description">
+                    <div class="description">
                         <?php the_content(); ?>
                     </div>
                     <a href="<?php the_permalink() ?>">Подробнее
@@ -231,7 +228,7 @@ Template Post Type: post, page, product
                 </div>
             </div>
         <?php elseif ($portfolio_counter == 3): ?>
-            <div class="row position-relative mt-5">
+            <div class="row position-relative mt-custom-2">
                 <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.13.png" alt="">
                 <div class="col-12  order-1 order-sm-2 order-md-2 order-lg-0 order-xl-0 col-lg-6 col-xl-6">
                     <div class="bg-left-landing">
@@ -245,11 +242,11 @@ Template Post Type: post, page, product
                     </div>
                 </div>
                 <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
-                    <h2 class="new"><?php the_title(); ?></h2>
+                    <h2 class="new mt-0"><?php the_title(); ?></h2>
                     <p class="text--secondary">
                         <?php echo get_post_meta(get_the_ID(), 'website', true); ?>
                     </p>
-                    <div class="mt-4 description">
+                    <div class="description">
                         <?php the_content(); ?>
                     </div>
                     <a href="<?php the_permalink() ?>">Подробнее
@@ -258,7 +255,7 @@ Template Post Type: post, page, product
                 </div>
             </div>
         <?php elseif ($portfolio_counter == 4): ?>
-            <div class="row mt-5">
+            <div class="row mt-custom-3">
                 <div class="col text-center">
                     <button class="btn btn-input-landing text-inverse">
                         Посмотреть другие работы
@@ -352,7 +349,7 @@ Template Post Type: post, page, product
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row">
                         <div class="col-6 prev">
                             <a href="#">
                                 <img class="rotate" src="/wp-content/themes/richbee/svg/back-white.svg"
@@ -371,7 +368,7 @@ Template Post Type: post, page, product
                 <div class="col-sm-12 offset-sm-1 col-md-12 offset-md-1 col-lg-5 offset-lg-1 col-xl-6 offset-xl-0 right-side">
                     <div class="row">
                         <div class="col-lg-11 col-xl-11 col-md-12">
-                            <h2 class="sub mt-0">
+                            <h2 class="sub mt-3">
                                 Наши кейсы
                             </h2>
                             <h2 class="new">
@@ -431,7 +428,7 @@ Template Post Type: post, page, product
         </div>
 
         <div class="container position-relative sixth-block mt-5">
-            <div class="row mb-5 text-center">
+            <div class="row mb-5 mt-5 text-center">
                 <div class="col">
                     <h2 class="sub">
                         С чего начать?
