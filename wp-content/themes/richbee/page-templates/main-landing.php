@@ -17,7 +17,7 @@ Template Post Type: post, page, product
                 <p class="ml">Ваш контактный телефон</p>
                 <?php echo do_shortcode('[caldera_form id="CF5d6e63522b362"]'); ?>
             </div>
-            <p class="text--secondary text-center">
+            <p class="text--secondary ml">
                 Нажимая кнопку, вы даете согласие на <a href="#">обработку персональных данных</a>
             </p>
         </div>
