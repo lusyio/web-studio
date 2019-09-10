@@ -7,74 +7,118 @@ Template Post Type: post, page, product
 
 <?php get_header(); ?>
 
-<div class="container">
-    <div class="row mb-5">
-        <div class="col">
-            <h1 class="new p-0">
-                <?= get_the_title() ?>
-            </h1>
-            <h3 class="gray mt-0 mb-5">
-                <?= get_post_meta($post->ID, 'biscat', true); ?>
-            </h3>
-            <div class="row">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <p class="new">
-                        <?= get_the_content() ?>
-                    </p>
-                </div>
-            </div>
-            <div class="card rectangle mt-5">
-                <img src="<?= get_the_post_thumbnail_url($post->ID, 'full') ?>" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col mt-5">
-            <h2 class="new text-center">
-                Проект в деталях
-            </h2>
-            <div class="row">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <p class="new">
-                        На сайте уже была довольно непростая структура услуг, пришлось учесть все моменты. На странице
-                        “Услуги”
-                        мы сделали табы с разделением услуг по категориям.
-                    </p>
-                </div>
-            </div>
-            <img class="mt-5" src="/wp-content/themes/richbee/svg/rectangle2.svg" alt="">
 
-        </div>
-    </div>
+<div class="container mb-5 third-block position-relative">
+    <img class="position-absolute richbee" src="/wp-content/themes/richbee/images/RICHBEE.png" alt="">
     <div class="row">
         <div class="col">
-            <div class="row mt-5">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <p class="new">
-                        Так как, мы не работали с контентом на этом проекте, пришлось переносить контент услуг, как
-                        было. Мы почистили код, но все остальное сохранили, как и было. Однако, сделали для заказчика
-                        легкую возможность включить более красивый вид услугу, например, как у услуги “Свадебные
-                        прически”.
-                    </p>
-                </div>
-            </div>
-            <img src="/wp-content/themes/richbee/images/Group%204.png" alt="">
-            <div class="row mt-5">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <p class="new">
-                        Так как, мы не работали с контентом на этом проекте, пришлось переносить контент услуг, как
-                        было. Мы почистили код, но все остальное сохранили, как и было. Однако, сделали для заказчика
-                        легкую возможность включить более красивый вид услугу, например, как у услуги “Свадебные
-                        прически”.
-                    </p>
-                </div>
-            </div>
+            <h2 class="sub text-center">
+                Наши работы
+            </h2>
+            <h1 class="new text-center">
+                Портфолио
+            </h1>
         </div>
     </div>
+    <?php $catquery = new WP_Query('cat=19&posts_per_page=14'); // portfolio  ?>
+    <?php $portfolio_counter = 1; ?>
+    <?php $image_size = array(356, 212); // выбор размера превью, выводит ближайшую по размеру в большую сторону?>
+    <?php while ($catquery->have_posts()) : $catquery->the_post(); ?>
+        <?php if ($portfolio_counter == 1): ?>
+            <div class="row position-relative mt-custom">
+                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.13.png" alt="">
+                <div class="col-12 order-2 order-sm-2 order-md-2 order-lg-0 order-xl-0 col-lg-6 col-xl-6">
+                    <div class="bg-left-landing">
+                    </div>
+                    <div class="img-inside">
+                        <div class="position-relative">
+                            <img src="/wp-content/themes/richbee/images/macbook-top.png" style="" alt="">
+                            <img class="img-inside-mac" src="<?php the_post_thumbnail_url($image_size) ?>" alt="">
+                        </div>
+                        <img src="/wp-content/themes/richbee/images/macbook-bottom.png" alt="">
+                    </div>
+                </div>
+                <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
+                    <h2 class="new mt-0"><?php the_title(); ?></h2>
+                    <p class="text--secondary">
+                        <?php echo get_post_meta(get_the_ID(), 'website', true); ?>
+                    </p>
+                    <div class="description"><?php the_content(); ?></div>
+                    <a href="<?php the_permalink() ?>">Подробнее
+                        <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        <?php elseif ($portfolio_counter == 2): ?>
+            <div class="row mt-custom-2">
+                <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 col-lg-5 order-lg-1 offset-lg-1">
+                    <h2 class="new mt-0"><?php the_title(); ?></h2>
+                    <p class="text--secondary">
+                        <?php echo get_post_meta(get_the_ID(), 'website', true); ?>
+                    </p>
+                    <div class="description">
+                        <?php the_content(); ?>
+                    </div>
+                    <a href="<?php the_permalink() ?>">Подробнее
+                        <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 order-sm-2 order-md-2 right-landing order-lg-2 col-12">
+                    <div class="bg-right-landing">
+                    </div>
+                    <div class="img-inside">
+                        <div class="position-relative">
+                            <img src="/wp-content/themes/richbee/images/macbook-top.png" style="" alt="">
+                            <img class="img-inside-mac" src="<?php the_post_thumbnail_url($image_size) ?>" alt="">
+                        </div>
+                        <img src="/wp-content/themes/richbee/images/macbook-bottom.png" alt="">
+                    </div>
+                </div>
+            </div>
+        <?php elseif ($portfolio_counter == 3): ?>
+            <div class="row position-relative mt-custom-2">
+                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.13.png" alt="">
+                <div class="col-12  order-1 order-sm-2 order-md-2 order-lg-0 order-xl-0 col-lg-6 col-xl-6">
+                    <div class="bg-left-landing">
+                    </div>
+                    <div class="img-inside">
+                        <div class="position-relative">
+                            <img src="/wp-content/themes/richbee/images/macbook-top.png" style="" alt="">
+                            <img class="img-inside-mac" src="<?php the_post_thumbnail_url($image_size) ?>" alt="">
+                        </div>
+                        <img src="/wp-content/themes/richbee/images/macbook-bottom.png" alt="">
+                    </div>
+                </div>
+                <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
+                    <h2 class="new mt-0"><?php the_title(); ?></h2>
+                    <p class="text--secondary">
+                        <?php echo get_post_meta(get_the_ID(), 'website', true); ?>
+                    </p>
+                    <div class="description">
+                        <?php the_content(); ?>
+                    </div>
+                    <a href="<?php the_permalink() ?>">Подробнее
+                        <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        <?php elseif ($portfolio_counter == 4): ?>
+            <div class="row mt-custom-3">
+                <div class="col text-center">
+                    <button class="btn btn-input-landing text-inverse">
+                        Посмотреть другие работы
+                    </button>
+                </div>
+            </div>
+            <?php break; ?>
+        <?php endif; ?>
+        <?php $portfolio_counter++; ?>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+    <?php unset($portfolio_counter); ?>
+    <?php unset($image_size); ?>
 </div>
 </div>
-</div>
-<div class="image-bg-fluid">
-</div>
+</div><!-- .container -->
 
 <?php get_footer(); ?>
