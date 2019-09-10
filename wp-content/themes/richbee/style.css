@@ -1819,6 +1819,64 @@ body {
     line-height: 30px;
 }
 
+@keyframes swipe-text {
+    0% { opacity: 0; transform: translate(-80px,0)}
+    20% { opacity: 1; transform: translate(0,0)}
+    80% { opacity: 1; transform: translate(0,0)}
+    100% { opacity: 0; transform: translate(80px,0)}
+}
+
+
+@keyframes avatar-up {
+    0% { opacity: 0; transform: scale(0,0)}
+    20% { opacity: 1; transform: scale(1,1)}
+    80% { opacity: 1; transform: scale(1,1)}
+    100% { opacity: 0; transform: translate(0,80px)}
+}
+
+@keyframes block-down {
+    0% { opacity: 0; transform: scale(0,0)}
+    20% { opacity: 1; transform: scale(1,1)}
+    80% { opacity: 1; transform: scale(1,1)}
+    100% { opacity: 0; transform: translate(0,20px)}
+}
+
+@keyframes left-down {
+    0% { opacity: 0; transform: translate(0,-200px)}
+    15% { opacity: 1; transform: translate(0,0)}
+    16% { opacity: 1; transform: translate(0,-20px)}
+    17% { opacity: 1; transform: translate(0,0)}
+    18% { opacity: 1; transform: translate(0,-10px)}
+    20% { opacity: 1; transform: translate(0,0)}
+    80% { opacity: 1; transform: translate(0,0)}
+    100% { opacity: 0; transform: translate(0,100px)}
+}
+
+#svg-avatar{
+    animation: avatar-up 6s cubic-bezier(0, 0, .1, 2.5) infinite;
+    -webkit-transform-origin:center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+#svg-left-block{
+    animation: left-down 6s cubic-bezier(0, 0, .1, 2.5) infinite;
+}
+
+#svg-block{
+    animation: block-down 6s normal infinite;
+    -webkit-transform-origin:center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+#svg-text{
+    animation: swipe-text 6s normal infinite;
+    -webkit-transform-origin:center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
 .fifth-block p {
     font-weight: normal;
     font-size: 24px;
