@@ -1828,8 +1828,8 @@ body {
 
 
 @keyframes avatar-up {
-    0% { opacity: 0; transform: scale(0,0)}
-    20% { opacity: 1; transform: scale(1,1)}
+    0% { opacity: 0; transform: scale(0,0) rotate3d(0, 1, 0, -360deg)}
+    20% { opacity: 1; transform: scale(1,1) rotate3d(0, 1, 0, 0deg)}
     80% { opacity: 1; transform: scale(1,1)}
     100% { opacity: 0; transform: translate(0,80px)}
 }
@@ -1854,7 +1854,7 @@ body {
 
 #svg-avatar{
     animation: avatar-up 6s cubic-bezier(0, 0, .1, 2.5) infinite;
-    -webkit-transform-origin:center;
+    -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
 }
