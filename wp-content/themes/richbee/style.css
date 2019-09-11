@@ -1064,12 +1064,33 @@ p.new{
     border: 0;
 }
 
+.card.rectangle-phone{
+    border: 0;
+}
+
+.iphone-header{
+    width: 84px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    background-color: rgb(12, 12, 12);
+}
+
+.rectangle-phone img{
+    position: relative;
+    border: 7px solid rgb(12, 12, 12);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 40px 80px 0px rgba(8, 8, 8, 0.2);
+    margin: auto;
+}
+
 .rectangle img{
     border: 13px solid rgb(12, 12, 12);
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 40px 80px 0px rgba(8, 8, 8, 0.2);
-    max-width: 991px;
     margin: auto;
 }
 
@@ -2371,6 +2392,9 @@ and (max-width: 767.8px) {
         width: fit-content;
         margin: auto;
     }
+    .singletopp{
+        font-size: 2em;
+    }
 }
 
 @media screen
@@ -2477,10 +2501,9 @@ and (max-width: 575.7px) {
         max-width: 100%;
     }
 
-    /*.third-block .right-landing img {*/
-    /*    max-width: 100%;*/
-    /*    right: 0;*/
-    /*}*/
+    .singletopp{
+        display: none;
+    }
 }
 
 /*--------------------------------------------------------------

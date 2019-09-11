@@ -23,7 +23,6 @@ Template Post Type: post, page, product
                 </div>
             </div>
             <img class="mt-5" src="/wp-content/themes/richbee/svg/rectangle2.svg" alt="">
-
         </div>
     </div>
     <div class="row">
@@ -52,5 +51,12 @@ Template Post Type: post, page, product
         </div>
     </div>
 </div>
+</div>
+</div>
+<div style="background-image: url(/wp-content/themes/richbee/images/Group%205.png);height: 800px">
+</div>
+    <div class="container">
+        <div class="row">
 
-<?php get_footer(); ?>
+
+            <?php get_footer(); ?>
