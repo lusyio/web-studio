@@ -8,6 +8,13 @@ Template Post Type: post, page, product
 <?php get_header(); ?>
 
 <div class="container uslugi">
+    <div class="row mb">
+        <div class="col">
+            <h1 class="uslugi-h1 mt-0">
+                Услуги
+            </h1>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
             <div class="card border-0">

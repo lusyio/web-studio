@@ -1101,6 +1101,14 @@ p.new{
     color: #000000;
 }
 
+.uslugi-h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #0F0F0F;
+}
+
 .uslugi p{
     font-weight: 300;
     font-size: 18px;
