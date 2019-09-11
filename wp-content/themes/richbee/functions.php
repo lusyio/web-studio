@@ -527,3 +527,12 @@ add_filter( 'caldera_forms_mailer', function( $mail, $data, $form ) {
     return $mail;
 
 }, 10, 3 );
+
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+function my_scripts_method() {
+    // отменяем зарегистрированный jQuery
+    // вместо "jquery-core", можно вписать "jquery", тогда будет отменен еще и jquery-migrate
+    wp_deregister_script( 'jquery-core' );
+    wp_register_script( 'jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+    wp_enqueue_script( 'jquery' );
+}

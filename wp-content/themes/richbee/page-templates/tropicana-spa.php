@@ -54,6 +54,7 @@ Template Post Type: post, page, product
 </div>
 </div>
 <div class="bg-image-spa">
+    <img src="/wp-content/themes/richbee/images/Group%205.png" alt="">
 </div>
     <div class="container">
         <div class="row">

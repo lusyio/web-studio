@@ -39,9 +39,9 @@ Template Post Type: post, page, product
                 </div>
                 <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 order-lg-0 col-lg-5 offset-lg-0">
                     <h2 class="new mt-0"><?php the_title(); ?></h2>
-                    <p class="text--secondary">
+                    <a href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>" class="text--secondary">
                         <?php echo get_post_meta(get_the_ID(), 'website', true); ?>
-                    </p>
+                    </a>
                     <div class="description"><?php the_content(); ?></div>
                     <a href="<?php the_permalink() ?>">Подробнее
                         <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
@@ -52,9 +52,9 @@ Template Post Type: post, page, product
             <div class="row mt-custom-2">
                 <div class="col-11 order-2 order-sm-1 order-md-1 offset-1 col-lg-5 order-lg-1 offset-lg-1">
                     <h2 class="new mt-0"><?php the_title(); ?></h2>
-                    <p class="text--secondary">
+                    <a href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>" class="text--secondary">
                         <?php echo get_post_meta(get_the_ID(), 'website', true); ?>
-                    </p>
+                    </a>
                     <div class="description">
                         <?php the_content(); ?>
                     </div>

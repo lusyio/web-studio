@@ -1147,6 +1147,115 @@ p.new {
     margin-top: 53%;
 }
 
+.modal-open .container {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.modal-backdrop.show {
+    opacity: .75;
+}
+
+.modal-960 {
+    max-width: 960px;
+    margin: 5.75rem auto;
+}
+
+.close-modal .btn:focus {
+    box-shadow: none;
+}
+
+#uslugiModal .modal-body {
+    padding: 37px 55px;
+}
+
+#uslugiModal .modal-content {
+    border-radius: 0;
+    border: 0;
+}
+
+#uslugiModal h1.new {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    color: #151515;
+    text-align: left;
+}
+
+#uslugiModal label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F0F0F;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+#uslugiModal .form-control:focus {
+    z-index: 2;
+    box-shadow: none;
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+}
+
+.close-modal {
+    right: -70px;
+    top: -70px;
+    position: absolute;
+}
+
+#uslugiModal .btn-input-landing {
+    padding: 18px 36px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #F6F6F6;
+}
+
+#uslugiModal .input-group-append {
+    position: absolute;
+    right: 0;
+}
+
+#uslugiModal .form-control {
+    background: #F9F9F9;
+    border: 1px solid #F0F0F0;
+    border-radius: 120px;
+    padding: 17px 25px;
+    height: 50px;
+}
+
+#uslugiModal p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+}
+
+#uslugiModal p a:hover {
+    color: #0F0F0F;
+}
+
+#uslugiModal p a {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+    text-decoration: underline;
+}
+
+#uslugiModal .form-control::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
 .uslugi a img {
     margin-left: 20px;
     transition: 200ms;
@@ -1241,11 +1350,17 @@ h2.sub {
 }
 
 .text--secondary, .fifth-block .text--secondary {
-    color: #999999;
-    font-style: normal;
-    font-weight: normal;
+    color: #999999 !important;
+    font-style: normal !important;
+    font-weight: normal !important;
     font-size: 12px;
     line-height: 14px;
+}
+
+a.text--secondary {
+    font-size: 18px !important;
+    line-height: 21px !important;
+    margin-bottom: 1.5em;
 }
 
 p {
@@ -1753,7 +1868,7 @@ body {
     margin-top: 6rem;
 }
 
-.third-block a.btn-input-landing{
+.third-block a.btn-input-landing {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
@@ -1763,7 +1878,7 @@ body {
     padding: 17px 27px;
 }
 
-.third-block a.btn-input-landing:hover{
+.third-block a.btn-input-landing:hover {
     color: #F6F6F6;
     cursor: pointer;
 }
@@ -1814,7 +1929,7 @@ body {
     margin-left: 10px;
 }
 
-.portfolio .richbee{
+.portfolio .richbee {
     top: 0;
 }
 
@@ -2113,16 +2228,14 @@ body {
 
 .bg-image-spa {
     max-width: 1400px;
-    height: 875px;
     margin: auto;
-    background-image: url(/wp-content/themes/richbee/images/Group%205.png)
+    margin-bottom: 50px;
 }
 
 .bg-image-rs {
     max-width: 1400px;
-    height: 920px;
     margin: auto;
-    background-image: url(/wp-content/themes/richbee/images/rs-cleaning-group.png)
+    margin-bottom: 50px;
 }
 
 .fifth-block p {
@@ -2567,6 +2680,21 @@ and (max-width: 767.8px) {
 
     .singletopp {
         font-size: 2em;
+    }
+
+    #uslugiModal .modal-body {
+        padding: 1rem;
+    }
+
+    .modal-960 {
+        margin: 1.75rem auto;
+        margin-top: 3rem;
+    }
+
+    .close-modal {
+        right: -10px;
+        top: -46px;
+        position: absolute;
     }
 }
 
