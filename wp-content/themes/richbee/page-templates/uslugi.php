@@ -86,7 +86,7 @@ Template Post Type: post, page, product
                 от 50.000 рублей
             </p>
             <p>
-                Увеличьте количество заявок до 400% уже через несколько дней после заказа
+                Сделаем Landing Page, который увеличит количество заявок до 267%
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
@@ -164,7 +164,7 @@ Template Post Type: post, page, product
                 от 10.000 рублей
             </p>
             <p>
-                Начнем выводит сайт в ТОП и увеличим трафик
+                Начнем выводить сайт в ТОП и увеличим трафик
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
