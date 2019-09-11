@@ -39,18 +39,14 @@ Template Post Type: post, page, product
                     </p>
                 </div>
             </div>
-            <img src="/wp-content/themes/richbee/images/Group%204.png" alt="">
-            <div class="row mt-5">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <p class="new">
-                        Добавили раздел со статьями, где делимся полезными советами по уборке и призываем посетителей
-                        сайта обратиться к нам за решением данных проблем. Так получаются стабильные "бесплатные"
-                        заявки. Сила seo в действии.
-                    </p>
-                </div>
-            </div>
         </div>
     </div>
 </div>
+</div>
+</div>
+<div class="bg-image-rs">
+</div>
+<div class="container">
+    <div class="row">
 
 <?php get_footer(); ?>

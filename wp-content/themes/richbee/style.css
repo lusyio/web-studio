@@ -2099,6 +2099,13 @@ body {
     background-image: url(/wp-content/themes/richbee/images/Group%205.png)
 }
 
+.bg-image-rs {
+    max-width: 1400px;
+    height: 920px;
+    margin: auto;
+    background-image: url(/wp-content/themes/richbee/images/rs-cleaning-group.png)
+}
+
 .fifth-block p {
     font-weight: normal;
     font-size: 24px;
