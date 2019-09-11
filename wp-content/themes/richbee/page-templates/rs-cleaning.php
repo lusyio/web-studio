@@ -24,7 +24,7 @@ Template Post Type: post, page, product
                 </div>
             </div>
             <div class="card rectangle mt-5">
-                <img class="mt-5" src="/wp-content/themes/richbee/images/rs-cleaning.jpg" alt="">
+                <img src="/wp-content/themes/richbee/images/rs-cleaning.jpg" alt="">
             </div>
         </div>
     </div>

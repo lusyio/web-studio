@@ -27,7 +27,7 @@ Template Post Type: post, page, product
     </div>
     <div class="row">
         <div class="col">
-            <div class="row mt-5">
+            <div class="row mt-5 mb-5">
                 <div class="col-12 col-lg-8 offset-lg-2">
                     <p class="new">
                         Так как, мы не работали с контентом на этом проекте, пришлось переносить контент услуг, как
@@ -53,7 +53,7 @@ Template Post Type: post, page, product
 </div>
 </div>
 </div>
-<div style="background-image: url(/wp-content/themes/richbee/images/Group%205.png);height: 800px">
+<div class="bg-image-spa">
 </div>
     <div class="container">
         <div class="row">
