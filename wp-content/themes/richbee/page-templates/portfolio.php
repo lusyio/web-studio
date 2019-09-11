@@ -7,8 +7,7 @@ Template Post Type: post, page, product
 
 <?php get_header(); ?>
 
-
-<div class="container mb-5 third-block position-relative">
+<div class="container mb-5 third-block position-relative portfolio">
     <img class="position-absolute richbee" src="/wp-content/themes/richbee/images/RICHBEE.png" alt="">
     <div class="row">
         <div class="col">

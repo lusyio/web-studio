@@ -1753,6 +1753,21 @@ body {
     margin-top: 6rem;
 }
 
+.third-block a.btn-input-landing{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #F6F6F6;
+    height: 50px;
+    padding: 17px 27px;
+}
+
+.third-block a.btn-input-landing:hover{
+    color: #F6F6F6;
+    cursor: pointer;
+}
+
 .third-block a img {
     transition: margin-left 250ms;
 }
@@ -1797,6 +1812,10 @@ body {
 
 .third-block a img {
     margin-left: 10px;
+}
+
+.portfolio .richbee{
+    top: 0;
 }
 
 .fourth-block {

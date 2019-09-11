@@ -392,9 +392,9 @@ Template Post Type: post, page, product
         <?php elseif ($portfolio_counter == 4): ?>
             <div class="row mt-custom-3">
                 <div class="col text-center">
-                    <button class="btn btn-input-landing text-inverse">
+                    <a href="/portfolio/" class="btn btn-input-landing">
                         Посмотреть другие работы
-                    </button>
+                    </a>
                 </div>
             </div>
             <?php break; ?>
