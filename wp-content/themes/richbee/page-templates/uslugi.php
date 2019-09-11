@@ -240,7 +240,7 @@ Template Post Type: post, page, product
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-10 offset-1">
+                                <div class="col-10 pl offset-1">
                                     <p>
                                         Нажимая кнопку “Заказать звонок”, вы даете свое согласие на <a href="#">обработку
                                             персональных

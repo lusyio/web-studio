@@ -45,7 +45,7 @@ Template Post Type: post, page, product
 </div>
 </div>
 <div class="bg-image-rs">
-    <img src="/wp-content/themes/richbee/images/rs-cleaning-group.png" alt="">
+    <img src="/wp-content/themes/richbee/images/rs-cleaning-group.jpg" alt="">
 </div>
 <div class="container">
     <div class="row">

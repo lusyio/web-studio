@@ -1185,6 +1185,10 @@ p.new {
     text-align: left;
 }
 
+#uslugiModal pl{
+    padding-left: 8px;
+}
+
 #uslugiModal label {
     font-weight: normal;
     font-size: 14px;
