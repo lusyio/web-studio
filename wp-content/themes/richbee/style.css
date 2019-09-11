@@ -1079,6 +1079,55 @@ p.new{
 }
 
 /*--------------------------------------------------------------
+# uslugi
+--------------------------------------------------------------*/
+
+.uslugi .card-body {
+    z-index: 1;
+}
+
+.uslugi .mt{
+    margin-top: 3.8rem;
+}
+
+.uslugi .mb{
+    margin-bottom: 4.8rem;
+}
+
+.uslugi h2.uslugi-h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.uslugi p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.uslugi a{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    color: #7085FE;
+    display: inline-block;
+    margin-top: 53%;
+}
+
+.uslugi a img{
+    margin-left: 20px;
+    transition: 200ms;
+}
+
+.uslugi a:hover img{
+    margin-left: 30px;
+}
+
+/*--------------------------------------------------------------
 # main-landing
 --------------------------------------------------------------*/
 
@@ -1570,7 +1619,7 @@ body {
     border-radius: 20px;
 }
 
-.second-block .card-body-primary, .card-body-warning {
+.card-body-primary, .card-body-warning {
     width: 150px;
     height: 150px;
     padding: 43px;
@@ -1828,8 +1877,8 @@ body {
 
 
 @keyframes avatar-up {
-    0% { opacity: 0; transform: scale(0,0) rotate3d(0, 1, 0, -360deg)}
-    20% { opacity: 1; transform: scale(1,1) rotate3d(0, 1, 0, 0deg)}
+    0% { opacity: 0; transform: scale(0.5,0.5)}
+    20% { opacity: 1; transform: scale(1,1)}
     80% { opacity: 1; transform: scale(1,1)}
     100% { opacity: 0; transform: translate(0,80px)}
 }
@@ -2025,7 +2074,6 @@ body {
 }
 
 .img-inside{
-    /*max-width: 80%;*/
     margin-top: 7%;
 }
 
@@ -2050,6 +2098,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
 
 @media screen
 and (max-width: 1376px){
@@ -2160,6 +2212,10 @@ and (max-width: 1199.7px) {
     .fourth-block .card {
         max-width: 94%;
     }
+
+    .uslugi a{
+        margin-top: 43%;
+    }
 }
 
 @media screen
@@ -2249,6 +2305,10 @@ and (max-width: 991px) {
     .right-landing .block-with-img{
         background-position: right;
     }
+
+    .uslugi a{
+        margin-top: 53%;
+    }
 }
 
 @media screen
@@ -2290,10 +2350,39 @@ and (max-width: 767.8px) {
     .right-landing .block-with-img{
         background-position: right;
     }
+    .uslugi a{
+        margin-top: 0;
+    }
+
+    .uslugi .bg-ellipse{
+        right: -25px;
+        top: -8px;
+    }
+
+    .uslugi .card{
+        width: fit-content;
+        margin: auto;
+    }
 }
 
 @media screen
 and (max-width: 575.7px) {
+
+    .uslugi .card{
+        width: fit-content;
+        margin: auto;
+    }
+
+    .uslugi a{
+        margin-top: 0;
+    }
+
+    .uslugi .bg-ellipse{
+        display: block;
+        right: -25px;
+        top: -8px;
+    }
+
     .bg-ellipse {
         display: none;
     }
