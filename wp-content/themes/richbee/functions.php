@@ -424,6 +424,10 @@ add_filter('caldera_forms_render_field_structure', function ($field_structure) {
         'fld_3805134',
         'fld_6086802',
         'fld_4575049',
+        'fld_945005',
+        'fld_3821774',
+        'fld_4262387'
+
     ];
     if (in_array($field_structure['id'], $elementIds)) {
         $field_structure['wrapper_before'] = '';
@@ -455,6 +459,11 @@ add_filter('caldera_forms_render_field_slug-call_wait', function ($field_html) {
     $submit_field['call_wait'] = $field_html;
     return $field_html;
 });
+add_filter('caldera_forms_render_field_slug-order', function ($field_html) {
+    global $submit_field;
+    $submit_field['call_wait'] = $field_html;
+    return $field_html;
+});
 
 /**
  * Присоединяем submit'ы к текстовым полям
@@ -470,6 +479,9 @@ add_filter('caldera_forms_render_field_structure', function ($field_structure) {
     }
     if ($field_structure['id'] == 'fld_72245') {
         $submit_button = $submit_field['call_wait'];
+    }
+    if ($field_structure['id'] == 'fld_3821774') {
+        $submit_button = $submit_field['order'];
     }
     if (!is_null($submit_button)) {
         $field_structure['field_before'] = '<div class="input-group mb-3">';
@@ -488,6 +500,19 @@ add_filter('caldera_forms_render_field_structure', function ($field_structure) {
         $field_structure['field_after'] = '';
     }
     if ($field_structure['id'] == 'fld_5518090') {
+        $field_structure['field_before'] = '<div class="input-group-append">';
+        $field_structure['field_after'] = '</div></div>';
+    }
+
+    if ($field_structure['id'] == 'fld_4262387' || $field_structure['id'] == 'fld_9190050') {
+        $field_structure['wrapper_before'] = '';
+        $field_structure['wrapper_after'] = '';
+    }
+    if ($field_structure['id'] == 'fld_3821774') {
+        $field_structure['field_before'] = '<div class="input-group mb-3">';
+        $field_structure['field_after'] = '';
+    }
+    if ($field_structure['id'] == 'fld_4262387') {
         $field_structure['field_before'] = '<div class="input-group-append">';
         $field_structure['field_after'] = '</div></div>';
     }
@@ -527,12 +552,3 @@ add_filter( 'caldera_forms_mailer', function( $mail, $data, $form ) {
     return $mail;
 
 }, 10, 3 );
-
-add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
-function my_scripts_method() {
-    // отменяем зарегистрированный jQuery
-    // вместо "jquery-core", можно вписать "jquery", тогда будет отменен еще и jquery-migrate
-    wp_deregister_script( 'jquery-core' );
-    wp_register_script( 'jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
-    wp_enqueue_script( 'jquery' );
-}

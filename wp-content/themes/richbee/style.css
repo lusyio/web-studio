@@ -1183,19 +1183,45 @@ p.new {
     line-height: 100%;
     color: #151515;
     text-align: left;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.alert-success{
+    color: #5c5c5c;
+    background-color: #ffffff;
+    border-color: #7085FE;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.alert-success .icon{
+    font-size: 40px;
+    display: block;
+    margin-top: 20px;
+    color: #7085FE;
+}
+
+#uslugiModal .input-group .form-control{
+    margin-bottom: 10px;
 }
 
 #uslugiModal pl{
     padding-left: 8px;
 }
 
-#uslugiModal label {
+#uslugiModal .form-control{
+    margin-bottom: 30px;
+}
+
+#uslugiModal p span {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: #0F0F0F;
     margin-bottom: 20px;
     margin-left: 25px;
+    margin-top: calc(.375rem + 1px);
 }
 
 #uslugiModal .form-control:focus {
@@ -1219,6 +1245,7 @@ p.new {
     line-height: 16px;
     text-align: center;
     color: #F6F6F6;
+    height: 50px;
 }
 
 #uslugiModal .input-group-append {

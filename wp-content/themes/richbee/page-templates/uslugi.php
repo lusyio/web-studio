@@ -222,23 +222,7 @@ Template Post Type: post, page, product
                         <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 p-0">
                             <h1 class="new">
                             </h1>
-                            <label for="name" class="col-form-label">Как нам к вам обращаться :</label>
-                            <div class="input-group mb-3">
-                                <input id="name" type="text" class="form-control"
-                                       placeholder="Например, Дмитрий Сергеевич">
-                            </div>
-                            <label for="phoneNumber" class="col-form-label">Укажите ваш контактный
-                                телефон:</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="+7 (000) 000-00-00"
-                                       id="phoneNumber"
-                                       aria-label="Recipient's username" aria-describedby="button-addon1">
-                                <div class="input-group-append">
-                                    <button class="btn btn-input-landing text-inverse" type="button"
-                                            id="button-addon1">Заказать
-                                    </button>
-                                </div>
-                            </div>
+                            <?php echo do_shortcode('[caldera_form id="CF5d79005c6c8fe"]'); ?>
                             <div class="row">
                                 <div class="col-10 pl offset-1">
                                     <p>
@@ -261,13 +245,13 @@ Template Post Type: post, page, product
 </div>
 
 <script>
-    $(document).ready(function () {
-        $('#uslugiModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget);
+    jQuery(document).ready(function () {
+        jQuery('#uslugiModal').on('show.bs.modal', function (event) {
+            var button = jQuery(event.relatedTarget);
             var recipient = button.data('whatever');
-            var modal = $(this);
-            console.log(recipient);
+            var modal = jQuery(this);
             modal.find('h1.new').text('Заказать ' + recipient);
+            modal.find('.uslugi-target').val(recipient);
         })
     });
 </script>
