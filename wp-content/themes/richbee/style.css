@@ -1187,7 +1187,7 @@ p.new {
     margin-bottom: 40px;
 }
 
-.alert-success{
+.alert-success {
     color: #5c5c5c;
     background-color: #ffffff;
     border-color: #7085FE;
@@ -1195,22 +1195,22 @@ p.new {
     text-align: center;
 }
 
-.alert-success .icon{
+.alert-success .icon {
     font-size: 40px;
     display: block;
     margin-top: 20px;
     color: #7085FE;
 }
 
-#uslugiModal .input-group .form-control{
+#uslugiModal .input-group .form-control {
     margin-bottom: 10px;
 }
 
-#uslugiModal pl{
+#uslugiModal pl {
     padding-left: 8px;
 }
 
-#uslugiModal .form-control{
+#uslugiModal .form-control {
     margin-bottom: 30px;
 }
 
@@ -2559,6 +2559,12 @@ and (max-width: 1199.7px) {
 
     .uslugi a {
         margin-top: 43%;
+    }
+
+    .close-modal {
+        right: -10px;
+        top: -55px;
+        position: absolute;
     }
 }
 

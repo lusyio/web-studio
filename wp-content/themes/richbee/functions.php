@@ -538,6 +538,9 @@ add_filter( 'caldera_forms_magic_summary_should_use_label', function( $use, $fie
     if( 'CF5d6cd3f839ccc' == $form[ 'ID' ] ){
         return true;
     }
+    if ('CF5d79005c6c8fe' == $form['ID']){
+        return true;
+    }
     return $use;
 }, 10, 3 );
 
@@ -547,6 +550,12 @@ add_filter( 'caldera_forms_mailer', function( $mail, $data, $form ) {
         $mail[ 'message' ] = preg_replace('~contact-type~', 'Выбранный способ связи:', $mail[ 'message' ]);
         $mail[ 'message' ] = preg_replace('~contact-phone~', 'Номер телефона:', $mail[ 'message' ]);
         $mail[ 'message' ] = preg_replace('~contact-email~', 'E-mail:', $mail[ 'message' ]);
+    }
+
+    if( 'CF5d79005c6c8fe' == $form[ 'ID' ] ) {
+        $mail[ 'message' ] = preg_replace('~name~', 'ФИО клиента:', $mail[ 'message' ]);
+        $mail[ 'message' ] = preg_replace('~phone~', 'Номер телефона:', $mail[ 'message' ]);
+        $mail[ 'message' ] = preg_replace('~uslugi-target~', 'Хочет заказать:', $mail[ 'message' ]);
     }
 
     return $mail;
