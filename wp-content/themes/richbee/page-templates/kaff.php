@@ -22,7 +22,7 @@ Template Post Type: post, page, product
                 </div>
             </div>
             <div class="card rectangle mt-5">
-                <img src="/wp-content/themes/richbee/images/kaff-1.jpeg" alt="">
+                <img src="/wp-content/themes/richbee/images/kaff-2.jpeg" alt="">
             </div>
         </div>
     </div>
