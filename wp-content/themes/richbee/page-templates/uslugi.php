@@ -38,8 +38,7 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="разработку сервисов">Заказать<img
-                        src="/wp-content/themes/richbee/svg/back.svg" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="разработку сервисов">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
         </div>
     </div>
     <div class="row mt">
@@ -65,8 +64,7 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="квиз-лендинг">Заказать<img
-                        src="/wp-content/themes/richbee/svg/back.svg" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="квиз-лендинг">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
         </div>
     </div>
     <div class="row mt">
@@ -92,8 +90,7 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="лендинг">Заказать<img
-                        src="/wp-content/themes/richbee/svg/back.svg" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="лендинг">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
         </div>
     </div>
     <div class="row mt">
@@ -119,8 +116,7 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="корпоративный сайт">Заказать<img
-                        src="/wp-content/themes/richbee/svg/back.svg" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="корпоративный сайт">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
         </div>
     </div>
     <div class="row mt">
@@ -146,8 +142,7 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="интернет магазин">Заказать<img
-                        src="/wp-content/themes/richbee/svg/back.svg" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="интернет магазин">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
         </div>
     </div>
     <div class="row mt">
@@ -173,8 +168,7 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="SEO оптимизацию">Заказать<img
-                        src="/wp-content/themes/richbee/svg/back.svg" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="SEO оптимизацию">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
         </div>
     </div>
     <div class="row mt mb">
@@ -201,8 +195,7 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="Яндекс Директ">Заказать<img
-                        src="/wp-content/themes/richbee/svg/back.svg" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="Яндекс Директ">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
         </div>
     </div>
 </div>

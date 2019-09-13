@@ -332,7 +332,7 @@ Template Post Type: post, page, product
                     </a>
                     <div class="description"><?php the_content(); ?></div>
                     <a href="<?php the_permalink() ?>">Подробнее
-                        <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
+                        <img src="/wp-content/themes/richbee/images/back.png" alt="">
                     </a>
                 </div>
             </div>
@@ -347,7 +347,7 @@ Template Post Type: post, page, product
                         <?php the_content(); ?>
                     </div>
                     <a href="<?php the_permalink() ?>">Подробнее
-                        <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
+                        <img src="/wp-content/themes/richbee/images/back.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-6 order-sm-2 order-md-2 right-landing order-lg-2 col-12">
@@ -358,7 +358,7 @@ Template Post Type: post, page, product
                             <img src="/wp-content/themes/richbee/images/macbook-top.png" style="" alt="">
                             <img class="img-inside-mac" src="<?php the_post_thumbnail_url($image_size) ?>" alt="">
                         </div>
-                        <img src="/wp-content/themes/richbee/images/macbook-bottom.png" alt="">
+                        <img src="/wp-content/themes/richbee/images/back.png" alt="">
                     </div>
                 </div>
             </div>
@@ -385,7 +385,7 @@ Template Post Type: post, page, product
                         <?php the_content(); ?>
                     </div>
                     <a href="<?php the_permalink() ?>">Подробнее
-                        <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
+                        <img src="/wp-content/themes/richbee/images/back.png" alt="">
                     </a>
                 </div>
             </div>

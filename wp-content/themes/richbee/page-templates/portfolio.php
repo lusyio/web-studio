@@ -44,7 +44,7 @@ Template Post Type: post, page, product
                     </a>
                     <div class="description"><?php the_content(); ?></div>
                     <a href="<?php the_permalink() ?>">Подробнее
-                        <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
+                        <img src="/wp-content/themes/richbee/images/back.png" alt="">
                     </a>
                 </div>
             </div>
@@ -59,7 +59,7 @@ Template Post Type: post, page, product
                         <?php the_content(); ?>
                     </div>
                     <a href="<?php the_permalink() ?>">Подробнее
-                        <img src="/wp-content/themes/richbee/svg/back.svg" alt="">
+                        <img src="/wp-content/themes/richbee/images/back.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-6 order-sm-2 order-md-2 right-landing order-lg-2 col-12">
