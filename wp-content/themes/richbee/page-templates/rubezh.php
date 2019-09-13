@@ -22,7 +22,7 @@ Template Post Type: post, page, product
                 </div>
             </div>
             <div class="card rectangle mt-5">
-                <img src="/wp-content/themes/richbee/images/rs-cleaning.jpg" alt="">
+                <img src="/wp-content/themes/richbee/images/rubezh-1.jpg" alt="">
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@ Template Post Type: post, page, product
 </div>
 </div>
 <div class="bg-image-rs">
-    <img src="/wp-content/themes/richbee/images/rs-cleaning-group.jpg" alt="">
+    <img src="/wp-content/themes/richbee/images/rubezh-img.jpg" alt="">
 </div>
 <div class="container">
     <div class="row">
