@@ -12,8 +12,6 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <hr>
-                <?php the_tags('<p class="meta">', '<span class="sep"> | </span>', '</p>'); ?>
                 <h1 class="new mb-4 position-relative"><?php the_title(); ?>
                     <div class="singletopp"><?php $cat = get_the_category();
                         echo $cat[0]->cat_name; ?></div>

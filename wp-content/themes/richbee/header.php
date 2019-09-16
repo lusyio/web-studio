@@ -41,7 +41,7 @@
                 <div class="navbar-brand recall-block order-xl-3 order-lg-2 order-md-2">
                     <a href="#"><img src="/wp-content/themes/richbee/svg/telegram-header.svg" alt=""></a>
                     <a href="#"><img src="/wp-content/themes/richbee/svg/whatsapp-header.svg" alt=""></a>
-                    <a class="header-phone ml-3" href="#">8 (495) 265-45-65</a>
+                    <a class="header-phone ml-3" href="#">8 (926) 655-69-88</a>
                     <p class="m-0 recall"><a href="#">Обратный звонок</a></p>
                 </div>
                 <button class="navbar-toggler order-lg-3 order-md-3 order-xl-2" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">

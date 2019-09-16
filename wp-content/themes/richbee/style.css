@@ -695,6 +695,10 @@ a img.aligncenter {
 .site-footer:after {
     clear: both;
 }
+.contacts p {
+    font-size: 16px;
+    font-weight: 300;
+}
 
 /*--------------------------------------------------------------
 # Widgets
