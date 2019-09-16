@@ -561,3 +561,10 @@ add_filter( 'caldera_forms_mailer', function( $mail, $data, $form ) {
     return $mail;
 
 }, 10, 3 );
+
+function do_excerpt($string, $word_limit) {
+    $words = explode(' ', $string, ($word_limit + 1));
+    if (count($words) > $word_limit)
+        array_pop($words);
+    echo implode(' ', $words).'...';
+}
