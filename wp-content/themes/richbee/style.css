@@ -1227,6 +1227,10 @@ p.new {
     padding: 37px 55px;
 }
 
+#uslugiModal .caldera_ajax_error_block{
+    display: none;
+}
+
 #uslugiModal .modal-content {
     border-radius: 0;
     border: 0;

@@ -42,7 +42,7 @@
                     <a href="#"><img src="/wp-content/themes/richbee/svg/telegram-header.svg" alt=""></a>
                     <a href="#"><img src="/wp-content/themes/richbee/svg/whatsapp-header.svg" alt=""></a>
                     <a class="header-phone ml-3" href="#">8 (926) 655-69-88</a>
-                    <p class="m-0 recall"><a href="#">Обратный звонок</a></p>
+                    <p class="m-0 recall"><a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="обратный звонок">Обратный звонок</a></p>
                 </div>
                 <button class="navbar-toggler order-lg-3 order-md-3 order-xl-2" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -102,3 +102,55 @@
                 <?php endif; ?>
 
                 <?php endif; ?>
+            </div>
+        </div>
+
+        <div class="modal fade" id="uslugiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-960" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 text-sm-center text-md-left col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                                    <img src="/wp-content/themes/richbee/svg/modal-img.svg" alt="">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 p-0">
+                                    <h1 class="new">
+                                    </h1>
+                                    <?php echo do_shortcode('[caldera_form id="CF5d79005c6c8fe"]'); ?>
+                                    <div class="row">
+                                        <div class="col-10 pl offset-1">
+                                            <p>
+                                                Нажимая кнопку “Заказать звонок”, вы даете свое согласие на <a href="#">обработку
+                                                    персональных
+                                                    данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="close-modal">
+            <button type="button" class="btn" data-dismiss="modal"><img
+                        src="/wp-content/themes/richbee/svg/cross.svg" alt=""></button>
+            </span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            jQuery(document).ready(function () {
+                jQuery('#uslugiModal').on('show.bs.modal', function (event) {
+                    var button = jQuery(event.relatedTarget);
+                    var recipient = button.data('whatever');
+                    var modal = jQuery(this);
+                    modal.find('h1.new').text('Заказать ' + recipient);
+                    modal.find('.uslugi-target').val(recipient);
+                })
+            });
+        </script>
+
+        <div class="container">
+            <div class="row">
