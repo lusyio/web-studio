@@ -45,7 +45,7 @@
                     <span>ИНН - 507703923591</span>
                 </div>
                 <div class="col-12 col-lg-4 second-card">
-                    <a href="#">Политика конфиденциальности</a>
+                    <a href="/wp-content/themes/richbee/politika-konfidencialnosti.pdf">Политика конфиденциальности</a>
                 </div>
             </div>
             <div>

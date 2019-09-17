@@ -18,7 +18,7 @@ Template Post Type: post, page, product
                 <?php echo do_shortcode('[caldera_form id="CF5d6e63522b362"]'); ?>
             </div>
             <p class="text--secondary ml">
-                Нажимая кнопку, вы даете согласие на <a href="#">обработку персональных данных</a>
+                Нажимая кнопку, вы даете согласие на <a href="/wp-content/themes/richbee/politika-konfidencialnosti.pdf">обработку персональных данных</a>
             </p>
         </div>
         <div class="col-12 col-lg-6">
