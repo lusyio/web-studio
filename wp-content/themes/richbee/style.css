@@ -2104,22 +2104,22 @@ body {
     padding-bottom: 70px;
 }
 
-.fourth-block a img {
+.fourth-block .arrows-block a img {
     transition: margin-right 250ms;
     margin-left: .25rem;
 }
 
-.fourth-block a img.rotate {
+.fourth-block .arrows-block a img.rotate {
     transition: 250ms;
     margin-right: .25rem;
     margin-left: 0;
 }
 
-.fourth-block a:hover img {
+.fourth-block .arrows-block a:hover img {
     margin-right: 14%;
 }
 
-.fourth-block a:hover img.rotate {
+.fourth-block .arrows-block a:hover img.rotate {
     margin-left: 7%;
     margin-right: 0;
 }
