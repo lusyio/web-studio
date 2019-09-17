@@ -2041,6 +2041,26 @@ body {
     top: 0;
 }
 
+.link-portfolio{
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 16px;
+    color: #7085FE;
+}
+
+.link-portfolio:hover{
+    color: #7085FE;
+}
+
+.link-portfolio img{
+    transition: margin-left 250ms;
+    margin-left: 10px;
+}
+
+.link-portfolio:hover img{
+    margin-left: 7%;
+}
+
 .fourth-block {
     background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
     width: 100%;

@@ -358,7 +358,7 @@ Template Post Type: post, page, product
                             <img src="/wp-content/themes/richbee/images/macbook-top.png" style="" alt="">
                             <img class="img-inside-mac" src="<?php the_post_thumbnail_url($image_size) ?>" alt="">
                         </div>
-                        <img src="/wp-content/themes/richbee/images/back.png" alt="">
+                        <img src="/wp-content/themes/richbee/images/macbook-bottom.png" alt="">
                     </div>
                 </div>
             </div>
