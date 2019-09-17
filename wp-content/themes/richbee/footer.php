@@ -27,14 +27,14 @@
                 </div>
                 <div class="col-12 col-lg-4 second-card">
                     <div>
-                        <a href="#"><img src="/wp-content/themes/richbee/svg/telegram.svg" alt=""></a>
-                        <a class="ml-2" href="#"><img src="/wp-content/themes/richbee/svg/whatsapp.svg" alt=""></a>
+                        <a title="Telegram" href="https://telegram.me/mr_richbee"><img src="/wp-content/themes/richbee/svg/telegram.svg" alt=""></a>
+                        <a title="WhatsApp" class="ml-2" href="https://wa.me/79266556988"><img src="/wp-content/themes/richbee/svg/whatsapp.svg" alt=""></a>
                     </div>
                     <div class="mt-3">
-                        <a class="footer-phone" href="#">8 (926) 655-69-88</a>
+                        <a title="Позвонить" class="footer-phone" href="tel:+79266556988">8 (926) 655-69-88</a>
                     </div>
                     <div class="mt-3">
-                        <a class="footer-email" href="#">hello@richbee.ru</a>
+                        <a title="Email" class="footer-email" href="mailto:hello@richbee.ru">hello@richbee.ru</a>
                     </div>
                 </div>
             </div>
