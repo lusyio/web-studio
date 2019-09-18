@@ -27,7 +27,7 @@ Template Post Type: post, page, product
                 <div class="col-12 offset-0 col-lg-8 offset-lg-2 mt-5">
                     <h2 class="new mt-0"><?php the_title(); ?></h2>
                     <p class="text--secondary mb-3"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?> |
-                        <a class="text--secondary" href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"> <?php echo get_post_meta(get_the_ID(), 'website', true); ?></a></p>
+                        <a class="text--secondary" href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"> <?php echo get_post_meta(get_the_ID(), 'website', true); ?></a> | Сайт создан <?= the_time('d.m.Y') ?></p>
                     <div class="description"><?php the_content(); ?></div>
                     <a class="link-portfolio" href="<?php the_permalink() ?>">Подробнее
                         <img src="/wp-content/themes/richbee/images/back.png" alt="">
