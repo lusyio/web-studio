@@ -757,8 +757,8 @@ Template Post Type: post, page, product
         </div>
         <script>
             jQuery(document).ready(function ($) {
-                $('.single .btn').on("click", function (e) {
-                    $('.single').hide().fadeIn(500);
+                $('.radio-block .single .btn').on("click", function (e) {
+                    $('.radio-block .single').hide().fadeIn(500);
                 });
             });
         </script>
