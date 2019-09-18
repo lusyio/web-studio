@@ -2843,6 +2843,16 @@ and (max-width: 575.7px) {
         margin: auto;
     }
 
+    header#masthead{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #masthead .navbar-nav > li > a{
+        padding-left: 0 !important;
+        font-size: 1.2rem !important;
+    }
+
     .uslugi a {
         margin-top: 0;
     }
