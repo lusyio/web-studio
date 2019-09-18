@@ -18,7 +18,9 @@ Template Post Type: post, page, product
                 <?php echo do_shortcode('[caldera_form id="CF5d6e63522b362"]'); ?>
             </div>
             <p class="text--secondary ml">
-                Нажимая кнопку, вы даете согласие на <a href="/wp-content/themes/richbee/politika-konfidencialnosti.pdf">обработку персональных данных</a>
+                Нажимая кнопку, вы даете согласие на <a
+                        href="/wp-content/themes/richbee/politika-konfidencialnosti.pdf">обработку персональных
+                    данных</a>
             </p>
         </div>
         <div class="col-12 col-lg-6">
@@ -295,7 +297,8 @@ Template Post Type: post, page, product
 <div class="container position-relative second-block mb-5">
     <div class="row">
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="квиз-лендинг">
+            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal"
+               data-whatever="квиз-лендинг">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
@@ -313,7 +316,8 @@ Template Post Type: post, page, product
             </a>
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="лендинг">
+            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal"
+               data-whatever="лендинг">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
@@ -331,7 +335,8 @@ Template Post Type: post, page, product
             </a>
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="корпоративный сайт">
+            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal"
+               data-whatever="корпоративный сайт">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
@@ -349,7 +354,8 @@ Template Post Type: post, page, product
             </a>
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="интернет-магазин">
+            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal"
+               data-whatever="интернет-магазин">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
@@ -369,7 +375,8 @@ Template Post Type: post, page, product
     </div>
     <div class="row">
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="разработку сервисов">
+            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal"
+               data-whatever="разработку сервисов">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
                     <div class="card-body">
@@ -387,7 +394,8 @@ Template Post Type: post, page, product
             </a>
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="SEO оптимизацию">
+            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal"
+               data-whatever="SEO оптимизацию">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
                     <div class="card-body">
@@ -405,7 +413,8 @@ Template Post Type: post, page, product
             </a>
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
-            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="Яндекс Директ">
+            <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal"
+               data-whatever="Яндекс Директ">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
                     <div class="card-body">
@@ -746,5 +755,12 @@ Template Post Type: post, page, product
                 </div>
             </div>
         </div>
+        <script>
+            jQuery(document).ready(function ($) {
+                $('.single .btn').on("click", function (e) {
+                    $('.single').hide().fadeIn(500);
+                });
+            });
+        </script>
 
         <?php get_footer(); ?>
