@@ -746,7 +746,9 @@ Template Post Type: post, page, product
                 <div class="col-12 col-lg-3 text-center">
                     <img class="position-relative girl" src="/wp-content/themes/richbee/svg/Group%209.svg"
                          alt="">
-                    <?php echo preg_replace('~"caldera-forms-modal"~', '"caldera-forms-modalposition-relative btn w-100 btn-input-landing text-inverse"', do_shortcode('[caldera_form_modal id="CF5d6e72157e3a8" type="button"]Оставить заявку[/caldera_form_modal]')); ?>
+                    <button data-toggle="modal" data-target="#uslugiModal" data-whatever="обратный звонок" class="btn w-100 btn-input-landing text-inverse">
+                        Оставить заявку
+                    </button>
                 </div>
             </div>
             <div class="row">
