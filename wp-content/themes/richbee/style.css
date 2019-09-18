@@ -1245,7 +1245,7 @@ p.new {
     padding: 37px 55px;
 }
 
-#uslugiModal .caldera_ajax_error_block{
+.caldera_ajax_error_block{
     display: none;
 }
 
