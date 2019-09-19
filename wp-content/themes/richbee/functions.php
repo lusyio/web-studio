@@ -591,3 +591,13 @@ function comment_form_hide_cookies_consent( $fields ) {
     return $fields;
 }
 add_filter( 'comment_form_default_fields', 'comment_form_hide_cookies_consent' );
+
+/* Шорткод для кейсов */
+function true_url_external( $atts ) {
+    $params = shortcode_atts( array( // параметры по умолчанию
+        'anchor' => 'Хочу такой же', // параметр 1
+        'url' => 'https://richbee.ru/uslugi', // параметр 2
+    ), $atts );
+    return "<a href='{$params['url']}' target='_blank'>{$params['anchor']}</a>";
+}
+add_shortcode( 'caseShort', 'true_url_external' );
