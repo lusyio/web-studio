@@ -1215,39 +1215,8 @@ p.new {
     color: #0F0F0F
 }
 
-.comment:nth-child(2n) {
-    text-align: right;
-}
-
-.comment:nth-child(2n) .comment-content {
-    margin-left: auto;
-    text-align: left;
-}
-
-.comment:nth-child(2n) .d-flex {
-    justify-content: flex-end;
-}
-
-.comment:nth-child(2n) .pull-left {
-    padding-left: 0.625rem;
-    padding-right: 0;
-}
-
-.comment:nth-child(2n) .avatar-comment {
-    order: 3;
-}
-
-.comment:nth-child(2n) .name-comment {
-    order: 2;
-}
-
 .comment .align-self-end {
     margin-bottom: .5rem;
-}
-
-.comment:nth-child(2n) .comment-content:before {
-    left: auto;
-    right: 1em;
 }
 
 .comments-title {
