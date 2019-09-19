@@ -32,13 +32,13 @@ if ( post_password_required() ) {
             if ( '1' === $comments_number ) {
                 printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'wp-bootstrap-starter' ),
+					esc_html__( 'Одна мысль о &ldquo;%1$s&rdquo;', 'wp-bootstrap-starter' ),
 					'<span>' . esc_html(get_the_title()) . '</span>'
 				);
             } else {
                 printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $underscore_comment_count, 'comments title', 'wp-bootstrap-starter' ) ),
+					esc_html( _nx( '%1$s мыслей о &ldquo;%2$s&rdquo;', '%1$s мыслей о &ldquo;%2$s&rdquo;', $underscore_comment_count, 'comments title', 'wp-bootstrap-starter' ) ),
 					esc_html( number_format_i18n( $underscore_comment_count ) ),
 					'<span>' . esc_html( get_the_title() ) . '</span>'
 				);
@@ -91,17 +91,13 @@ if ( post_password_required() ) {
     <?php comment_form( $args = array(
         'id_form'           => 'commentform',  // that's the wordpress default value! delete it or edit it ;)
         'id_submit'         => 'commentsubmit',
-        'title_reply'       => __( 'Leave a Reply', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
+        'title_reply'       => __( 'Оставить комментарий', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
 		/* translators: 1: Reply Specific User */
         'title_reply_to'    => __( 'Leave a Reply to %s', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
-        'cancel_reply_link' => __( 'Cancel Reply', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
-        'label_submit'      => __( 'Post Comment', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
+        'cancel_reply_link' => __( 'Отменить', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
+        'label_submit'      => __( 'Оставить комментарий', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
 
-        'comment_field' =>  '<p><textarea placeholder="Start typing..." id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
-
-        'comment_notes_after' => '<p class="form-allowed-tags">' .
-            __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'wp-bootstrap-starter' ) .
-            '</p><div class="alert alert-info">' . allowed_tags() . '</div>'
+        'comment_field' =>  '<p><textarea placeholder="Введите сообщение..." id="comment" class="form-control" name="comment" cols="45" rows="4" aria-required="true"></textarea></p>',
 
         // So, that was the needed stuff to have bootstrap basic styles for the form elements and buttons
 

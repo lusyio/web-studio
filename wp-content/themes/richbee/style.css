@@ -695,13 +695,15 @@ a img.aligncenter {
 .site-footer:after {
     clear: both;
 }
+
 .contacts p {
     font-size: 16px;
     font-weight: 300;
 }
+
 .img-protfolio {
-    -webkit-box-shadow: 5px 9px 25px 0px rgba(0,0,0,0.25);
-    box-shadow: 5px 9px 25px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 5px 9px 25px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 9px 25px 0px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     margin: auto;
     display: block;
@@ -710,14 +712,17 @@ a img.aligncenter {
     transition: 0.5s all;
     width: 100%;
 }
+
 .porfolio-block a:hover .img-protfolio {
     transform: scale(1, 1);
     transition: 0.5s all;
 }
+
 .porfolio-block p {
     font-size: 18px;
     line-height: 1.8;
 }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -761,48 +766,56 @@ a img.aligncenter {
     display: block;
     background: white;
     position: relative;
-    -webkit-transition: box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s,-webkit-transform .15s ease-out;
-    transition: transform .15s ease-out,box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s;
-    transition: transform .15s ease-out,box-shadow .15s ease-out,opacity .15s ease-out,.15s margin-left .15s ease-out,.15s visibility .15s,-webkit-transform .15s ease-out;
-    box-shadow: 0 10px 15px rgba(14,21,47,.05);
+    -webkit-transition: box-shadow .15s ease-out, opacity .15s ease-out, .15s margin-left .15s ease-out, .15s visibility .15s, -webkit-transform .15s ease-out;
+    transition: transform .15s ease-out, box-shadow .15s ease-out, opacity .15s ease-out, .15s margin-left .15s ease-out, .15s visibility .15s;
+    transition: transform .15s ease-out, box-shadow .15s ease-out, opacity .15s ease-out, .15s margin-left .15s ease-out, .15s visibility .15s, -webkit-transform .15s ease-out;
+    box-shadow: 0 10px 15px rgba(14, 21, 47, .05);
     z-index: 99;
     color: #000000 !important;
 }
+
 .news span.text {
     color: #000000 !important;
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
 }
+
 .news:hover {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
     z-index: 1;
-    box-shadow: 0 22px 50px rgba(14,21,47,.2);
+    box-shadow: 0 22px 50px rgba(14, 21, 47, .2);
 }
+
 .news img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
 }
+
 .newsinside {
     padding: 0px 36px 24px;
 }
+
 .newsinside h3 {
     line-height: 1.4;
     font-size: 1.4em;
     font-weight: bold;
     color: #111111;
 }
+
 .news hr {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
+
 .newsfot {
     padding: 10px 36px;
     font-weight: 300;
     font-size: 14px;
 }
+
 .news a:hover {
     text-decoration: none;
 }
@@ -1173,6 +1186,144 @@ p.new {
 }
 
 /*--------------------------------------------------------------
+# comments
+--------------------------------------------------------------*/
+
+.comment .card {
+    border: 0;
+}
+
+.comment-content.card-block {
+    background-color: #f2f2f2;
+    padding: 15px 20px;
+    position: relative;
+    margin-top: 1em;
+    border-radius: 15px;
+    max-width: fit-content;
+    border: 0;
+}
+
+.comment-content p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 22px;
+    color: #0F0F0F;
+}
+
+.comment .h5 {
+    color: #0F0F0F
+}
+
+.comment:nth-child(2n) {
+    text-align: right;
+}
+
+.comment:nth-child(2n) .comment-content {
+    margin-left: auto;
+    text-align: left;
+}
+
+.comment:nth-child(2n) .d-flex {
+    justify-content: flex-end;
+}
+
+.comment:nth-child(2n) .pull-left {
+    padding-left: 0.625rem;
+    padding-right: 0;
+}
+
+.comment:nth-child(2n) .avatar-comment {
+    order: 3;
+}
+
+.comment:nth-child(2n) .name-comment {
+    order: 2;
+}
+
+.comment .align-self-end {
+    margin-bottom: .5rem;
+}
+
+.comment:nth-child(2n) .comment-content:before {
+    left: auto;
+    right: 1em;
+}
+
+.comments-title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #0F0F0F;
+    margin-bottom: 30px;
+    margin-top: 38px;
+}
+
+.comment-respond input {
+    background-color: #fafafa;
+}
+
+.comment-reply-title{
+    margin-left: 20px;
+}
+
+.comment-respond {
+    text-align: left !important;
+}
+
+.comment-respond label {
+    font-size: 1rem;
+    line-height: 22px;
+    color: #0F0F0F;
+    margin-bottom: 5px;
+    margin-left: 13px;
+}
+
+.comment a {
+    font-weight: 300;
+    line-height: 21px;
+    color: #999999;
+}
+
+#comment {
+    border: none !important;
+    background-color: #ecf1f7;
+    padding: 15px 20px;
+    border-radius: 12px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#comment:focus {
+    box-shadow: none;
+}
+
+#comment:before, .comment-content:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 .5em .5em .5em;
+    border-color: transparent transparent #f2f2f2 transparent;
+    position: absolute;
+    left: 1em;
+    top: -.5em;
+}
+
+.comment-reply {
+    margin-top: 1em;
+}
+
+.avatar.avatar-50.photo {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+/*--------------------------------------------------------------
 # uslugi
 --------------------------------------------------------------*/
 
@@ -1245,7 +1396,7 @@ p.new {
     padding: 37px 55px;
 }
 
-.caldera_ajax_error_block{
+.caldera_ajax_error_block {
     display: none;
 }
 
@@ -2041,23 +2192,23 @@ body {
     top: 0;
 }
 
-.link-portfolio{
+.link-portfolio {
     font-weight: 300;
     font-size: 0.875rem;
     line-height: 16px;
     color: #7085FE;
 }
 
-.link-portfolio:hover{
+.link-portfolio:hover {
     color: #7085FE;
 }
 
-.link-portfolio img{
+.link-portfolio img {
     transition: margin-left 250ms;
     margin-left: 10px;
 }
 
-.link-portfolio:hover img{
+.link-portfolio:hover img {
     margin-left: 7%;
 }
 
@@ -2763,8 +2914,18 @@ and (max-width: 767.8px) {
     .third-block .bg-left-landing {
         height: 340px;
     }
+
     .img-protfolio {
-        transform: scale(1,1);
+        transform: scale(1, 1);
+    }
+
+    .third-block a {
+        font-size: 1.2rem;
+    }
+
+    .rectangle img {
+        border: 3px solid rgb(12, 12, 12);
+        border-radius: 15px;
     }
 
     .recall-block {

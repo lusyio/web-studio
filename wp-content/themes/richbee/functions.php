@@ -575,3 +575,19 @@ function do_excerpt($string, $word_limit) {
         array_pop($words);
     echo implode(' ', $words).'...';
 }
+
+/* убирает URL в комментах */
+add_filter('comment_form_default_fields', 'wp_url_remove');
+function wp_url_remove($fields)
+{
+    if(isset($fields['url']))
+        unset($fields['url']);
+    return $fields;
+}
+
+/* Отключает чекбокс GDPR */
+function comment_form_hide_cookies_consent( $fields ) {
+    unset( $fields['cookies'] );
+    return $fields;
+}
+add_filter( 'comment_form_default_fields', 'comment_form_hide_cookies_consent' );
