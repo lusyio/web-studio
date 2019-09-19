@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="col-sm-6">
+<div class="col-sm-12 mb-sm-4 mb-md-0 col-md-6">
     <div class="news">
         <a href="<?php the_permalink() ?>" rel="bookmark">
             <span><?php echo get_the_post_thumbnail( $id, 'small', $attr ); ?></span>

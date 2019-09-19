@@ -22,7 +22,7 @@ get_header(); ?>
                     </h1>
                 </div>
             </div>
-            <div class="row mb-4 mt-5">
+            <div class="row mb-sm-0 mb-md-4 mt-5">
                 <?php
                 /* Start the Loop */
                 $i = 1;
