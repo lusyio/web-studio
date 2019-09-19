@@ -26,27 +26,6 @@ if ( post_password_required() ) {
     // You can start editing here -- including this comment!
     if ( have_comments() ) : ?>
 
-        <h2 class="comments-title">
-            <?php
-            $comments_number = get_comments_number();
-            if ( '1' === $comments_number ) {
-                printf(
-					/* translators: 1: title. */
-					esc_html__( 'Одна мысль о &ldquo;%1$s&rdquo;', 'wp-bootstrap-starter' ),
-					'<span>' . esc_html(get_the_title()) . '</span>'
-				);
-            } else {
-                printf( // WPCS: XSS OK.
-					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s мыслей о &ldquo;%2$s&rdquo;', '%1$s мыслей о &ldquo;%2$s&rdquo;', $underscore_comment_count, 'comments title', 'wp-bootstrap-starter' ) ),
-					esc_html( number_format_i18n( $underscore_comment_count ) ),
-					'<span>' . esc_html( get_the_title() ) . '</span>'
-				);
-            }
-            ?>
-        </h2><!-- .comments-title -->
-
-
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
             <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
                 <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wp-bootstrap-starter' ); ?></h2>

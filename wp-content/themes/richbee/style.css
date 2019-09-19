@@ -2963,6 +2963,13 @@ and (max-width: 767.8px) {
         top: -46px;
         position: absolute;
     }
+    .post-navigation .nav-previous a{
+        border: 0;
+    }
+
+    .post-navigation .nav-next a{
+        border: 0;
+    }
 }
 
 @media screen
