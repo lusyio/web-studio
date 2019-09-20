@@ -2594,6 +2594,35 @@ body {
     }
 }
 
+
+@keyframes head-shake {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    33% {
+        transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+    }
+    66% {
+        transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+}
+
+#girl-head {
+    -webkit-animation: head-shake 4s normal infinite;
+    -o-animation: head-shake 4s normal infinite;
+    animation: head-shake 4s normal infinite;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
 #service:hover #svg-service {
     -webkit-animation: landing-right 4s normal infinite;
     -o-animation: landing-right 4s normal infinite;
