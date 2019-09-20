@@ -22,7 +22,8 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <section id="primary" class="content-area col-sm-12 col-lg-8 offset-0 offset-sm-0 offset-md-0 offset-lg-2 offset-xl-2 pb-5">
+    <section id="primary"
+             class="content-area col-sm-12 col-lg-8 offset-0 offset-sm-0 offset-md-0 offset-lg-2 offset-xl-2 pb-5">
 
         <main id="main" class="site-main" role="main">
             <div class="single-post">
@@ -32,13 +33,15 @@ get_header(); ?>
 
                     the_content();
 
+                    echo do_shortcode('[lusy_banner]');
+
                     the_post_navigation();
 
                     // If comments are open or we have at least one comment, load up the comment template.
                     if (comments_open() || get_comments_number()) :
-                        if (in_category(28)){
-                        echo do_shortcode('[caseShort anchor="Хочу такой же же" url="URL ссылки"]');
-                        }else {
+                        if (in_category(28)) {
+                            echo do_shortcode('[caseShort anchor="Хочу такой же же" url="URL ссылки"]');
+                        } else {
                             comments_template();
                         }
                     endif;
@@ -50,6 +53,21 @@ get_header(); ?>
 
         </main><!-- #main -->
     </section><!-- #primary -->
+    <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            var swiper1 = new Swiper('.vertical', {
+                direction: 'vertical',
+                autoHeight: true,
+                loop: true,
+                height: 56,
+                autoplay: {
+                    delay: 5000,
+                },
+            });
+        });
+
+    </script>
 
 <?php
 get_footer();

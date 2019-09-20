@@ -1231,7 +1231,7 @@ p.new {
     background-color: #fafafa;
 }
 
-.comment-reply-title{
+.comment-reply-title {
     margin-left: 20px;
 }
 
@@ -2281,6 +2281,19 @@ body {
     line-height: 30px;
 }
 
+.banner{
+    height: 550px;
+    background-image: url(/wp-content/themes/richbee/images/system.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.banner a{
+    position: absolute;
+    bottom: 21%;
+    right: 30%
+}
+
 @keyframes swipe-text {
     0% {
         opacity: 0;
@@ -2783,12 +2796,18 @@ and (max-width: 1199.7px) {
         top: -55px;
         position: absolute;
     }
-    .post-navigation .nav-previous a{
+
+    .post-navigation .nav-previous a {
         border: 0;
     }
 
-    .post-navigation .nav-next a{
+    .post-navigation .nav-next a {
         border: 0;
+    }
+
+    .banner a{
+        bottom: 35%;
+        right: 28%;
     }
 }
 
@@ -2883,6 +2902,11 @@ and (max-width: 991px) {
     .uslugi a {
         margin-top: 53%;
     }
+
+    .banner a{
+        bottom: 26%;
+        right: 28%;
+    }
 }
 
 @media screen
@@ -2970,6 +2994,19 @@ and (max-width: 767.8px) {
         top: -46px;
         position: absolute;
     }
+
+    .single-post blockquote {
+        padding: 55px 20px;
+    }
+
+    .banner a{
+        bottom: 40%;
+        right: 26%;
+    }
+
+    .banner h2{
+        font-size: 30px !important;
+    }
 }
 
 @media screen
@@ -2980,12 +3017,12 @@ and (max-width: 575.7px) {
         margin: auto;
     }
 
-    header#masthead{
+    header#masthead {
         padding-left: 0;
         padding-right: 0;
     }
 
-    #masthead .navbar-nav > li > a{
+    #masthead .navbar-nav > li > a {
         padding-left: 0 !important;
         font-size: 1.35rem !important;
     }
@@ -3089,6 +3126,19 @@ and (max-width: 575.7px) {
 
     .singletopp {
         display: none;
+    }
+
+    .banner a{
+        bottom: 40%;
+        right: 16%;
+    }
+
+    .banner h2{
+        font-size: 20px !important;
+    }
+
+    .banner {
+        padding: 0;
     }
 }
 
