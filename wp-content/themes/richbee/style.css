@@ -2281,14 +2281,14 @@ body {
     line-height: 30px;
 }
 
-.banner{
+.banner {
     height: 550px;
     background-image: url(/wp-content/themes/richbee/images/system.jpg);
     background-position: top;
     background-size: cover;
 }
 
-.banner a{
+.banner a {
     position: absolute;
     bottom: 21%;
     right: 30%
@@ -2462,7 +2462,189 @@ body {
     }
 }
 
+@keyframes lens-round {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(-30px, -10px);
+        -webkit-transform: translate(-30px, -10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(-30px, 5px);
+        -webkit-transform: translate(-30px, 5px);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(0, 5px);
+        -webkit-transform: translate(0, 5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@keyframes website-down {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    25% {
+        opacity: 0;
+        transform: translate(0, 15px);
+        -webkit-transform: translate(0, 15px);
+    }
+    40% {
+        opacity: 0;
+        transform: translate(-8px, 0);
+        -webkit-transform: translate(-8px, 0);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@keyframes landing-right {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    25% {
+        opacity: 0;
+        transform: translate(10px, 0);
+        -webkit-transform: translate(10px, 0);
+    }
+    40% {
+        opacity: 0;
+        transform: translate(-10px, 0);
+        -webkit-transform: translate(-10px, 0);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@keyframes shop-down {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    25% {
+        opacity: 0;
+        transform: translate(15px, 0);
+        -webkit-transform: translate(15px, 0);
+    }
+    40% {
+        opacity: 0;
+        transform: translate(0, -15px);
+        -webkit-transform: translate(0, -15px);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+#service:hover #svg-service {
+    -webkit-animation: landing-right 4s normal infinite;
+    -o-animation: landing-right 4s normal infinite;
+    animation: landing-right 4s normal infinite;
+}
+
+#shop:hover #svg-shop-1 {
+    -webkit-animation: shop-down 4s normal infinite;
+    -o-animation: shop-down 4s normal infinite;
+    animation: shop-down 4s normal infinite;
+}
+
+#shop:hover #svg-shop-2 {
+    -webkit-animation: landing-right 4s normal infinite;
+    -o-animation: landing-right 4s normal infinite;
+    animation: landing-right 4s normal infinite;
+}
+
+#coop-site:hover #svg-coop {
+    -webkit-animation: landing-right 4s normal infinite;
+    -o-animation: landing-right 4s normal infinite;
+    animation: landing-right 4s normal infinite;
+}
+
+#landing:hover #svg-landing {
+    -webkit-animation: landing-right 4s normal infinite;
+    -o-animation: landing-right 4s normal infinite;
+    animation: landing-right 4s normal infinite;
+}
+
+#direct:hover #svg-direct {
+    -webkit-animation: lens-round 4s normal infinite;
+    -o-animation: lens-round 4s normal infinite;
+    animation: lens-round 4s normal infinite;
+}
+
+#seo:hover #svg-lens {
+    -webkit-animation: lens-round 4s normal infinite;
+    -o-animation: lens-round 4s normal infinite;
+    animation: lens-round 4s normal infinite;
+}
+
+#quiz:hover #svg-website {
+    -webkit-animation: website-down 4s normal infinite;
+    -o-animation: website-down 4s normal infinite;
+    animation: website-down 4s normal infinite;
+}
+
 #svg-avatar {
+    -webkit-animation: rubberBand 10s normal infinite;
+    -o-animation: rubberBand 10s normal infinite;
     animation: rubberBand 10s normal infinite;
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -2470,10 +2652,14 @@ body {
 }
 
 #svg-left-block {
+    -webkit-animation: left-down 10s normal infinite;
+    -o-animation: left-down 10s normal infinite;
     animation: left-down 10s normal infinite;
 }
 
 #svg-block {
+    -webkit-animation: block-down 10s normal infinite;
+    -o-animation: block-down 10s normal infinite;
     animation: block-down 10s normal infinite;
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -2481,6 +2667,8 @@ body {
 }
 
 #svg-text {
+    -webkit-animation: swipe-text 10s normal infinite;
+    -o-animation: swipe-text 10s normal infinite;
     animation: swipe-text 10s normal infinite;
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -2805,7 +2993,7 @@ and (max-width: 1199.7px) {
         border: 0;
     }
 
-    .banner a{
+    .banner a {
         bottom: 35%;
         right: 28%;
     }
@@ -2903,7 +3091,7 @@ and (max-width: 991px) {
         margin-top: 53%;
     }
 
-    .banner a{
+    .banner a {
         bottom: 26%;
         right: 28%;
     }
@@ -2999,12 +3187,12 @@ and (max-width: 767.8px) {
         padding: 55px 20px;
     }
 
-    .banner a{
+    .banner a {
         bottom: 40%;
         right: 26%;
     }
 
-    .banner h2{
+    .banner h2 {
         font-size: 30px !important;
     }
 }
@@ -3128,12 +3316,12 @@ and (max-width: 575.7px) {
         display: none;
     }
 
-    .banner a{
+    .banner a {
         bottom: 40%;
         right: 16%;
     }
 
-    .banner h2{
+    .banner h2 {
         font-size: 20px !important;
     }
 
