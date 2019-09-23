@@ -387,7 +387,7 @@ Template Post Type: post, page, product
                             Разработка сервисов
                         </h3>
                         <p class="text-center">
-                            от 150.000 рублей
+                            от 200.000 рублей
                         </p>
                     </div>
                 </div>
