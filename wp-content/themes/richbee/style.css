@@ -1390,6 +1390,8 @@ p.new {
     border-color: #7085FE;
     padding: 35px 20px;
     text-align: center;
+    margin-top: 40px;
+    margin-left: -20px;
 }
 
 .alert-success .icon {
