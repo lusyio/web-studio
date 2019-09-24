@@ -10,25 +10,27 @@
  */
 
 ?>
-<?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</div><!-- #content -->
-    <?php get_template_part( 'footer-widget' ); ?>
-	<footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
-		<div class="container footer-container">
+<?php if (!is_page_template('blank-page.php') && !is_page_template('blank-page-with-container.php')): ?>
+    </div><!-- .row -->
+    </div><!-- .container -->
+    </div><!-- #content -->
+    <?php get_template_part('footer-widget'); ?>
+    <footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
+        <div class="container footer-container">
             <div class="row">
                 <div class="col-12 col-lg-8 first-card">
                     <div class="site-info">
-                        <?php echo '<a class="footer-name mr-3" href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
+                        <?php echo '<a class="footer-name mr-3" href="' . home_url() . '">' . get_bloginfo('name') . '</a>'; ?>
                         <span class="credits">Агенство интернет-маркетинга</span>
                     </div><!-- close .site-info -->
-                    <?php wp_nav_menu(array( 'theme_location' => 'second', 'after' => '<span class="sep"> | </span>', 'container_class' => 'mt-4 footer-menu' )); ?>
+                    <?php wp_nav_menu(array('theme_location' => 'second', 'after' => '<span class="sep"> | </span>', 'container_class' => 'mt-4 footer-menu')); ?>
                 </div>
                 <div class="col-12 col-lg-4 second-card">
                     <div>
-                        <a title="Telegram" href="https://telegram.me/mr_richbee"><img src="/wp-content/themes/richbee/svg/telegram.svg" alt=""></a>
-                        <a title="WhatsApp" class="ml-2" href="https://wa.me/79266556988"><img src="/wp-content/themes/richbee/svg/whatsapp.svg" alt=""></a>
+                        <a title="Telegram" href="https://telegram.me/mr_richbee"><img
+                                    src="/wp-content/themes/richbee/svg/telegram.svg" alt=""></a>
+                        <a title="WhatsApp" class="ml-2" href="https://wa.me/79266556988"><img
+                                    src="/wp-content/themes/richbee/svg/whatsapp.svg" alt=""></a>
                     </div>
                     <div class="mt-3">
                         <a title="Позвонить" class="footer-phone" href="tel:+79266556988">8 (926) 655-69-88</a>
@@ -51,12 +53,12 @@
             <div>
 
             </div>
-		</div>
-	</footer><!-- #colophon -->
+        </div>
+    </footer><!-- #colophon -->
 <?php endif; ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(27860136, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/27860136" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(27860136, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/27860136" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
 </html>
