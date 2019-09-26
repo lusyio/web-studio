@@ -2503,20 +2503,20 @@ body {
         transform: translate(0, 0);
         -webkit-transform: translate(0, 0);
     }
-    20% {
-        opacity: 1;
-        transform: translate(0, 0);
-        -webkit-transform: translate(0, 0);
-    }
-    25% {
+    10% {
         opacity: 0;
         transform: translate(0, 15px);
         -webkit-transform: translate(0, 15px);
     }
-    40% {
+    30% {
         opacity: 0;
         transform: translate(-8px, 0);
         -webkit-transform: translate(-8px, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
     }
     70% {
         opacity: 1;
@@ -2536,20 +2536,20 @@ body {
         transform: translate(0, 0);
         -webkit-transform: translate(0, 0);
     }
-    20% {
-        opacity: 1;
-        transform: translate(0, 0);
-        -webkit-transform: translate(0, 0);
-    }
-    25% {
+    10% {
         opacity: 0;
         transform: translate(10px, 0);
         -webkit-transform: translate(10px, 0);
     }
-    40% {
+    30% {
         opacity: 0;
         transform: translate(-10px, 0);
         -webkit-transform: translate(-10px, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
     }
     70% {
         opacity: 1;
@@ -2564,25 +2564,26 @@ body {
 }
 
 @keyframes shop-down {
+
     0% {
         opacity: 1;
         transform: translate(0, 0);
         -webkit-transform: translate(0, 0);
     }
-    20% {
-        opacity: 1;
-        transform: translate(0, 0);
-        -webkit-transform: translate(0, 0);
-    }
-    25% {
+    10% {
         opacity: 0;
         transform: translate(15px, 0);
         -webkit-transform: translate(15px, 0);
     }
-    40% {
+    30% {
         opacity: 0;
         transform: translate(0, -15px);
         -webkit-transform: translate(0, -15px);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
     }
     70% {
         opacity: 1;
