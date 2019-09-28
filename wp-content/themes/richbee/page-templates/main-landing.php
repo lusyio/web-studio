@@ -24,7 +24,7 @@ Template Post Type: post, page, product
             </p>
         </div>
         <div class="col-12 col-lg-6">
-            <div id="imac_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:600px;height:400px;overflow:hidden;">
+            <div id="imac_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:600px;height:400px;overflow:hidden;left:-53px;top: -79px;">
                 <script type="text/javascript" charset="utf-8" src="/wp-content/themes/richbee/imac.hyperesources/imac_hype_generated_script.js?2108"></script>
             </div>
         </div>
