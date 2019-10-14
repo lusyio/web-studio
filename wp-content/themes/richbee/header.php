@@ -123,7 +123,7 @@
                                     <div class="row">
                                         <div class="col-10 pl offset-1">
                                             <p>
-                                                Нажимая кнопку “Заказать звонок”, вы даете свое согласие на <a href="#">обработку
+                                                Нажимая кнопку “Заказать звонок”, вы даете свое согласие на <a href="/wp-content/themes/richbee/politika-konfidencialnosti.pdf">обработку
                                                     персональных
                                                     данных</a>
                                             </p>
