@@ -14,7 +14,12 @@ Template Post Type: post, page, product
                 <div class="col-12">
                     <ul class="nav mt-5" id="tabPortfolio" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link portfolio-tabs__link pl-0 pr-0 active" id="coopTab" data-toggle="tab"
+                            <a class="nav-link portfolio-tabs__link pl-0 pr-0 active" id="allTab" data-toggle="tab"
+                               href="#all" role="tab"
+                               aria-controls="coop" aria-selected="true">Все проекты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link portfolio-tabs__link pl-0 pr-0" id="coopTab" data-toggle="tab"
                                href="#coop" role="tab"
                                aria-controls="coop" aria-selected="true">Корпоративные сайты</a>
                         </li>
@@ -228,6 +233,7 @@ Template Post Type: post, page, product
     </div>
 </div>
 
+
 <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 
 <script>
@@ -257,6 +263,35 @@ Template Post Type: post, page, product
             prevEl: '.swiper-button-prev__service',
         },
     });
+
+    jQuery('[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var swiperCoop = new Swiper('.swiper-container-coop', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next__coop',
+                prevEl: '.swiper-button-prev__coop',
+            },
+        });
+
+        var swiperShops = new Swiper('.swiper-container-shops', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next__shops',
+                prevEl: '.swiper-button-prev__shops',
+            },
+        });
+
+        var swiperService = new Swiper('.swiper-container-service', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next__service',
+                prevEl: '.swiper-button-prev__service',
+            },
+        });
+    })
 </script>
 
 <?php get_footer(); ?>
