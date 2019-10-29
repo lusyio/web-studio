@@ -23,6 +23,11 @@ Template Post Type: post, page, product
                                href="#shops" role="tab" aria-controls="shops"
                                aria-selected="true">Интернет-магазины</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link portfolio-tabs__link pl-0 pr-0" id="serviceTab" data-toggle="tab"
+                               href="#service" role="tab" aria-controls="service"
+                               aria-selected="true">Сервисы</a>
+                        </li>
                     </ul>
 
                     <div class="row portfolio-tabs-tags">
@@ -55,72 +60,201 @@ Template Post Type: post, page, product
         </div>
     </div>
 </div>
+<div class="tab-content">
+    <div class="container mb-5 tab-pane show active" id="coop" role="tabpanel" aria-labelledby="coopTab">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-12 offset-0">
 
-<div class="container mb-5">
+                <?php $catquery = new WP_Query('cat=32&posts_per_page=14'); // portfolio  ?>
 
-    <div class="row">
-        <div class="col-lg-10 offset-lg-1 col-12 offset-0">
+                <?php while ($catquery->have_posts()) :
+                    $catquery->the_post(); ?>
 
-            <?php $catquery = new WP_Query('cat=19&posts_per_page=14'); // portfolio  ?>
-
-            <?php while ($catquery->have_posts()) :
-                $catquery->the_post(); ?>
-
-                <div class="row portfolio-header">
-                    <div class="col-6 m-auto">
-                        <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                    <div class="row portfolio-header">
+                        <div class="col-6 m-auto">
+                            <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                        </div>
+                        <div class="col-6 text-right m-auto">
+                            <a class="portfolio-header__site"
+                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+                        </div>
                     </div>
-                    <div class="col-6 text-right m-auto">
-                        <a class="portfolio-header__site"
-                           href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+
+                    <div class="row portfolio">
+                        <div class="col">
+                            <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
+                            <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row portfolio">
-                    <div class="col">
-                        <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                        <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                    <div class="swiper-container swiper-container-coop">
+                        <div class="swiper-wrapper">
+                            <?php
+                            global $post;
+                            $gallery = get_post_gallery_images($post);
+                            // Loop through each image in each gallery
+                            foreach ($gallery
+
+                                     as $image_url): ?>
+                                <div class="swiper-slide">
+                                    <img src="<?= $image_url ?>" alt="">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next__coop"></div>
+                        <div class="swiper-button-prev swiper-button-prev__coop"></div>
                     </div>
-                </div>
 
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <?php
-                        global $post;
-                        $gallery = get_post_gallery_images($post);
-                        // Loop through each image in each gallery
-                        foreach ($gallery
-
-                                 as $image_url): ?>
-                            <div class="swiper-slide">
-                                <img src="<?= $image_url ?>" alt="">
-                            </div>
-                        <?php endforeach; ?>
+                    <div class="row portfolio-content">
+                        <div class="col portfolio-content__text">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
 
-                <div class="row portfolio-content">
-                    <div class="col portfolio-content__text">
-                        <?php the_content(); ?>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5 tab-pane" id="shops" role="tabpanel" aria-labelledby="shopsTab">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-12 offset-0">
+
+                <?php $catquery = new WP_Query('cat=33&posts_per_page=14'); // portfolio  ?>
+
+                <?php while ($catquery->have_posts()) :
+                    $catquery->the_post(); ?>
+
+                    <div class="row portfolio-header">
+                        <div class="col-6 m-auto">
+                            <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                        </div>
+                        <div class="col-6 text-right m-auto">
+                            <a class="portfolio-header__site"
+                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+                        </div>
                     </div>
-                </div>
 
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
+                    <div class="row portfolio">
+                        <div class="col">
+                            <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
+                            <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-container swiper-container-shops">
+                        <div class="swiper-wrapper">
+                            <?php
+                            $gallery = get_post_gallery_images($post);
+                            // Loop through each image in each gallery
+                            foreach ($gallery
+
+                                     as $image_url): ?>
+                                <div class="swiper-slide">
+                                    <img src="<?= $image_url ?>" alt="">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next__shops"></div>
+                        <div class="swiper-button-prev swiper-button-prev__shops"></div>
+                    </div>
+
+                    <div class="row portfolio-content">
+                        <div class="col portfolio-content__text">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5 tab-pane" id="service" role="tabpanel" aria-labelledby="serviceTab">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-12 offset-0">
+
+                <?php $catquery = new WP_Query('cat=34&posts_per_page=14'); // portfolio  ?>
+
+                <?php while ($catquery->have_posts()) :
+                    $catquery->the_post(); ?>
+
+                    <div class="row portfolio-header">
+                        <div class="col-6 m-auto">
+                            <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                        </div>
+                        <div class="col-6 text-right m-auto">
+                            <a class="portfolio-header__site"
+                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+                        </div>
+                    </div>
+
+                    <div class="row portfolio">
+                        <div class="col">
+                            <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
+                            <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-container swiper-container-service">
+                        <div class="swiper-wrapper">
+                            <?php
+                            $gallery = get_post_gallery_images($post);
+                            // Loop through each image in each gallery
+                            foreach ($gallery
+
+                                     as $image_url): ?>
+                                <div class="swiper-slide">
+                                    <img src="<?= $image_url ?>" alt="">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next__service"></div>
+                        <div class="swiper-button-prev swiper-button-prev__service"></div>
+                    </div>
+
+                    <div class="row portfolio-content">
+                        <div class="col portfolio-content__text">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            </div>
         </div>
     </div>
 </div>
+
 <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 
 <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiperCoop = new Swiper('.swiper-container-coop', {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next__coop',
+            prevEl: '.swiper-button-prev__coop',
+        },
+    });
+
+    var swiperShops = new Swiper('.swiper-container-shops', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next__shops',
+            prevEl: '.swiper-button-prev__shops',
+        },
+    });
+
+    var swiperService = new Swiper('.swiper-container-service', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next__service',
+            prevEl: '.swiper-button-prev__service',
         },
     });
 </script>
