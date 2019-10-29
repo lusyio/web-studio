@@ -1122,6 +1122,101 @@ object {
 # portfolio
 --------------------------------------------------------------*/
 
+.portfolio-header {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 30px;
+    margin-top: 90px;
+}
+
+.portfolio-header__content{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.portfolio-header__site{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.portfolio__title{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.portfolio__tags{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A7A7A7;
+    margin-bottom: 40px;
+}
+
+.portfolio-content__text p{
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.portfolio-tabs__link{
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #C4C4C4;
+}
+
+.portfolio-tabs__link.active{
+    color: #4B93FF;
+}
+
+.portfolio-tabs-tags{
+    margin-top: 60px;
+}
+
+.portfolio-tabs-tags__header{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #101010;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.swiper-button-next{
+    background-image: url(/wp-content/themes/richbee/svg/portfolio-right.svg);
+}
+
+.swiper-button-prev{
+    background-image: url(/wp-content/themes/richbee/svg/portfolio-left.svg);
+}
+
+.swiper-button-disabled{
+
+}
+
+#tabPortfolio .nav-item:not(:first-of-type) .portfolio-tabs__link{
+    margin-left: 50px;
+}
+
+.portfolio-tabs-tags__content{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #5C5C5C;
+}
+
+.row.portfolio{
+    margin-top: 40px;
+}
+
 h1.new {
     font-weight: bold;
     font-size: 48px;
