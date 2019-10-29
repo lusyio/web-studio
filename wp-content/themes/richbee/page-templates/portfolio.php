@@ -66,7 +66,63 @@ Template Post Type: post, page, product
     </div>
 </div>
 <div class="tab-content">
-    <div class="container mb-5 tab-pane show active" id="coop" role="tabpanel" aria-labelledby="coopTab">
+    <div class="container mb-5 tab-pane show active" id="all" role="tabpanel" aria-labelledby="allTab">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-12 offset-0">
+
+                <?php $catquery = new WP_Query('cat=19&posts_per_page=14'); // portfolio  ?>
+
+                <?php while ($catquery->have_posts()) :
+                    $catquery->the_post(); ?>
+
+                    <div class="row portfolio-header">
+                        <div class="col-6 m-auto">
+                            <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                        </div>
+                        <div class="col-6 text-right m-auto">
+                            <a class="portfolio-header__site"
+                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+                        </div>
+                    </div>
+
+                    <div class="row portfolio">
+                        <div class="col">
+                            <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
+                            <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-container swiper-container-all">
+                        <div class="swiper-wrapper">
+                            <?php
+                            global $post;
+                            $gallery = get_post_gallery_images($post);
+                            // Loop through each image in each gallery
+                            foreach ($gallery
+
+                                     as $image_url): ?>
+                                <div class="swiper-slide">
+                                    <img src="<?= $image_url ?>" alt="">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next__all"></div>
+                        <div class="swiper-button-prev swiper-button-prev__all"></div>
+                    </div>
+
+                    <div class="row portfolio-content">
+                        <div class="col portfolio-content__text">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5 tab-pane" id="coop" role="tabpanel" aria-labelledby="coopTab">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-12 offset-0">
 
@@ -237,6 +293,15 @@ Template Post Type: post, page, product
 <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 
 <script>
+    var swiperAll = new Swiper('.swiper-container-all', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next__all',
+            prevEl: '.swiper-button-prev__all',
+        },
+    });
+
     var swiperCoop = new Swiper('.swiper-container-coop', {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -265,6 +330,15 @@ Template Post Type: post, page, product
     });
 
     jQuery('[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var swiperAll = new Swiper('.swiper-container-all', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next__all',
+                prevEl: '.swiper-button-prev__all',
+            },
+        });
+
         var swiperCoop = new Swiper('.swiper-container-coop', {
             slidesPerView: 3,
             spaceBetween: 30,
