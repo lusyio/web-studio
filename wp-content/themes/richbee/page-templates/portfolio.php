@@ -77,7 +77,7 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-6 m-auto">
-                            <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                            <a href="<?php the_permalink() ?>" class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
                         <div class="col-6 text-right m-auto">
                             <a class="portfolio-header__site"
@@ -133,7 +133,7 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-6 m-auto">
-                            <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                            <a href="<?php the_permalink() ?>" class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
                         <div class="col-6 text-right m-auto">
                             <a class="portfolio-header__site"
@@ -189,7 +189,7 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-6 m-auto">
-                            <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                            <a href="<?php the_permalink() ?>" class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
                         <div class="col-6 text-right m-auto">
                             <a class="portfolio-header__site"
@@ -244,7 +244,7 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-6 m-auto">
-                            <h3 class="portfolio-header__content m-0"><?php the_title(); ?></h3>
+                            <a href="<?php the_permalink() ?>" class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
                         <div class="col-6 text-right m-auto">
                             <a class="portfolio-header__site"
