@@ -76,6 +76,9 @@ Template Post Type: post, page, product
                                 ?>
                             </a>
                         </div>
+                        <div class="col-12">
+                            <hr class="portfolio-header__hr">
+                        </div>
                     </div>
 
                     <div class="row portfolio">
@@ -143,6 +146,9 @@ Template Post Type: post, page, product
                                 echo $domain;
                                 ?>
                             </a>
+                        </div>
+                        <div class="col-12">
+                            <hr class="portfolio-header__hr">
                         </div>
                     </div>
 
@@ -212,6 +218,9 @@ Template Post Type: post, page, product
                                 ?>
                             </a>
                         </div>
+                        <div class="col-12">
+                            <hr class="portfolio-header__hr">
+                        </div>
                     </div>
 
                     <div class="row portfolio">
@@ -279,6 +288,9 @@ Template Post Type: post, page, product
                                 echo $domain;
                                 ?>
                             </a>
+                        </div>
+                        <div class="col-12">
+                            <hr class="portfolio-header__hr">
                         </div>
                     </div>
 
