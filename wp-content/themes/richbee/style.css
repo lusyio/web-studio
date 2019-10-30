@@ -1243,6 +1243,11 @@ object {
     z-index:10;
 }
 
+.swiper-slide img{
+    border: 1px solid #CBCBCB;
+    border-radius: 11px;
+}
+
 #tabPortfolio .nav-link{
     background-color: transparent;
 }
