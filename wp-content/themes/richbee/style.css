@@ -3413,6 +3413,14 @@ and (max-width: 575.7px) {
         margin: 0;
     }
 
+    .swiper-button-next{
+        right: 10%;
+    }
+
+    .swiper-button-prev{
+        left: 10%;
+    }
+
     #tabPortfolio .nav-link{
         text-align: center;
     }
