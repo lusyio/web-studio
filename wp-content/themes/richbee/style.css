@@ -3417,6 +3417,10 @@ and (max-width: 575.7px) {
         right: 10%;
     }
 
+    .swiper-slide__bg{
+        display: none;
+    }
+
     .swiper-button-prev{
         left: 10%;
     }
