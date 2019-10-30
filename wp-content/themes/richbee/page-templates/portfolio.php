@@ -526,6 +526,11 @@ Template Post Type: post, page, product
                 prevEl: '.swiper-button-prev__service',
             },
         });
+
+        swiperAll.update ();
+        swiperCoop.update ();
+        swiperService.update ();
+        swiperShops.update ();
     });
 </script>
 
