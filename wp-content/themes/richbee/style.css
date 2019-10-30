@@ -1137,6 +1137,15 @@ object {
     text-decoration: none;
 }
 
+.swiper-container-all, .swiper-container-coop, .swiper-container-service, .swiper-container-shops{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
 .portfolio-header__content:hover {
     color: #000000;
 }
@@ -3268,6 +3277,10 @@ and (max-width: 767.8px) {
         transform: scale(1, 1);
     }
 
+    .swiper-slide__bg{
+        display: none;
+    }
+
     .third-block a {
         font-size: 1.2rem;
     }
@@ -3356,6 +3369,10 @@ and (max-width: 767.8px) {
     .banner h2 {
         font-size: 30px !important;
     }
+
+    #tabPortfolio .nav-item:nth-of-type(3) .portfolio-tabs__link{
+        margin: 0;
+    }
 }
 
 @media screen
@@ -3366,9 +3383,21 @@ and (max-width: 575.7px) {
         margin: auto;
     }
 
+    #tabPortfolio{
+        display: block;
+    }
+
+    #tabPortfolio .nav-item:not(:first-of-type) .portfolio-tabs__link{
+        margin: 0;
+    }
+
     header#masthead {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .swiper-container-all, .swiper-container-coop, .swiper-container-service, .swiper-container-shops{
+        max-width: 290px;
     }
 
     #masthead .navbar-nav > li > a {

@@ -77,12 +77,12 @@ Template Post Type: post, page, product
                     $catquery->the_post(); ?>
 
                     <div class="row portfolio-header">
-                        <div class="col-6 m-auto position-relative">
+                        <div class="col-sm-6 col-12 m-auto position-relative">
                             <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
-                        <div class="col-6 text-right m-auto">
+                        <div class="col-sm-6 col-12 text-right m-auto">
                             <a class="portfolio-header__site"
                                href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                 <?php
@@ -101,7 +101,7 @@ Template Post Type: post, page, product
                         </div>
                     </div>
 
-                    <div class="swiper-container swiper-container-all">
+                    <div class="swiper-container-all">
                         <div class="swiper-wrapper">
                             <?php
                             global $post;
@@ -142,12 +142,12 @@ Template Post Type: post, page, product
                     $catquery->the_post(); ?>
 
                     <div class="row portfolio-header">
-                        <div class="col-6 m-auto position-relative">
+                        <div class="col-sm-6 col-12 m-auto position-relative">
                             <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
-                        <div class="col-6 text-right m-auto">
+                        <div class="col-sm-6 col-12 text-right m-auto">
                             <a class="portfolio-header__site"
                                href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                 <?php
@@ -166,7 +166,7 @@ Template Post Type: post, page, product
                         </div>
                     </div>
 
-                    <div class="swiper-container swiper-container-coop">
+                    <div class="swiper-container-coop">
                         <div class="swiper-wrapper">
                             <?php
                             global $post;
@@ -207,12 +207,12 @@ Template Post Type: post, page, product
                     $catquery->the_post(); ?>
 
                     <div class="row portfolio-header">
-                        <div class="col-6 m-auto position-relative">
+                        <div class="col-sm-6 col-12 m-auto position-relative">
                             <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
-                        <div class="col-6 text-right m-auto">
+                        <div class="col-sm-6 col-12 text-right m-auto">
                             <a class="portfolio-header__site"
                                href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                 <?php
@@ -231,7 +231,7 @@ Template Post Type: post, page, product
                         </div>
                     </div>
 
-                    <div class="swiper-container swiper-container-shops">
+                    <div class="swiper-container-shops">
                         <div class="swiper-wrapper">
                             <?php
                             $gallery = get_post_gallery_images($post);
@@ -271,12 +271,12 @@ Template Post Type: post, page, product
                     $catquery->the_post(); ?>
 
                     <div class="row portfolio-header">
-                        <div class="col-6 m-auto position-relative">
+                        <div class="col-sm-6 col-12 m-auto position-relative">
                             <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
-                        <div class="col-6 text-right m-auto">
+                        <div class="col-sm-6 col-12 text-right m-auto">
                             <a class="portfolio-header__site"
                                href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                 <?php
@@ -295,7 +295,7 @@ Template Post Type: post, page, product
                         </div>
                     </div>
 
-                    <div class="swiper-container swiper-container-service">
+                    <div class="swiper-container-service">
                         <div class="swiper-wrapper">
                             <?php
                             $gallery = get_post_gallery_images($post);
