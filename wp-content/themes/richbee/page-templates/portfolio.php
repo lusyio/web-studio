@@ -102,6 +102,7 @@ Template Post Type: post, page, product
                     </div>
 
                     <div class="swiper-container-all">
+                        <div class="swiper-slide__bg"></div>
                         <div class="swiper-wrapper">
                             <?php
                             global $post;
@@ -111,10 +112,11 @@ Template Post Type: post, page, product
 
                                      as $image_url): ?>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide__bg"></div>
                                     <img src="<?= $image_url ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
+                            <div class="swiper-slide swiper-slide__last">
+                            </div>
                         </div>
                         <div class="swiper-button-next swiper-button-next__all"></div>
                         <div class="swiper-button-prev swiper-button-prev__all"></div>
@@ -167,6 +169,7 @@ Template Post Type: post, page, product
                     </div>
 
                     <div class="swiper-container-coop">
+                        <div class="swiper-slide__bg"></div>
                         <div class="swiper-wrapper">
                             <?php
                             global $post;
@@ -176,10 +179,11 @@ Template Post Type: post, page, product
 
                                      as $image_url): ?>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide__bg"></div>
                                     <img src="<?= $image_url ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
+                            <div class="swiper-slide swiper-slide__last">
+                            </div>
                         </div>
                         <div class="swiper-button-next swiper-button-next__coop"></div>
                         <div class="swiper-button-prev swiper-button-prev__coop"></div>
@@ -232,18 +236,21 @@ Template Post Type: post, page, product
                     </div>
 
                     <div class="swiper-container-shops">
+                        <div class="swiper-slide__bg"></div>
                         <div class="swiper-wrapper">
                             <?php
+                            global $post;
                             $gallery = get_post_gallery_images($post);
                             // Loop through each image in each gallery
                             foreach ($gallery
 
                                      as $image_url): ?>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide__bg"></div>
                                     <img src="<?= $image_url ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
+                            <div class="swiper-slide swiper-slide__last">
+                            </div>
                         </div>
                         <div class="swiper-button-next swiper-button-next__shops"></div>
                         <div class="swiper-button-prev swiper-button-prev__shops"></div>
@@ -296,18 +303,21 @@ Template Post Type: post, page, product
                     </div>
 
                     <div class="swiper-container-service">
+                        <div class="swiper-slide__bg"></div>
                         <div class="swiper-wrapper">
                             <?php
+                            global $post;
                             $gallery = get_post_gallery_images($post);
                             // Loop through each image in each gallery
                             foreach ($gallery
 
                                      as $image_url): ?>
                                 <div class="swiper-slide">
-                                    <div class="swiper-slide__bg"></div>
                                     <img src="<?= $image_url ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
+                            <div class="swiper-slide swiper-slide__last">
+                            </div>
                         </div>
                         <div class="swiper-button-next swiper-button-next__service"></div>
                         <div class="swiper-button-prev swiper-button-prev__service"></div>
@@ -352,6 +362,8 @@ Template Post Type: post, page, product
             prevEl: '.swiper-button-prev__all',
         },
     });
+
+
 
     var swiperCoop = new Swiper('.swiper-container-coop', {
         slidesPerView: 3,
@@ -422,7 +434,7 @@ Template Post Type: post, page, product
         },
     });
 
-    jQuery('[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    jQuery('[data-toggle="tab"]').on('shown.bs.tab', function () {
         swiperAll.updateSize();
         swiperAll.updateSlides();
         swiperAll.updateProgress();
@@ -442,7 +454,7 @@ Template Post Type: post, page, product
         swiperService.updateSlides();
         swiperService.updateProgress();
         swiperService.updateSlidesClasses();
-    })
+    });
 </script>
 
 <?php get_footer(); ?>

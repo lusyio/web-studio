@@ -1229,16 +1229,18 @@ object {
     display: none;
 }
 
-.swiper-slide:not(.swiper-slide-next):not(.swiper-slide-active):not(:last-of-type) .swiper-slide__bg {
+.swiper-slide__bg {
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -ms-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
     position: absolute;
-    width: 100%;
+    right: 0;
+    width: 33%;
     height: 100%;
-    background: linear-gradient(270deg, #FFFFFF 62.43%, rgba(255, 255, 255, 0.7) 88.66%, rgba(255, 255, 255, 0.5) 100%)
+    background: linear-gradient(270deg, #FFFFFF 62.43%, rgba(255, 255, 255, 0.7) 88.66%, rgba(255, 255, 255, 0.5) 100%);
+    z-index:10;
 }
 
 #tabPortfolio .nav-link{
@@ -3282,6 +3284,10 @@ and (max-width: 767.8px) {
     }
 
     .swiper-slide__bg{
+        display: none;
+    }
+
+    .swiper-slide__last{
         display: none;
     }
 
