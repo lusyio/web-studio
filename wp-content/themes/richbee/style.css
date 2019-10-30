@@ -1239,7 +1239,7 @@ object {
     right: 0;
     width: 33%;
     height: 100%;
-    background: linear-gradient(270deg, #FFFFFF 62.43%, rgba(255, 255, 255, 0.7) 88.66%, rgba(255, 255, 255, 0.5) 100%);
+    background: linear-gradient(270deg, #FFFFFF 15.43%, rgba(255, 255, 255, 0.7) 46.66%, rgba(255, 255, 255, 0) 100%);
     z-index:10;
 }
 
