@@ -7,6 +7,16 @@ Template Post Type: post, page, product
 
 <?php get_header(); ?>
 
+<div class="container mb-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="new mb-4 position-relative">Портфолио
+                    <div class="singletopp">RICHBEE</div>
+                </h1>
+            </div>
+        </div>
+</div>
+
 <div class="container portfolio-tabs">
     <div class="row">
         <div class="col-lg-10 offset-lg-1 col-12 offset-0">
@@ -34,33 +44,6 @@ Template Post Type: post, page, product
                                aria-selected="true">Сервисы</a>
                         </li>
                     </ul>
-
-                    <div class="row portfolio-tabs-tags">
-                        <div class="col-12 col-lg-6">
-                            <h3 class="portfolio-tabs-tags__header">Готовый к SEO-продвижению</h3>
-                            <p class="portfolio-tabs-tags__content">Объедините работу клиентской базы, складского учета,
-                                бухгалтерии и производства <...> в единую централизованную систему</p>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <h3 class="portfolio-tabs-tags__header">Удобная административная панель</h3>
-                            <p class="portfolio-tabs-tags__content">Улучшите скорость и эффективность работы
-                                сотрудников, за счет удобного доступа к необходимой информации, автоматизации
-                                документооборота, системы постановки задач</p>
-                        </div>
-                    </div>
-
-                    <div class="row portfolio-tabs-tags">
-                        <div class="col-12 col-lg-6">
-                            <h3 class="portfolio-tabs-tags__header">Уникальный дизайн</h3>
-                            <p class="portfolio-tabs-tags__content">Формируйте статистику или отчеты о деятельности
-                                компании, сотрудниках, клиентах в любом разрезе и за любой период</p>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <h3 class="portfolio-tabs-tags__header">Адаптация под все устройства</h3>
-                            <p class="portfolio-tabs-tags__content">ERP-система разрабатывается конкретно под ваш бизнес
-                                и задачи, что упрощает ее внедрение и сокращает время обучение сотрудников</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
