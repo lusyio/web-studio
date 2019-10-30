@@ -3406,6 +3406,10 @@ and (max-width: 575.7px) {
         margin: 0;
     }
 
+    #tabPortfolio .nav-link{
+        text-align: center;
+    }
+
     header#masthead {
         padding-left: 0;
         padding-right: 0;
