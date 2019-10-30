@@ -1197,10 +1197,10 @@ object {
 
 .portfolio-header__icon{
     position: absolute;
-    left: -7.5rem;
+    left: -5.5rem;
     top: 0;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 5rem;
+    height: 5rem;
     background-size: cover !important;
 }
 
