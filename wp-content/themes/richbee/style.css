@@ -1241,6 +1241,9 @@ object {
     background: linear-gradient(270deg, #FFFFFF 62.43%, rgba(255, 255, 255, 0.7) 88.66%, rgba(255, 255, 255, 0.5) 100%)
 }
 
+#tabPortfolio .nav-link{
+    background-color: transparent;
+}
 
 #tabPortfolio .nav-item:not(:first-of-type) .portfolio-tabs__link {
     margin-left: 50px;
