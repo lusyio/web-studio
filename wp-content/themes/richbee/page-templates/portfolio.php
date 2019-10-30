@@ -8,13 +8,13 @@ Template Post Type: post, page, product
 <?php get_header(); ?>
 
 <div class="container mb-5">
-        <div class="row">
-            <div class="col text-center">
-                <h1 class="new mb-4 position-relative">Портфолио
-                    <div class="singletopp">RICHBEE</div>
-                </h1>
-            </div>
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="new mb-4 position-relative">Портфолио
+                <div class="singletopp">RICHBEE</div>
+            </h1>
         </div>
+    </div>
 </div>
 
 <div class="container portfolio-tabs">
@@ -352,33 +352,7 @@ Template Post Type: post, page, product
         });
     });
 
-    jQuery('[data-toggle="tab"]').on('shown.bs.tab', function () {
-        jQuery('.swiper-container-all').each(function () {
-            var swiperAll = new Swiper(this, {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                breakpoints: {
-                    576: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
-                    },
-                    991: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                },
-                navigation: {
-                    nextEl: this.querySelector('.swiper-button-next__all'),
-                    prevEl: this.querySelector('.swiper-button-prev__all'),
-                },
-            });
-            swiperAll.update();
-        });
-
+    jQuery('#coopTab').on('shown.bs.tab', function () {
         jQuery('.swiper-container-coop').each(function () {
             var swiperCoop = new Swiper(this, {
                 slidesPerView: 3,
@@ -404,7 +378,9 @@ Template Post Type: post, page, product
             });
             swiperCoop.update();
         });
+    });
 
+    jQuery('#shopsTab').on('shown.bs.tab', function () {
         jQuery('.swiper-container-shops').each(function () {
             var swiperShops = new Swiper(this, {
                 slidesPerView: 3,
@@ -430,7 +406,9 @@ Template Post Type: post, page, product
             });
             swiperShops.update();
         });
+    });
 
+    jQuery('#serviceTab').on('shown.bs.tab', function () {
         jQuery('.swiper-container-service').each(function () {
             var swiperService = new Swiper(this, {
                 slidesPerView: 3,
