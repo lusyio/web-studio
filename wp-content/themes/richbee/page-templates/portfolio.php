@@ -332,6 +332,7 @@ Template Post Type: post, page, product
 <script>
     var swiperAll = new Swiper('.swiper-container-all', {
         slidesPerView: 3,
+        spaceBetween: 30,
         breakpoints: {
             576: {
                 slidesPerView: 1,
@@ -354,6 +355,7 @@ Template Post Type: post, page, product
 
     var swiperCoop = new Swiper('.swiper-container-coop', {
         slidesPerView: 3,
+        spaceBetween: 30,
         breakpoints: {
             576: {
                 slidesPerView: 1,
@@ -376,6 +378,7 @@ Template Post Type: post, page, product
 
     var swiperShops = new Swiper('.swiper-container-shops', {
         slidesPerView: 3,
+        spaceBetween: 30,
         breakpoints: {
             576: {
                 slidesPerView: 1,
@@ -398,6 +401,7 @@ Template Post Type: post, page, product
 
     var swiperService = new Swiper('.swiper-container-service', {
         slidesPerView: 3,
+        spaceBetween: 30,
         breakpoints: {
             576: {
                 slidesPerView: 1,
@@ -421,6 +425,7 @@ Template Post Type: post, page, product
     jQuery('[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         var swiperAll = new Swiper('.swiper-container-all', {
             slidesPerView: 3,
+            spaceBetween: 30,
             breakpoints: {
                 576: {
                     slidesPerView: 1,
@@ -443,6 +448,7 @@ Template Post Type: post, page, product
 
         var swiperCoop = new Swiper('.swiper-container-coop', {
             slidesPerView: 3,
+            spaceBetween: 30,
             breakpoints: {
                 576: {
                     slidesPerView: 1,
@@ -465,6 +471,7 @@ Template Post Type: post, page, product
 
         var swiperShops = new Swiper('.swiper-container-shops', {
             slidesPerView: 3,
+            spaceBetween: 30,
             breakpoints: {
                 576: {
                     slidesPerView: 1,
@@ -487,6 +494,7 @@ Template Post Type: post, page, product
 
         var swiperService = new Swiper('.swiper-container-service', {
             slidesPerView: 3,
+            spaceBetween: 30,
             breakpoints: {
                 576: {
                     slidesPerView: 1,
