@@ -66,7 +66,7 @@ Template Post Type: post, page, product
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
-                        <div class="col-sm-6 col-12 text-right m-auto">
+                        <div class="col-sm-6 col-12 text-sm-right text-left m-sm-auto mt-3">
                             <a class="portfolio-header__site"
                                href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                 <?php
@@ -88,25 +88,27 @@ Template Post Type: post, page, product
                         </div>
                     </div>
 
-                    <div class="swiper-container-all">
-                        <div class="swiper-slide__bg"></div>
-                        <div class="swiper-wrapper">
-                            <?php
-                            global $post;
-                            $gallery = get_post_gallery_images($post);
-                            // Loop through each image in each gallery
-                            foreach ($gallery
-
-                                     as $image_url): ?>
-                                <div class="swiper-slide">
-                                    <img src="<?= $image_url ?>" alt="">
-                                </div>
-                            <?php endforeach; ?>
-                            <div class="swiper-slide swiper-slide__last">
-                            </div>
-                        </div>
+                    <div class="position-relative">
                         <div class="swiper-button-next swiper-button-next__all"></div>
                         <div class="swiper-button-prev swiper-button-prev__all"></div>
+                        <div class="swiper-container-all">
+                            <div class="swiper-slide__bg"></div>
+                            <div class="swiper-wrapper">
+                                <?php
+                                global $post;
+                                $gallery = get_post_gallery_images($post);
+                                // Loop through each image in each gallery
+                                foreach ($gallery
+
+                                         as $image_url): ?>
+                                    <div class="swiper-slide">
+                                        <img src="<?= $image_url ?>" alt="">
+                                    </div>
+                                <?php endforeach; ?>
+                                <div class="swiper-slide swiper-slide__last">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row portfolio-content">
@@ -137,7 +139,7 @@ Template Post Type: post, page, product
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
-                        <div class="col-sm-6 col-12 text-right m-auto">
+                        <div class="col-sm-6 col-12 text-sm-right text-left m-sm-auto mt-3">
                             <a class="portfolio-header__site"
                                href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                 <?php
@@ -159,25 +161,27 @@ Template Post Type: post, page, product
                         </div>
                     </div>
 
-                    <div class="swiper-container-coop">
-                        <div class="swiper-slide__bg"></div>
-                        <div class="swiper-wrapper">
-                            <?php
-                            global $post;
-                            $gallery = get_post_gallery_images($post);
-                            // Loop through each image in each gallery
-                            foreach ($gallery
-
-                                     as $image_url): ?>
-                                <div class="swiper-slide">
-                                    <img src="<?= $image_url ?>" alt="">
-                                </div>
-                            <?php endforeach; ?>
-                            <div class="swiper-slide swiper-slide__last">
-                            </div>
-                        </div>
+                    <div class="position-relative">
                         <div class="swiper-button-next swiper-button-next__coop"></div>
                         <div class="swiper-button-prev swiper-button-prev__coop"></div>
+                        <div class="swiper-container-coop">
+                            <div class="swiper-slide__bg"></div>
+                            <div class="swiper-wrapper">
+                                <?php
+                                global $post;
+                                $gallery = get_post_gallery_images($post);
+                                // Loop through each image in each gallery
+                                foreach ($gallery
+
+                                         as $image_url): ?>
+                                    <div class="swiper-slide">
+                                        <img src="<?= $image_url ?>" alt="">
+                                    </div>
+                                <?php endforeach; ?>
+                                <div class="swiper-slide swiper-slide__last">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row portfolio-content">
@@ -208,7 +212,7 @@ Template Post Type: post, page, product
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
-                        <div class="col-sm-6 col-12 text-right m-auto">
+                        <div class="col-sm-6 col-12 text-sm-right text-left m-sm-auto mt-3">
                             <a class="portfolio-header__site"
                                href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                 <?php
@@ -230,25 +234,27 @@ Template Post Type: post, page, product
                         </div>
                     </div>
 
-                    <div class="swiper-container-shops">
-                        <div class="swiper-slide__bg"></div>
-                        <div class="swiper-wrapper">
-                            <?php
-                            global $post;
-                            $gallery = get_post_gallery_images($post);
-                            // Loop through each image in each gallery
-                            foreach ($gallery
-
-                                     as $image_url): ?>
-                                <div class="swiper-slide">
-                                    <img src="<?= $image_url ?>" alt="">
-                                </div>
-                            <?php endforeach; ?>
-                            <div class="swiper-slide swiper-slide__last">
-                            </div>
-                        </div>
+                    <div class="position-relative">
                         <div class="swiper-button-next swiper-button-next__shops"></div>
                         <div class="swiper-button-prev swiper-button-prev__shops"></div>
+                        <div class="swiper-container-shops">
+                            <div class="swiper-slide__bg"></div>
+                            <div class="swiper-wrapper">
+                                <?php
+                                global $post;
+                                $gallery = get_post_gallery_images($post);
+                                // Loop through each image in each gallery
+                                foreach ($gallery
+
+                                         as $image_url): ?>
+                                    <div class="swiper-slide">
+                                        <img src="<?= $image_url ?>" alt="">
+                                    </div>
+                                <?php endforeach; ?>
+                                <div class="swiper-slide swiper-slide__last">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row portfolio-content">
@@ -279,7 +285,7 @@ Template Post Type: post, page, product
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
-                        <div class="col-sm-6 col-12 text-right m-auto">
+                        <div class="col-sm-6 col-12 text-sm-right text-left m-sm-auto mt-3">
                             <a class="portfolio-header__site"
                                href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                 <?php
@@ -301,25 +307,27 @@ Template Post Type: post, page, product
                         </div>
                     </div>
 
-                    <div class="swiper-container-service">
-                        <div class="swiper-slide__bg"></div>
-                        <div class="swiper-wrapper">
-                            <?php
-                            global $post;
-                            $gallery = get_post_gallery_images($post);
-                            // Loop through each image in each gallery
-                            foreach ($gallery
-
-                                     as $image_url): ?>
-                                <div class="swiper-slide">
-                                    <img src="<?= $image_url ?>" alt="">
-                                </div>
-                            <?php endforeach; ?>
-                            <div class="swiper-slide swiper-slide__last">
-                            </div>
-                        </div>
+                    <div class="position-relative">
                         <div class="swiper-button-next swiper-button-next__service"></div>
                         <div class="swiper-button-prev swiper-button-prev__service"></div>
+                        <div class="swiper-container-service">
+                            <div class="swiper-slide__bg"></div>
+                            <div class="swiper-wrapper">
+                                <?php
+                                global $post;
+                                $gallery = get_post_gallery_images($post);
+                                // Loop through each image in each gallery
+                                foreach ($gallery
+
+                                         as $image_url): ?>
+                                    <div class="swiper-slide">
+                                        <img src="<?= $image_url ?>" alt="">
+                                    </div>
+                                <?php endforeach; ?>
+                                <div class="swiper-slide swiper-slide__last">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row portfolio-content">
@@ -339,114 +347,116 @@ Template Post Type: post, page, product
 <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 
 <script>
-    jQuery('.swiper-container-all').each(function () {
-        var swiperAll = new Swiper(this, {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            breakpoints: {
-                576: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+    jQuery(document).ready(function ($) {
+        jQuery('.swiper-container-all').each(function () {
+            var swiperAll = new Swiper(this, {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
                 },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
+                navigation: {
+                    nextEl: $(this).parents('.position-relative').find('.swiper-button-next__all'),
+                    prevEl: $(this).parents('.position-relative').find('.swiper-button-prev__all'),
                 },
-                991: {
+            });
+        });
+
+        jQuery('#coopTab').on('shown.bs.tab', function () {
+            jQuery('.swiper-container-coop').each(function () {
+                var swiperCoop = new Swiper(this, {
                     slidesPerView: 3,
                     spaceBetween: 30,
-                },
-            },
-            navigation: {
-                nextEl: this.querySelector('.swiper-button-next__all'),
-                prevEl: this.querySelector('.swiper-button-prev__all'),
-            },
-        });
-    });
-
-    jQuery('#coopTab').on('shown.bs.tab', function () {
-        jQuery('.swiper-container-coop').each(function () {
-            var swiperCoop = new Swiper(this, {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                breakpoints: {
-                    576: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                    breakpoints: {
+                        576: {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        991: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
                     },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
+                    navigation: {
+                        nextEl: $(this).parents('.position-relative').find('.swiper-button-next__coop'),
+                        prevEl: $(this).parents('.position-relative').find('.swiper-button-prev__coop'),
                     },
-                    991: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                },
-                navigation: {
-                    nextEl: this.querySelector('.swiper-button-next__coop'),
-                    prevEl: this.querySelector('.swiper-button-prev__coop'),
-                },
+                });
+                swiperCoop.update();
             });
-            swiperCoop.update();
         });
-    });
 
-    jQuery('#shopsTab').on('shown.bs.tab', function () {
-        jQuery('.swiper-container-shops').each(function () {
-            var swiperShops = new Swiper(this, {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                breakpoints: {
-                    576: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+        jQuery('#shopsTab').on('shown.bs.tab', function () {
+            jQuery('.swiper-container-shops').each(function () {
+                var swiperShops = new Swiper(this, {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    breakpoints: {
+                        576: {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        991: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
                     },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
+                    navigation: {
+                        nextEl: $(this).parents('.position-relative').find('.swiper-button-next__shops'),
+                        prevEl: $(this).parents('.position-relative').find('.swiper-button-prev__shops'),
                     },
-                    991: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                },
-                navigation: {
-                    nextEl: this.querySelector('.swiper-button-next__shops'),
-                    prevEl: this.querySelector('.swiper-button-prev__shops'),
-                },
+                });
+                swiperShops.update();
             });
-            swiperShops.update();
         });
-    });
 
-    jQuery('#serviceTab').on('shown.bs.tab', function () {
-        jQuery('.swiper-container-service').each(function () {
-            var swiperService = new Swiper(this, {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                breakpoints: {
-                    576: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+        jQuery('#serviceTab').on('shown.bs.tab', function () {
+            jQuery('.swiper-container-service').each(function () {
+                var swiperService = new Swiper(this, {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    breakpoints: {
+                        576: {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        991: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
                     },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
+                    navigation: {
+                        nextEl: $(this).parents('.position-relative').find('.swiper-button-next__service'),
+                        prevEl: $(this).parents('.position-relative').find('.swiper-button-prev__service'),
                     },
-                    991: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                },
-                navigation: {
-                    nextEl: this.querySelector('.swiper-button-next__service'),
-                    prevEl: this.querySelector('.swiper-button-prev__service'),
-                },
+                });
+                swiperService.update();
             });
-            swiperService.update();
         });
-    });
+    })
 
 </script>
 

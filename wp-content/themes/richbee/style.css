@@ -1218,10 +1218,12 @@ object {
 }
 
 .swiper-button-next {
+    right: -40px;
     background-image: url(/wp-content/themes/richbee/svg/portfolio-right.svg);
 }
 
 .swiper-button-prev {
+    left: -40px;
     background-image: url(/wp-content/themes/richbee/svg/portfolio-left.svg);
 }
 
@@ -3293,7 +3295,8 @@ and (max-width: 767.8px) {
     }
 
     .swiper-slide__bg{
-        display: none;
+        width: 50%;
+
     }
 
     .swiper-slide__last{
