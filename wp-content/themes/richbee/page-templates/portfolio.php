@@ -78,7 +78,8 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-sm-6 col-12 m-auto position-relative">
-                            <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
+                            <div class="portfolio-header__icon"
+                                 style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
@@ -145,7 +146,8 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-sm-6 col-12 m-auto position-relative">
-                            <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
+                            <div class="portfolio-header__icon"
+                                 style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
@@ -212,7 +214,8 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-sm-6 col-12 m-auto position-relative">
-                            <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
+                            <div class="portfolio-header__icon"
+                                 style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
@@ -279,7 +282,8 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-sm-6 col-12 m-auto position-relative">
-                            <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
+                            <div class="portfolio-header__icon"
+                                 style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
@@ -340,198 +344,212 @@ Template Post Type: post, page, product
 <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 
 <script>
-    var swiperAll = new Swiper('.swiper-container-all', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        breakpoints: {
-            576: {
-                slidesPerView: 1,
-                spaceBetween: 0,
+    jQuery('.swiper-container-all').each(function () {
+        var swiperAll = new Swiper(this, {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
+            navigation: {
+                nextEl: this.querySelector('.swiper-button-next__all'),
+                prevEl: this.querySelector('.swiper-button-prev__all'),
             },
-            991: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-        },
-        navigation: {
-            nextEl: '.swiper-button-next__all',
-            prevEl: '.swiper-button-prev__all',
-        },
+        });
     });
 
-
-
-    var swiperCoop = new Swiper('.swiper-container-coop', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        breakpoints: {
-            576: {
-                slidesPerView: 1,
-                spaceBetween: 0,
+    jQuery('.swiper-container-coop').each(function () {
+        var swiperCoop = new Swiper(this, {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
+            navigation: {
+                nextEl: this.querySelector('.swiper-button-next__coop'),
+                prevEl: this.querySelector('.swiper-button-prev__coop'),
             },
-            991: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-        },
-        navigation: {
-            nextEl: '.swiper-button-next__coop',
-            prevEl: '.swiper-button-prev__coop',
-        },
+        });
     });
 
-    var swiperShops = new Swiper('.swiper-container-shops', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        breakpoints: {
-            576: {
-                slidesPerView: 1,
-                spaceBetween: 0,
+    jQuery('.swiper-container-shops').each(function () {
+        var swiperShops = new Swiper(this, {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
+            navigation: {
+                nextEl: this.querySelector('.swiper-button-next__shops'),
+                prevEl: this.querySelector('.swiper-button-prev__shops'),
             },
-            991: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-        },
-        navigation: {
-            nextEl: '.swiper-button-next__shops',
-            prevEl: '.swiper-button-prev__shops',
-        },
+        });
     });
 
-    var swiperService = new Swiper('.swiper-container-service', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        breakpoints: {
-            576: {
-                slidesPerView: 1,
-                spaceBetween: 0,
+    jQuery('.swiper-container-service').each(function () {
+        var swiperService = new Swiper(this, {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
+            navigation: {
+                nextEl: this.querySelector('.swiper-button-next__service'),
+                prevEl: this.querySelector('.swiper-button-prev__service'),
             },
-            991: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-        },
-        navigation: {
-            nextEl: '.swiper-button-next__service',
-            prevEl: '.swiper-button-prev__service',
-        },
+        });
     });
 
     jQuery('[data-toggle="tab"]').on('shown.bs.tab', function () {
-        var swiperAll = new Swiper('.swiper-container-all', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            breakpoints: {
-                576: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+        jQuery('.swiper-container-all').each(function () {
+            var swiperAll = new Swiper(this, {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
                 },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
+                navigation: {
+                    nextEl: this.querySelector('.swiper-button-next__all'),
+                    prevEl: this.querySelector('.swiper-button-prev__all'),
                 },
-                991: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-            navigation: {
-                nextEl: '.swiper-button-next__all',
-                prevEl: '.swiper-button-prev__all',
-            },
+            });
+            swiperAll.update();
         });
 
-        var swiperCoop = new Swiper('.swiper-container-coop', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            breakpoints: {
-                576: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+        jQuery('.swiper-container-coop').each(function () {
+            var swiperCoop = new Swiper(this, {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
                 },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
+                navigation: {
+                    nextEl: this.querySelector('.swiper-button-next__coop'),
+                    prevEl: this.querySelector('.swiper-button-prev__coop'),
                 },
-                991: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-            navigation: {
-                nextEl: '.swiper-button-next__coop',
-                prevEl: '.swiper-button-prev__coop',
-            },
+            });
+            swiperCoop.update();
         });
 
-        var swiperShops = new Swiper('.swiper-container-shops', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            breakpoints: {
-                576: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+        jQuery('.swiper-container-shops').each(function () {
+            var swiperShops = new Swiper(this, {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
                 },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
+                navigation: {
+                    nextEl: this.querySelector('.swiper-button-next__shops'),
+                    prevEl: this.querySelector('.swiper-button-prev__shops'),
                 },
-                991: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-            navigation: {
-                nextEl: '.swiper-button-next__shops',
-                prevEl: '.swiper-button-prev__shops',
-            },
+            });
+            swiperShops.update();
         });
 
-        var swiperService = new Swiper('.swiper-container-service', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            breakpoints: {
-                576: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+        jQuery('.swiper-container-service').each(function () {
+            var swiperService = new Swiper(this, {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
                 },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
+                navigation: {
+                    nextEl: this.querySelector('.swiper-button-next__service'),
+                    prevEl: this.querySelector('.swiper-button-prev__service'),
                 },
-                991: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-            navigation: {
-                nextEl: '.swiper-button-next__service',
-                prevEl: '.swiper-button-prev__service',
-            },
+            });
+            swiperService.update();
         });
-
-        swiperAll.update ();
-        swiperCoop.update ();
-        swiperService.update ();
-        swiperShops.update ();
     });
+
 </script>
 
 <?php get_footer(); ?>
