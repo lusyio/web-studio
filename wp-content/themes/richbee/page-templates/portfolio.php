@@ -42,22 +42,23 @@ Template Post Type: post, page, product
                                 бухгалтерии и производства <...> в единую централизованную систему</p>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <h3 class="portfolio-tabs-tags__header">Готовый к SEO-продвижению</h3>
-                            <p class="portfolio-tabs-tags__content">Объедините работу клиентской базы, складского учета,
-                                бухгалтерии и производства <...> в единую централизованную систему</p>
+                            <h3 class="portfolio-tabs-tags__header">Удобная административная панель</h3>
+                            <p class="portfolio-tabs-tags__content">Улучшите скорость и эффективность работы
+                                сотрудников, за счет удобного доступа к необходимой информации, автоматизации
+                                документооборота, системы постановки задач</p>
                         </div>
                     </div>
 
                     <div class="row portfolio-tabs-tags">
                         <div class="col-12 col-lg-6">
-                            <h3 class="portfolio-tabs-tags__header">Готовый к SEO-продвижению</h3>
-                            <p class="portfolio-tabs-tags__content">Объедините работу клиентской базы, складского учета,
-                                бухгалтерии и производства <...> в единую централизованную систему</p>
+                            <h3 class="portfolio-tabs-tags__header">Уникальный дизайн</h3>
+                            <p class="portfolio-tabs-tags__content">Формируйте статистику или отчеты о деятельности
+                                компании, сотрудниках, клиентах в любом разрезе и за любой период</p>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <h3 class="portfolio-tabs-tags__header">Готовый к SEO-продвижению</h3>
-                            <p class="portfolio-tabs-tags__content">Объедините работу клиентской базы, складского учета,
-                                бухгалтерии и производства <...> в единую централизованную систему</p>
+                            <h3 class="portfolio-tabs-tags__header">Адаптация под все устройства</h3>
+                            <p class="portfolio-tabs-tags__content">ERP-система разрабатывается конкретно под ваш бизнес
+                                и задачи, что упрощает ее внедрение и сокращает время обучение сотрудников</p>
                         </div>
                     </div>
                 </div>
@@ -77,18 +78,25 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-6 m-auto">
-                            <a href="<?php the_permalink() ?>" class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink() ?>"
+                               class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
                         <div class="col-6 text-right m-auto">
                             <a class="portfolio-header__site"
-                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                                <?php
+                                $url = get_post_meta(get_the_ID(), 'website', true);;
+                                $domain = parse_url($url, PHP_URL_HOST);
+                                echo $domain;
+                                ?>
+                            </a>
                         </div>
                     </div>
 
                     <div class="row portfolio">
                         <div class="col">
                             <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                            <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                            <p class="portfolio__tags"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
                         </div>
                     </div>
 
@@ -111,7 +119,7 @@ Template Post Type: post, page, product
                     </div>
 
                     <div class="row portfolio-content">
-                        <div class="col portfolio-content__text">
+                        <div class="col-lg-9 col-12 portfolio-content__text">
                             <?php the_content(); ?>
                         </div>
                     </div>
@@ -133,11 +141,18 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-6 m-auto">
-                            <a href="<?php the_permalink() ?>" class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink() ?>"
+                               class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
                         <div class="col-6 text-right m-auto">
                             <a class="portfolio-header__site"
-                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                                <?php
+                                $url = get_post_meta(get_the_ID(), 'website', true);;
+                                $domain = parse_url($url, PHP_URL_HOST);
+                                echo $domain;
+                                ?>
+                            </a>
                         </div>
                     </div>
 
@@ -167,7 +182,7 @@ Template Post Type: post, page, product
                     </div>
 
                     <div class="row portfolio-content">
-                        <div class="col portfolio-content__text">
+                        <div class="col-lg-9 col-12 portfolio-content__text">
                             <?php the_content(); ?>
                         </div>
                     </div>
@@ -189,11 +204,18 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-6 m-auto">
-                            <a href="<?php the_permalink() ?>" class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink() ?>"
+                               class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
                         <div class="col-6 text-right m-auto">
                             <a class="portfolio-header__site"
-                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                                <?php
+                                $url = get_post_meta(get_the_ID(), 'website', true);;
+                                $domain = parse_url($url, PHP_URL_HOST);
+                                echo $domain;
+                                ?>
+                            </a>
                         </div>
                     </div>
 
@@ -222,7 +244,7 @@ Template Post Type: post, page, product
                     </div>
 
                     <div class="row portfolio-content">
-                        <div class="col portfolio-content__text">
+                        <div class="col-lg-9 col-12 portfolio-content__text">
                             <?php the_content(); ?>
                         </div>
                     </div>
@@ -244,11 +266,18 @@ Template Post Type: post, page, product
 
                     <div class="row portfolio-header">
                         <div class="col-6 m-auto">
-                            <a href="<?php the_permalink() ?>" class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink() ?>"
+                               class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
                         <div class="col-6 text-right m-auto">
                             <a class="portfolio-header__site"
-                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>"><?php echo get_post_meta(get_the_ID(), 'website', true); ?></a>
+                               href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                                <?php
+                                $url = get_post_meta(get_the_ID(), 'website', true);;
+                                $domain = parse_url($url, PHP_URL_HOST);
+                                echo $domain;
+                                ?>
+                            </a>
                         </div>
                     </div>
 
@@ -277,7 +306,7 @@ Template Post Type: post, page, product
                     </div>
 
                     <div class="row portfolio-content">
-                        <div class="col portfolio-content__text">
+                        <div class="col-lg-9 col-12 portfolio-content__text">
                             <?php the_content(); ?>
                         </div>
                     </div>
