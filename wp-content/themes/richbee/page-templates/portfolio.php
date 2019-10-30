@@ -77,7 +77,8 @@ Template Post Type: post, page, product
                     $catquery->the_post(); ?>
 
                     <div class="row portfolio-header">
-                        <div class="col-6 m-auto">
+                        <div class="col-6 m-auto position-relative">
+                            <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
@@ -110,6 +111,7 @@ Template Post Type: post, page, product
 
                                      as $image_url): ?>
                                 <div class="swiper-slide">
+                                    <div class="swiper-slide__bg"></div>
                                     <img src="<?= $image_url ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
@@ -140,7 +142,8 @@ Template Post Type: post, page, product
                     $catquery->the_post(); ?>
 
                     <div class="row portfolio-header">
-                        <div class="col-6 m-auto">
+                        <div class="col-6 m-auto position-relative">
+                            <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
@@ -173,6 +176,7 @@ Template Post Type: post, page, product
 
                                      as $image_url): ?>
                                 <div class="swiper-slide">
+                                    <div class="swiper-slide__bg"></div>
                                     <img src="<?= $image_url ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
@@ -203,7 +207,8 @@ Template Post Type: post, page, product
                     $catquery->the_post(); ?>
 
                     <div class="row portfolio-header">
-                        <div class="col-6 m-auto">
+                        <div class="col-6 m-auto position-relative">
+                            <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
@@ -235,6 +240,7 @@ Template Post Type: post, page, product
 
                                      as $image_url): ?>
                                 <div class="swiper-slide">
+                                    <div class="swiper-slide__bg"></div>
                                     <img src="<?= $image_url ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
@@ -265,7 +271,8 @@ Template Post Type: post, page, product
                     $catquery->the_post(); ?>
 
                     <div class="row portfolio-header">
-                        <div class="col-6 m-auto">
+                        <div class="col-6 m-auto position-relative">
+                            <div class="portfolio-header__icon" style="background: url(<?php echo get_post_meta(get_the_ID(), 'icon', true); ?>);"></div>
                             <a href="<?php the_permalink() ?>"
                                class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                         </div>
@@ -297,6 +304,7 @@ Template Post Type: post, page, product
 
                                      as $image_url): ?>
                                 <div class="swiper-slide">
+                                    <div class="swiper-slide__bg"></div>
                                     <img src="<?= $image_url ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
@@ -324,7 +332,20 @@ Template Post Type: post, page, product
 <script>
     var swiperAll = new Swiper('.swiper-container-all', {
         slidesPerView: 3,
-        spaceBetween: 30,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
         navigation: {
             nextEl: '.swiper-button-next__all',
             prevEl: '.swiper-button-prev__all',
@@ -333,7 +354,20 @@ Template Post Type: post, page, product
 
     var swiperCoop = new Swiper('.swiper-container-coop', {
         slidesPerView: 3,
-        spaceBetween: 30,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
         navigation: {
             nextEl: '.swiper-button-next__coop',
             prevEl: '.swiper-button-prev__coop',
@@ -342,7 +376,20 @@ Template Post Type: post, page, product
 
     var swiperShops = new Swiper('.swiper-container-shops', {
         slidesPerView: 3,
-        spaceBetween: 30,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
         navigation: {
             nextEl: '.swiper-button-next__shops',
             prevEl: '.swiper-button-prev__shops',
@@ -351,7 +398,20 @@ Template Post Type: post, page, product
 
     var swiperService = new Swiper('.swiper-container-service', {
         slidesPerView: 3,
-        spaceBetween: 30,
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
         navigation: {
             nextEl: '.swiper-button-next__service',
             prevEl: '.swiper-button-prev__service',
@@ -361,7 +421,20 @@ Template Post Type: post, page, product
     jQuery('[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         var swiperAll = new Swiper('.swiper-container-all', {
             slidesPerView: 3,
-            spaceBetween: 30,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
             navigation: {
                 nextEl: '.swiper-button-next__all',
                 prevEl: '.swiper-button-prev__all',
@@ -370,7 +443,20 @@ Template Post Type: post, page, product
 
         var swiperCoop = new Swiper('.swiper-container-coop', {
             slidesPerView: 3,
-            spaceBetween: 30,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
             navigation: {
                 nextEl: '.swiper-button-next__coop',
                 prevEl: '.swiper-button-prev__coop',
@@ -379,7 +465,20 @@ Template Post Type: post, page, product
 
         var swiperShops = new Swiper('.swiper-container-shops', {
             slidesPerView: 3,
-            spaceBetween: 30,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
             navigation: {
                 nextEl: '.swiper-button-next__shops',
                 prevEl: '.swiper-button-prev__shops',
@@ -388,7 +487,20 @@ Template Post Type: post, page, product
 
         var swiperService = new Swiper('.swiper-container-service', {
             slidesPerView: 3,
-            spaceBetween: 30,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
             navigation: {
                 nextEl: '.swiper-button-next__service',
                 prevEl: '.swiper-button-prev__service',
