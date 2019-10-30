@@ -1197,10 +1197,11 @@ object {
 
 .portfolio-header__icon{
     position: absolute;
-    left: -120px;
+    left: -7.5rem;
     top: 0;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
+    background-size: cover !important;
 }
 
 .portfolio-tabs-tags__header {
