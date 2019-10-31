@@ -3418,7 +3418,15 @@ and (max-width: 575.7px) {
     }
 
     .swiper-slide__bg{
-        display: none;
+        width: 8%;
+    }
+
+    .swiper-slide{
+        max-width: 260px;
+    }
+
+    .swiper-slide img{
+        max-width: 255px;
     }
 
     .swiper-button-prev{
@@ -3467,10 +3475,6 @@ and (max-width: 575.7px) {
 
     .right-landing .position-relative img {
         margin-left: auto;
-    }
-
-    .swiper-slide img{
-        max-width: 290px;
     }
 
     .bg-left-landing {
