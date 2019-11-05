@@ -154,9 +154,9 @@
         <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog"
              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-960 modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="container-fluid">
+                <div class="modal-content border-0">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid p-0">
                             <div class="row">
                                 <div class="col-12 text-sm-center text-md-left col-sm-12">
                                     <div id="carouselPortfolioModal" class="carousel slide" data-ride="carousel">
