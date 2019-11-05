@@ -102,7 +102,7 @@ Template Post Type: post, page, product
 
                                          as $image_url): ?>
                                     <div class="swiper-slide">
-                                        <img src="<?= $image_url ?>" alt="">
+                                        <img data-toggle="modal" data-target="#portfolioModal" src="<?= $image_url ?>" alt="">
                                     </div>
                                 <?php endforeach; ?>
                                 <div class="swiper-slide swiper-slide__last">
@@ -175,7 +175,7 @@ Template Post Type: post, page, product
 
                                          as $image_url): ?>
                                     <div class="swiper-slide">
-                                        <img src="<?= $image_url ?>" alt="">
+                                        <img data-toggle="modal" data-target="#portfolioModal" src="<?= $image_url ?>" alt="">
                                     </div>
                                 <?php endforeach; ?>
                                 <div class="swiper-slide swiper-slide__last">
@@ -248,7 +248,7 @@ Template Post Type: post, page, product
 
                                          as $image_url): ?>
                                     <div class="swiper-slide">
-                                        <img src="<?= $image_url ?>" alt="">
+                                        <img data-toggle="modal" data-target="#portfolioModal" src="<?= $image_url ?>" alt="">
                                     </div>
                                 <?php endforeach; ?>
                                 <div class="swiper-slide swiper-slide__last">
@@ -321,7 +321,7 @@ Template Post Type: post, page, product
 
                                          as $image_url): ?>
                                     <div class="swiper-slide">
-                                        <img src="<?= $image_url ?>" alt="">
+                                        <img data-toggle="modal" data-target="#portfolioModal" src="<?= $image_url ?>" alt="">
                                     </div>
                                 <?php endforeach; ?>
                                 <div class="swiper-slide swiper-slide__last">
@@ -342,7 +342,6 @@ Template Post Type: post, page, product
         </div>
     </div>
 </div>
-
 
 <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 

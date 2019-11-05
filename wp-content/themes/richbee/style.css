@@ -1126,7 +1126,7 @@ object {
     margin-top: 90px;
 }
 
-.portfolio-header__hr{
+.portfolio-header__hr {
     margin: 0;
     margin-top: 30px;
 }
@@ -1140,7 +1140,7 @@ object {
     text-decoration: none;
 }
 
-.swiper-container-all, .swiper-container-coop, .swiper-container-service, .swiper-container-shops{
+.swiper-container-all, .swiper-container-coop, .swiper-container-service, .swiper-container-shops {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -1198,7 +1198,7 @@ object {
     margin-top: 60px;
 }
 
-.portfolio-header__icon{
+.portfolio-header__icon {
     position: absolute;
     left: -5.5rem;
     top: 0;
@@ -1217,14 +1217,19 @@ object {
     margin-bottom: 20px;
 }
 
-.swiper-button-next {
+.swiper-button-next, .carousel-control-next-icon {
     right: -40px;
     background-image: url(/wp-content/themes/richbee/svg/portfolio-right.svg);
 }
 
-.swiper-button-prev {
+.swiper-button-prev, .carousel-control-prev-icon {
     left: -40px;
     background-image: url(/wp-content/themes/richbee/svg/portfolio-left.svg);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 27px;
+    height: 44px;
 }
 
 .swiper-button-prev.swiper-button-disabled {
@@ -1246,15 +1251,15 @@ object {
     width: 33%;
     height: 100%;
     background: linear-gradient(270deg, #FFFFFF 15.43%, rgba(255, 255, 255, 0.7) 46.66%, rgba(255, 255, 255, 0) 100%);
-    z-index:10;
+    z-index: 10;
 }
 
-.swiper-slide img{
+.swiper-slide img {
     border: 1px solid #f5f5f5;
     border-radius: 8px;
 }
 
-#tabPortfolio .nav-link{
+#tabPortfolio .nav-link {
     background-color: transparent;
 }
 
@@ -3192,7 +3197,7 @@ and (max-width: 991px) {
         text-align: center;
     }
 
-    .portfolio-header__icon{
+    .portfolio-header__icon {
         display: none;
     }
 
@@ -3294,12 +3299,12 @@ and (max-width: 767.8px) {
         transform: scale(1, 1);
     }
 
-    .swiper-slide__bg{
+    .swiper-slide__bg {
         width: 50%;
 
     }
 
-    .swiper-slide__last{
+    .swiper-slide__last {
         display: none;
     }
 
@@ -3392,7 +3397,7 @@ and (max-width: 767.8px) {
         font-size: 30px !important;
     }
 
-    #tabPortfolio .nav-item:nth-of-type(3) .portfolio-tabs__link{
+    #tabPortfolio .nav-item:nth-of-type(3) .portfolio-tabs__link {
         margin: 0;
     }
 }
@@ -3405,35 +3410,35 @@ and (max-width: 575.7px) {
         margin: auto;
     }
 
-    #tabPortfolio{
+    #tabPortfolio {
         display: block;
     }
 
-    #tabPortfolio .nav-item:not(:first-of-type) .portfolio-tabs__link{
+    #tabPortfolio .nav-item:not(:first-of-type) .portfolio-tabs__link {
         margin: 0;
     }
 
-    .swiper-button-next{
+    .swiper-button-next {
         right: 10%;
     }
 
-    .swiper-slide__bg{
+    .swiper-slide__bg {
         width: 8%;
     }
 
-    .swiper-slide{
+    .swiper-slide {
         max-width: 260px;
     }
 
-    .swiper-slide img{
+    .swiper-slide img {
         max-width: 255px;
     }
 
-    .swiper-button-prev{
+    .swiper-button-prev {
         left: 10%;
     }
 
-    #tabPortfolio .nav-link{
+    #tabPortfolio .nav-link {
         text-align: center;
     }
 
@@ -3442,7 +3447,7 @@ and (max-width: 575.7px) {
         padding-right: 0;
     }
 
-    .swiper-container-all, .swiper-container-coop, .swiper-container-service, .swiper-container-shops{
+    .swiper-container-all, .swiper-container-coop, .swiper-container-service, .swiper-container-shops {
         max-width: 290px;
     }
 
