@@ -19,7 +19,8 @@ Template Post Type: post, page, product
             <div class="row">
                 <div class="col-lg-9 col-12">
                     <div class="btn w-100 first-block__btn">
-                        Расчитать стоимость онлайн
+                        Расчитать стоимость онлайн <img src="/wp-content/themes/richbee/svg/calculator.svg" class="ml-4"
+                                                        alt="">
                     </div>
                 </div>
             </div>
@@ -28,7 +29,7 @@ Template Post Type: post, page, product
             <div class="first-block-card">
                 <p class="first-block-card-header">История о том, <a href="#" class="first-block-card-header__link">как
                         мы производство щебня оцифровывали</a></p>
-                <p class="first-block-card-content">EPR-система для ООО "Рубеж В"</p>
+                <p class="first-block-card-content">EPR-система для <span>ООО "Рубеж В"</span></p>
                 <p class="first-block-card-link"><a href="#">Читать подробнее...</a></p>
                 <img class="first-block-card-img" src="/wp-content/themes/richbee/images/newstyle/rubezh-v.png" alt="">
             </div>
@@ -48,12 +49,12 @@ Template Post Type: post, page, product
                     любые другие онлайн-сервисы + создаем под ключ корпоративные сайты, интернет-магазины и
                     лендинги.</p>
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-12 col-sm-6 col-lg-5">
                         <div class="btn w-100 second-block-content__dev">
                             Услуги по разработке
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-sm-6 col-lg-5">
                         <div class="btn w-100 second-block-content__promotion">
                             услуги по продвижению
                         </div>
@@ -110,10 +111,10 @@ Template Post Type: post, page, product
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-center mt-5">
+                            <h3 class="text-center second-block-card-body__header">
                                 Корпоративный сайт
                             </h3>
-                            <p class="text-center">
+                            <p class="text-center second-block-card-body__content">
                                 от 110.000 рублей
                             </p>
                         </div>
@@ -156,10 +157,10 @@ Template Post Type: post, page, product
                                     </defs>
                                 </svg>
                             </div>
-                            <h3 class="text-center mt-5">
+                            <h3 class="second-block-card-body__header">
                                 Интернет-магазин
                             </h3>
-                            <p class="text-center">
+                            <p class="text-center second-block-card-body__content">
                                 от 150.000 рублей
                             </p>
                         </div>
@@ -215,10 +216,10 @@ Template Post Type: post, page, product
                                           fill="#DD4F24"/>
                                 </svg>
                             </div>
-                            <h3 class="text-center mt-5">
+                            <h3 class="second-block-card-body__header">
                                 Лендинг
                             </h3>
-                            <p class="text-center">
+                            <p class="text-center second-block-card-body__content">
                                 от 50.000 рублей
                             </p>
                         </div>
@@ -263,10 +264,10 @@ Template Post Type: post, page, product
                                     </defs>
                                 </svg>
                             </div>
-                            <h3 class="text-center mt-5">
+                            <h3 class="second-block-card-body__header">
                                 Разработка сервисов
                             </h3>
-                            <p class="text-center">
+                            <p class="text-center second-block-card-body__content">
                                 от 200.000 рублей
                             </p>
                         </div>
@@ -277,26 +278,30 @@ Template Post Type: post, page, product
     </div>
 </div>
 
-<div class="video-bg">
-    <div class="container video-block">
-        <div class="row">
-            <div class="col-lg-6 col-12">
-
-            </div>
-            <div class="col-lg-6 col-12">
-                <p class="video-block-header">Посмотрите, <span class="video-block-header__span">как проходит разработка в нашей студии</span>
-                </p>
-                <p class="video-block-content">Показываем процесс разработки сайта <a class="video-block-content__link"
-                                                                                      href="http://cherchen.ru/">cherchen.ru</a>
-                    для автора Александры Черчень (длительность - 2 минуты)</p>
+<?php if (get_post_meta($post->ID, 'youtube_id', true) !== ''): ?>
+    <div class="video-bg">
+        <div class="container video-block">
+            <div class="row">
+                <div class="col-lg-6 col-12 position-relative">
+                    <img class="youtube-bg" src="<?= get_post_meta($post->ID, 'youtube_bg', true) ?>" alt="">
+                    <span class="youtube-start-btn" data-toggle="modal" data-target="#youtubeModal"></span>
+                </div>
+                <div class="col-lg-6 col-12 m-auto">
+                    <p class="video-block-header">Посмотрите, <span class="video-block-header__span">как проходит разработка в нашей студии</span>
+                    </p>
+                    <p class="video-block-content">Показываем процесс разработки сайта <a
+                                class="video-block-content__link"
+                                href="http://cherchen.ru/">cherchen.ru</a>
+                        для автора Александры Черчень (длительность - 2 минуты)</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+<?php endif; ?>
 
-<div class="container">
+<div class="container conteiner-portfolio-main">
     <div class="row">
-        <div class="container mb-5 third-block position-relative">
+        <div class="container third-block position-relative">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-12 offset-0">
                     <h2 class="third-block__header text-center">
@@ -305,13 +310,13 @@ Template Post Type: post, page, product
                 </div>
             </div>
         </div>
-        <div class="container portfolio-tabs">
+        <div class="container portfolio-tabs portfolio-tabs-main">
 
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-12 offset-0">
                     <div class="row">
                         <div class="col-12">
-                            <ul class="nav mt-5" id="tabPortfolio" role="tablist">
+                            <ul class="nav" id="tabPortfolio" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link portfolio-tabs__link pl-0 pr-0 active" id="allTab"
                                        data-toggle="tab"
@@ -411,8 +416,8 @@ Template Post Type: post, page, product
 
                             <div class="row mt-custom-3">
                                 <div class="col">
-                                    <a href="/portfolio/#all" class="btn btn-see-all">
-                                        Посмотреть все работы
+                                    <a href="/portfolio/" class="btn btn-see-all">
+                                        Посмотреть все работы <img class="ml-4" src="/wp-content/themes/richbee/svg/landing-pageportfolio.svg" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -422,7 +427,6 @@ Template Post Type: post, page, product
                         <?php endwhile; ?>
                         <?php wp_reset_postdata(); ?>
                         <?php unset($portfolio_counter); ?>
-                        <?php unset($image_size); ?>
                     </div>
                 </div>
             </div>
@@ -498,8 +502,8 @@ Template Post Type: post, page, product
 
                             <div class="row mt-custom-3">
                                 <div class="col">
-                                    <a href="/portfolio/#coop" class="btn btn-see-all">
-                                        Посмотреть все работы
+                                    <a href="/portfolio/" class="btn btn-see-all">
+                                        Посмотреть все работы <img class="ml-4" src="/wp-content/themes/richbee/svg/landing-pageportfolio.svg" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -509,7 +513,6 @@ Template Post Type: post, page, product
                         <?php endwhile; ?>
                         <?php wp_reset_postdata(); ?>
                         <?php unset($portfolio_counter); ?>
-                        <?php unset($image_size); ?>
                     </div>
                 </div>
             </div>
@@ -585,8 +588,8 @@ Template Post Type: post, page, product
 
                             <div class="row mt-custom-3">
                                 <div class="col">
-                                    <a href="/portfolio/#shops" class="btn btn-see-all">
-                                        Посмотреть все работы
+                                    <a href="/portfolio/" class="btn btn-see-all">
+                                        Посмотреть все работы <img class="ml-4" src="/wp-content/themes/richbee/svg/landing-pageportfolio.svg" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -596,7 +599,6 @@ Template Post Type: post, page, product
                         <?php endwhile; ?>
                         <?php wp_reset_postdata(); ?>
                         <?php unset($portfolio_counter); ?>
-                        <?php unset($image_size); ?>
                     </div>
                 </div>
             </div>
@@ -671,8 +673,8 @@ Template Post Type: post, page, product
 
                             <div class="row mt-custom-3">
                                 <div class="col">
-                                    <a href="/portfolio/#service" class="btn btn-see-all">
-                                        Посмотреть все работы
+                                    <a href="/portfolio/" class="btn btn-see-all">
+                                        Посмотреть все работы <img class="ml-4" src="/wp-content/themes/richbee/svg/landing-pageportfolio.svg" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -682,13 +684,43 @@ Template Post Type: post, page, product
                         <?php endwhile; ?>
                         <?php wp_reset_postdata(); ?>
                         <?php unset($portfolio_counter); ?>
-                        <?php unset($image_size); ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<?php if (get_post_meta($post->ID, 'youtube_id', true) !== ''): ?>
+    <script>
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Replace the 'ytplayer' element with an <iframe> and
+        // YouTube player after the API code downloads.
+        var player;
+        var height = 496;
+        jQuery('#player').css('height', height);
+
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+                height: height + 'px',
+                width: '100%',
+                videoId: '<?= get_post_meta($post->ID, 'youtube_id', true); ?>'
+            });
+        }
+
+        jQuery('#youtubeModal').on('shown.bs.modal', function () {
+            player.playVideo();
+        });
+
+        jQuery('#youtubeModal').on('hidden.bs.modal', function (e) {
+            player.stopVideo();
+        })
+    </script>
+<?php endif; ?>
 </div><!-- .container -->
 <div class="container">
     <div class="row">

@@ -27,15 +27,16 @@
                                     <p class="prefooter-block-card__info">Если вам нужна разработка сайта или его
                                         продвижение, то предлагаем обсудить это:</p>
                                     <div class="prefooter-block-card-links">
-                                        <a href="#" class="prefooter-block-card-links_link">8 (926) 655-69-88</a>
-                                        <a href="#" class="prefooter-block-card-links_link">sales@richbee.ru</a>
-                                        <a href="#" class="prefooter-block-card-links_link">Написать в Telegram</a>
-                                        <a href="#" class="prefooter-block-card-links_link">Написать в WhatsApp</a>
+                                        <a href="tel:+79266556988" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/telephone.svg" alt="">8 (926) 655-69-88</a>
+                                        <a href="ailto:sales@richbee.ru" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/email.svg" alt="">sales@richbee.ru</a>
+                                        <a href="https://telegram.me/mr_richbee" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/telegram-footer.svg" alt="">Написать в Telegram</a>
+                                        <a href="https://wa.me/79266556988" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/whatsapp-footer.svg" alt="">Написать в WhatsApp</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-7 col-12">
-                                <div class="prefooter-block-card-bg"></div>
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&amp;width=100%&amp;height=601&amp;lang=ru_RU&amp;scroll=true">
+                                </script>
                             </div>
                         </div>
                     </div>
