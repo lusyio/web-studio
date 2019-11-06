@@ -230,7 +230,7 @@ Template Post Type: post, page, product
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
                 <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#uslugiModal"
                    data-whatever="разработку сервисов">
-                    <div class="card border-0" id="service">
+                    <div class="card border-0" id="service-icon">
                         <div class="card-body">
                             <div class="second-block-card-body text-center">
                                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
