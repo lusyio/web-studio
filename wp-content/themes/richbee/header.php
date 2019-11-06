@@ -209,7 +209,7 @@
             </div>
         </div>
         <?php endif; ?>
-
+        <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
         <script>
             jQuery(document).ready(function ($) {
                 $('#portfolioModal').on('show.bs.modal', function (event) {

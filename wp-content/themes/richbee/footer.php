@@ -75,7 +75,6 @@
 <?php endif; ?>
 </div><!-- #page -->
 
-<script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 
 <?php if (get_post_meta($post->ID, 'youtube_id', true) !== ''): ?>
     <script>

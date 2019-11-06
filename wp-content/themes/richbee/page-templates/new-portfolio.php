@@ -10,10 +10,29 @@ Template Post Type: post, page, product
 <div class="container post-block">
     <div class="row">
         <div class="col-12 col-lg-5">
-            <?php echo do_shortcode('[gallery option1="value1"]'); ?>
+            <div class="position-relative">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <?php
+                        global $post;
+                        $gallery = get_post_gallery_images($post);
+                        // Loop through each image in each gallery
+                        foreach ($gallery
+
+                                 as $image_url): ?>
+                            <div class="swiper-slide">
+                                <img data-toggle="modal" data-target="#portfolioModal" src="<?= $image_url ?>" alt="">
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="swiper-pagination swiper-pagination-img col"></div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6 col-12 m-auto">
-            <h1 class="post-block-header"><?php the_title(); ?></h1>
+        <div class="col-lg-6 col-12 ml-auto mr-auto">
+            <h1 class="post-block-header mt-4"><?php the_title(); ?></h1>
             <div class="row">
                 <div class="col">
                     <p class="post-block-title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
@@ -292,5 +311,23 @@ Template Post Type: post, page, product
         </div>
     </div>
 </div>
-
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                var imgList = [];
+                var img;
+                jQuery('.swiper-slide').each(function () {
+                    img = jQuery(this).find('img').attr('src');
+                    if (img !== undefined) {
+                        imgList.push(img);
+                    }
+                });
+                return '<img src="' + imgList[index] + '" class="' + className + '">';
+            },
+        },
+    });
+</script>
 <?php get_footer(); ?>

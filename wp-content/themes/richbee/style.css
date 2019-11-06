@@ -1389,6 +1389,22 @@ p.new {
     color: #FFFFFF;
     text-transform: uppercase;
     padding: 30px 46px;
+    -webkit-transition: ease-in 200ms;
+    -moz-transition: ease-in 200ms;
+    -ms-transition: ease-in 200ms;
+    -o-transition: ease-in 200ms;
+    transition: ease-in 200ms;
+}
+
+.first-block__btn:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    color: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(210, 84, 36, 0.5);
+    cursor: pointer;
 }
 
 .first-block-card {
@@ -1416,11 +1432,11 @@ p.new {
     color: #FFFFFF;
 }
 
-.first-block-card-header__link:hover{
+.first-block-card-header__link:hover {
     color: #FFFFFF;
 }
 
-.first-block-card-link a:hover{
+.first-block-card-link a:hover {
     color: #FFFFFF;
 }
 
@@ -1432,7 +1448,7 @@ p.new {
     margin-bottom: 63px;
 }
 
-.first-block-card-content span{
+.first-block-card-content span {
     display: block;
 }
 
@@ -1560,7 +1576,7 @@ p.new {
     height: 102px;
 }
 
-.youtube-bg{
+.youtube-bg {
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
     border-radius: 13px;
 }
@@ -1599,7 +1615,7 @@ p.new {
     margin-left: 30px;
 }
 
-#youtubeModal .modal-960{
+#youtubeModal .modal-960 {
     max-width: 880px;
     margin: 3rem auto;
 }
@@ -1622,7 +1638,7 @@ p.new {
     margin-bottom: 54px;
 }
 
-.portfolio-tabs-main #tabPortfolio{
+.portfolio-tabs-main #tabPortfolio {
     justify-content: space-between;
 }
 
@@ -1637,9 +1653,25 @@ p.new {
     border-radius: 45px;
     padding: 22px 46px;
     margin-top: 50px;
+    -webkit-transition: ease-in 200ms;
+    -moz-transition: ease-in 200ms;
+    -ms-transition: ease-in 200ms;
+    -o-transition: ease-in 200ms;
+    transition: ease-in 200ms;
 }
 
-.conteiner-portfolio-main{
+.btn-see-all:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    color: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(210, 84, 36, 0.5);
+    cursor: pointer;
+}
+
+.conteiner-portfolio-main {
     padding-bottom: 90px;
 }
 
@@ -1738,7 +1770,7 @@ ymaps {
     border-bottom-right-radius: 20px;
 }
 
-.post-block-header{
+.post-block-header {
     font-weight: 900;
     font-size: 36px;
     line-height: 129.2%;
@@ -1748,7 +1780,7 @@ ymaps {
     margin-bottom: 8px;
 }
 
-.post-block-title{
+.post-block-title {
     font-weight: 300;
     font-size: 18px;
     line-height: 48px;
@@ -1756,7 +1788,7 @@ ymaps {
     margin-bottom: 30px;
 }
 
-.post-block-content p{
+.post-block-content p {
     font-weight: 300;
     font-size: 18px;
     line-height: 36px;
@@ -1764,18 +1796,18 @@ ymaps {
     margin-bottom: 55px;
 }
 
-.post-block{
+.post-block {
     padding-bottom: 80px;
 }
 
-.post-block-site__link{
+.post-block-site__link {
     font-weight: bold;
     font-size: 18px;
     line-height: 36px;
     color: #DD4F24;
 }
 
-.post-block-site{
+.post-block-site {
     font-weight: 300;
     font-size: 18px;
     line-height: 36px;
@@ -2619,23 +2651,52 @@ body {
     z-index: 1;
 }
 
+.swiper-pagination-img {
+    margin-top: 40px;
+    position: relative;
+    text-align: left;
+}
+
+.swiper-pagination-img img:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.swiper-pagination-img img {
+    margin-right: 13px;
+    margin-bottom: 13px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    border: 1px solid #02021E;
+}
+
 .second-block .card {
     z-index: 2;
     background: #FFFFFF;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    transition: 150ms;
     position: relative;
+    -webkit-transition: ease-in 200ms;
+    -moz-transition: ease-in 200ms;
+    -ms-transition: ease-in 200ms;
+    -o-transition: ease-in 200ms;
+    transition: ease-in 200ms;
 }
 
 .second-block .card:hover {
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
     -webkit-transform: translateY(-5px);
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
     transform: translateY(-5px);
     z-index: 5;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
 }
 
 .bg-left-landing {
