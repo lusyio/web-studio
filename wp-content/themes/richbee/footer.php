@@ -21,7 +21,7 @@
                 <div class="col">
                     <div class="prefooter-block-card">
                         <div class="row">
-                            <div class="col-lg-5 col-12">
+                            <div class="col-xl-5 col-lg-6 col-12">
                                 <div class="prefooter-block-card-body">
                                     <p class="prefooter-block-card__header">Пообщаемся?</p>
                                     <p class="prefooter-block-card__info">Если вам нужна разработка сайта или его
@@ -34,7 +34,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-7 col-12">
+                            <div class="col-xl-7 col-lg-6 col-12">
                                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true">
                                 </script>
                             </div>

@@ -1366,7 +1366,7 @@ p.new {
 
 .first-block__header {
     font-weight: 900;
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 129.2%;
     color: #02021E;
     margin-top: 0;
@@ -1392,7 +1392,7 @@ p.new {
     line-height: 16px;
     color: #FFFFFF;
     text-transform: uppercase;
-    padding: 30px 46px;
+    padding: 25px 24px;
     -webkit-transition: ease-in 200ms;
     -moz-transition: ease-in 200ms;
     -ms-transition: ease-in 200ms;
@@ -1465,6 +1465,8 @@ p.new {
 
 .first-block-card-link {
     margin-bottom: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .first-block-card-img {
@@ -1482,7 +1484,7 @@ p.new {
 
 .second-block-header {
     font-weight: 300;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 60px;
     color: #02021E;
     margin-top: 0;
@@ -1491,10 +1493,18 @@ p.new {
 
 .second-block-header__span {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 60px;
     color: #02021E;
     display: block;
+}
+
+.post-block .swiper-slide{
+    max-width: unset;
+}
+
+.post-block .swiper-slide img{
+    max-width: 290px;
 }
 
 .second-block-content {
@@ -1578,11 +1588,14 @@ p.new {
     background-repeat: no-repeat;
     width: 106px;
     height: 102px;
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 
 .youtube-bg {
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
     border-radius: 13px;
+    width: 100%;
 }
 
 .youtube-start-btn:hover {
@@ -1637,7 +1650,7 @@ p.new {
 
 .third-block__header {
     font-weight: 900;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 64px;
     text-align: center;
     color: #02021E;
@@ -3678,6 +3691,11 @@ and (max-width: 1199.7px) {
         bottom: 35%;
         right: 28%;
     }
+
+    .first-block-card-img{
+        right: -100px;
+    }
+
 }
 
 @media screen
@@ -3688,6 +3706,26 @@ and (max-width: 991px) {
 
     .footer-container .first-card {
         text-align: center;
+    }
+
+    .first-block-card-img{
+        right: 0;
+        top: 30px;
+        max-width: 60%;
+    }
+
+    .video-block-header{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .video-block-content{
+        margin-left: 0;
+    }
+
+    ymaps{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
     }
 
     .portfolio-header__icon {
@@ -3795,6 +3833,11 @@ and (max-width: 767.8px) {
     .swiper-slide__bg {
         width: 50%;
 
+    }
+
+    .youtube-start-btn{
+        height: 75px;
+        width: 75px;
     }
 
     .swiper-slide__last {
@@ -3917,6 +3960,19 @@ and (max-width: 575.7px) {
 
     .swiper-slide__bg {
         width: 8%;
+    }
+
+    .btn-see-all{
+        width: 100%;
+        padding: 22px 33px;
+    }
+
+    .first-block-card-img{
+        top: 60%;
+    }
+
+    .first-block__btn{
+        padding: 25px 14px;
     }
 
     .swiper-slide {
@@ -4061,6 +4117,10 @@ and (max-width: 575.7px) {
 
     .banner {
         padding: 0;
+    }
+
+    .prefooter-block-card-body{
+        padding: 30px 15px 45px 15px;
     }
 }
 
