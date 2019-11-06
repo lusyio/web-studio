@@ -77,6 +77,38 @@
 
 <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
 
+<?php if (get_post_meta($post->ID, 'youtube_id', true) !== ''): ?>
+    <script>
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Replace the 'ytplayer' element with an <iframe> and
+        // YouTube player after the API code downloads.
+        var player;
+        var height = 496;
+        jQuery('#player').css('height', height);
+
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+                height: height + 'px',
+                width: '100%',
+                videoId: '<?= get_post_meta($post->ID, 'youtube_id', true); ?>'
+            });
+        }
+
+        jQuery('#youtubeModal').on('shown.bs.modal', function () {
+            player.playVideo();
+        });
+
+        jQuery('#youtubeModal').on('hidden.bs.modal', function (e) {
+            player.stopVideo();
+        })
+    </script>
+<?php endif; ?>
+
 <script>
     jQuery(document).ready(function ($) {
         jQuery('.swiper-container-all').each(function () {

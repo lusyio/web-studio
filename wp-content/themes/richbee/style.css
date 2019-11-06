@@ -1730,6 +1730,51 @@ ymaps {
     border-bottom-right-radius: 20px;
 }
 
+.post-block-header{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 129.2%;
+    color: #02021E;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.post-block-title{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 48px;
+    color: #040404;
+    margin-bottom: 30px;
+}
+
+.post-block-content p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #040404;
+    margin-bottom: 55px;
+}
+
+.post-block{
+    padding-bottom: 80px;
+}
+
+.post-block-site__link{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    color: #DD4F24;
+}
+
+.post-block-site{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #040404;
+    margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # newstyle
 --------------------------------------------------------------*/
