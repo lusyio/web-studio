@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-7 col-12">
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&amp;width=100%&amp;height=601&amp;lang=ru_RU&amp;scroll=true">
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true">
                                 </script>
                             </div>
                         </div>

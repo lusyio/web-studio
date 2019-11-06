@@ -317,8 +317,8 @@ Template Post Type: post, page, product
             el: '.swiper-pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                var imgList = [];
-                var img;
+                let imgList = [];
+                let img;
                 jQuery('.swiper-slide').each(function () {
                     img = jQuery(this).find('img').attr('src');
                     if (img !== undefined) {

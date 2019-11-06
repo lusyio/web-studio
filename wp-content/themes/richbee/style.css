@@ -1160,6 +1160,10 @@ object {
     color: #000000;
 }
 
+.portfolio-header__site:hover{
+    color: #000000;
+}
+
 .portfolio__title {
     font-weight: normal;
     font-size: 20px;
@@ -1627,6 +1631,10 @@ p.new {
     color: #FFFFFF;
 }
 
+.video-block-content__link:hover{
+    color: #FFFFFF;
+}
+
 .third-block__header {
     font-weight: 900;
     font-size: 48px;
@@ -1757,8 +1765,8 @@ p.new {
     margin-bottom: 7px;
 }
 
-.prefooter-block-card-bg {
-
+.prefooter-block-card-links_link:hover{
+    color: #040404;
 }
 
 ymaps {
