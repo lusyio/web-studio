@@ -72,6 +72,8 @@ Template Post Type: post, page, product
         </div>
     </div>
 <?php endif; ?>
+</div>
+</div>
 
 <div class="second-block-bg bg-white">
     <div class="container position-relative second-block mb-5">
@@ -453,4 +455,7 @@ Template Post Type: post, page, product
         },
     });
 </script>
-<?php get_footer(); ?>
+
+<div class="container">
+    <div class="row">
+        <?php get_footer(); ?>
