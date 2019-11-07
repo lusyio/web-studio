@@ -108,7 +108,7 @@ Template Post Type: post, page, product
                                                 Корпоративный сайт
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
-                                                <?= (get_post_meta($post->ID, 'coop-site__price', true) !== '') ? 'get_post_meta($post->ID, \'coop-site__price\', true)' : 'от 80.000 рублей'; ?>
+                                                <?= (get_post_meta($post->ID, 'coop-site__price', true) !== '') ? get_post_meta($post->ID, 'coop-site__price', true) : 'от 80.000 рублей'; ?>
                                             </p>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@ Template Post Type: post, page, product
                                                 Интернет-магазин
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
-                                                <?= (get_post_meta($post->ID, 'shop__price', true) !== '') ? 'get_post_meta($post->ID, \'shop__price\', true)' : 'от 110.000 рублей'; ?>
+                                                <?= (get_post_meta($post->ID, 'shop__price', true) !== '') ? get_post_meta($post->ID, 'shop__price', true) : 'от 110.000 рублей'; ?>
                                             </p>
                                         </div>
                                     </div>
@@ -213,7 +213,7 @@ Template Post Type: post, page, product
                                                 Лендинг
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
-                                                <?= (get_post_meta($post->ID, 'landing__price', true) !== '') ? 'get_post_meta($post->ID, \'landing__price\', true)' : 'от 50.000 рублей'; ?>
+                                                <?= (get_post_meta($post->ID, 'landing__price', true) !== '') ? get_post_meta($post->ID, 'landing__price', true) : 'от 50.000 рублей'; ?>
                                             </p>
                                         </div>
                                     </div>
@@ -261,7 +261,7 @@ Template Post Type: post, page, product
                                                 Разработка сервисов
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
-                                                <?= (get_post_meta($post->ID, 'service__price', true) !== '') ? 'get_post_meta($post->ID, \'service__price\', true)' : 'от 150.000 рублей'; ?>
+                                                <?= (get_post_meta($post->ID, 'service__price', true) !== '') ? get_post_meta($post->ID, 'service__price', true) : 'от 150.000 рублей'; ?>
                                             </p>
                                         </div>
                                     </div>
@@ -308,7 +308,7 @@ Template Post Type: post, page, product
                                                 SEO продвижение
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
-                                                <?= (get_post_meta($post->ID, 'seo__price', true) !== '') ? 'get_post_meta($post->ID, \'seo__price\', true)' : 'от 10.000 рублей'; ?>
+                                                <?= (get_post_meta($post->ID, 'seo__price', true) !== '') ? get_post_meta($post->ID, 'seo__price', true) : 'от 10.000 рублей'; ?>
                                                 от 10.000 рублей
                                             </p>
                                         </div>
@@ -353,7 +353,7 @@ Template Post Type: post, page, product
                                                 Яндекс.Директ
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
-                                                <?= (get_post_meta($post->ID, 'direct__price', true) !== '') ? 'get_post_meta($post->ID, \'direct__price\', true)' : 'от 25.000 рублей'; ?>
+                                                <?= (get_post_meta($post->ID, 'direct__price', true) !== '') ? get_post_meta($post->ID, 'direct__price', true) : 'от 25.000 рублей'; ?>
                                             </p>
                                         </div>
                                     </div>
@@ -388,7 +388,7 @@ Template Post Type: post, page, product
                                                 Реклама ВКонтакте
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
-                                                <?= (get_post_meta($post->ID, 'vk__price', true) !== '') ? 'get_post_meta($post->ID, \'vk__price\', true)' : 'от 30.000 рублей'; ?>
+                                                <?= (get_post_meta($post->ID, 'vk__price', true) !== '') ? get_post_meta($post->ID, 'vk__price', true) : 'от 30.000 рублей'; ?>
                                             </p>
                                         </div>
                                     </div>
