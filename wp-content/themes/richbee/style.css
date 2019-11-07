@@ -1826,6 +1826,11 @@ p.new {
     margin-bottom: 7px;
 }
 
+.prefooter-block-card-links_link img{
+    width: 30px;
+    height: 48px;
+}
+
 .prefooter-block-card-links_link:hover {
     color: #040404;
 }

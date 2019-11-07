@@ -26,7 +26,7 @@ Template Post Type: post, page, product
         </div>
         <div class="col-sm-6 col-12">
             <p>Адрес офиса</p>
-            <h3><a href="https://yandex.ru/maps/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&source=constructorLink" class="prefooter-block-card-links_link">Москва, 3-я Мытищинская улица, 16с60</a></h3>
+            <h3><a href="https://yandex.ru/maps/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&source=constructorLink" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/office.svg" alt="">Москва, 3-я Мытищинская улица, 16с60</a></h3>
         </div>
         <div class="col-sm-12 mt-3">
             <script type="text/javascript" charset="utf-8" async
