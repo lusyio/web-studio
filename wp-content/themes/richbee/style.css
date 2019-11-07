@@ -1466,7 +1466,7 @@ p.new {
 .first-block-card-link {
     margin-bottom: 0;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .first-block-card-img {
@@ -1782,8 +1782,9 @@ p.new {
     color: #040404;
 }
 
-ymaps {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+.prefooter-block-card .col-xl-7 > ymaps {
+    -ms-filter: gray(100%);
+    filter: grayscale(100%);
     /* Firefox 3.5+ */
     -webkit-filter: grayscale(100%);
     /* Chrome 19+ & Safari 6+ */
