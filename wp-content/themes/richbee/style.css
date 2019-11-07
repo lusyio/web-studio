@@ -1149,11 +1149,11 @@ object {
     z-index: 1;
 }
 
-.swiper-container-img img{
+.swiper-container-img img {
     max-width: 100% !important;
 }
 
-.swiper-container-services{
+.swiper-container-services {
     margin: 0 auto;
     overflow: hidden;
     list-style: none;
@@ -1394,12 +1394,12 @@ p.new {
     margin-bottom: 50px;
 }
 
-.btn-promo-lusy:hover{
+.btn-promo-lusy:hover {
     background: linear-gradient(180deg, #7f7ef7 0%, #7E7BFC 100%);
     color: #F6F6F6;
 }
 
-.btn-promo-lusy{
+.btn-promo-lusy {
     background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
     border-radius: 120px !important;
     padding: 12px 27px;
@@ -3994,7 +3994,7 @@ and (max-width: 767.8px) {
         margin: 0;
     }
 
-    .single-post > ul, ol{
+    .single-post > ul, ol {
         padding: 15px 35px 20px;
     }
 }
@@ -4009,6 +4009,10 @@ and (max-width: 575.7px) {
 
     .banner {
         display: none;
+    }
+
+    .swiper-container-services .swiper-slide {
+        max-width: unset !important;
     }
 
     #tabPortfolio {
