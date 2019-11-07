@@ -309,7 +309,6 @@ Template Post Type: post, page, product
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
                                                 <?= (get_post_meta($post->ID, 'seo__price', true) !== '') ? get_post_meta($post->ID, 'seo__price', true) : 'от 10.000 рублей'; ?>
-                                                от 10.000 рублей
                                             </p>
                                         </div>
                                     </div>

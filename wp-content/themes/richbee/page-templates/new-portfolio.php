@@ -11,7 +11,7 @@ Template Post Type: post, page, product
     <div class="row">
         <div class="col-12 col-lg-5">
             <div class="position-relative">
-                <div class="swiper-container">
+                <div class="swiper-container swiper-container-img">
                     <div class="swiper-wrapper">
                         <?php
                         global $post;
@@ -343,7 +343,6 @@ Template Post Type: post, page, product
                                             </h3>
                                             <p class="text-center second-block-card-body__content">
                                                 <?= (get_post_meta($post->ID, 'seo__price', true) !== '') ? get_post_meta($post->ID, 'seo__price', true) : 'от 10.000 рублей'; ?>
-                                                от 10.000 рублей
                                             </p>
                                         </div>
                                     </div>
@@ -436,9 +435,9 @@ Template Post Type: post, page, product
     </div>
 </div>
 <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container-img', {
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-pagination-img',
             clickable: true,
             renderBullet: function (index, className) {
                 let imgList = [];

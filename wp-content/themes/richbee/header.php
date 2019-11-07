@@ -185,29 +185,29 @@
             </div>
         </div>
 
-        <?php if ( get_post_meta($post->ID, 'youtube_id', true) !== '' ):?>
-        <div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog"
-             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-960 modal-dialog-centered" role="document">
-                <div class="modal-content border-0">
-                    <div class="modal-body p-0">
-                        <div class="container-fluid p-0">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div id="player">
-                                        <div id="ytplayer"></div>
+        <?php if (get_post_meta($post->ID, 'youtube_id', true) !== ''): ?>
+            <div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-960 modal-dialog-centered" role="document">
+                    <div class="modal-content border-0">
+                        <div class="modal-body p-0">
+                            <div class="container-fluid p-0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="player">
+                                            <div id="ytplayer"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <span class="close-modal">
+                        <span class="close-modal">
                         <button type="button" class="btn" data-dismiss="modal"><img
                                     src="/wp-content/themes/richbee/svg/cross.svg" alt=""></button>
                     </span>
+                    </div>
                 </div>
             </div>
-        </div>
         <?php endif; ?>
         <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
         <script>

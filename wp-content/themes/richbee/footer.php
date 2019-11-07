@@ -122,9 +122,8 @@
     jQuery(document).ready(function ($) {
 
         var swiperServises = new Swiper('.swiper-container-services', {
-            spaceBetween: 300,
             pagination: {
-                el: '.swiper-pagination',
+                el: '.servises-pagination',
                 clickable: true,
                 renderBullet: function (index, className) {
                     let name = ['УСЛУГИ ПО РАЗРАБОТКЕ', 'УСЛУГИ ПО ПРОДВИЖЕНИЮ'];

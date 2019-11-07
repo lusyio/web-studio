@@ -989,12 +989,12 @@ object {
     color: #333;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 1px dashed #7685f8;
+    border-bottom: 1px dashed #DD4F24;
     transition: 200ms;
 }
 
 .single-post > p a:hover {
-    border-bottom: 1px solid #7685f8;
+    border-bottom: 1px solid #DD4F24;
 }
 
 .single-post > ul, ol {
@@ -1007,14 +1007,14 @@ object {
 .single-post .btn-primary {
     color: #fff;
     padding: 12px 27px;
-    background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+    background: #DD4F24;
     border: 0;
     border-radius: 120px;
     font-weight: normal;
 }
 
 .single-post .btn-primary:hover {
-    background: linear-gradient(180deg, #7f7ef7 0%, #7E7BFC 100%);
+    background: #DD4F24;
     color: #F6F6F6;
     border: 0;
 }
@@ -1042,11 +1042,11 @@ object {
 .single-post blockquote {
     padding: 80px 120px;
     margin: 0 0 20px;
-    border-top: 5px solid #7085FE;
+    border-top: 5px solid #DD4F24;
     font-style: italic;
     text-align: center;
     background: white;
-    border-bottom: 5px solid #7E7BFC;
+    border-bottom: 5px solid #DD4F24;
     position: relative;
 }
 
@@ -1082,7 +1082,7 @@ object {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 16px;
-    color: #7085FE;
+    color: #DD4F24;
 }
 
 .meta .sep {
@@ -1147,6 +1147,16 @@ object {
     list-style: none;
     padding: 0;
     z-index: 1;
+}
+
+.swiper-container-img img{
+    max-width: 100% !important;
+}
+
+.swiper-container-services{
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .portfolio-header__content:hover {
@@ -1360,7 +1370,7 @@ p.new {
 }
 
 #portfolioModal .modal-960 {
-    max-width: 570px;
+    max-width: 620px;
     margin: 3rem auto 0 auto;
 }
 
@@ -2013,7 +2023,7 @@ ymaps {
     font-size: 18px;
     line-height: 21px;
     text-align: right;
-    color: #7085FE;
+    color: #DD4F24;
     display: inline-block;
     margin-top: 53%;
 }
@@ -2065,7 +2075,7 @@ ymaps {
 .alert-success {
     color: #5c5c5c;
     background-color: #ffffff;
-    border-color: #7085FE;
+    border-color: #DD4F24;
     padding: 35px 20px;
     text-align: center;
     margin-top: 40px;
@@ -2076,7 +2086,7 @@ ymaps {
     font-size: 40px;
     display: block;
     margin-top: 20px;
-    color: #7085FE;
+    color: #DD4F24;
 }
 
 #uslugiModal .input-group .form-control {
@@ -2189,7 +2199,7 @@ ymaps {
 }
 
 .recall-block a:hover img {
-    background: #7282fd14
+    background: #DD4F2414
 }
 
 .navbar-toggler {
@@ -2223,7 +2233,7 @@ ymaps {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    color: #7684f8 !important;
+    color: #DD4F24 !important;
 }
 
 .navbar-brand .site-title-info {
@@ -2398,7 +2408,7 @@ body {
     box-sizing: border-box;
     margin: 2px 10px 2px 0;
     border: solid 2px; /* Safari */
-    border-color: #7085FE;
+    border-color: #DD4F24;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -2444,7 +2454,7 @@ body {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+    background: #DD4F24;
     transform: translate(5px, 5px) scale(0);
     transition: transform 0.2s;
 }
@@ -2480,11 +2490,11 @@ body {
 
 /* Checked */
 .radio-block .service-type label > input:checked {
-    background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+    background: #DD4F24;
 }
 
 .radio-block .service-type label > input:checked + span::before {
-    border-color: #7085FE;
+    border-color: #DD4F24;
 }
 
 .radio-block .service-type label > input:checked + span::after {
@@ -2540,7 +2550,7 @@ body {
 }
 
 .radio-block .service-type label > input:active + span::before {
-    border-color: #7085FE;
+    border-color: #DD4F24;
 }
 
 /* Disabled */
@@ -2558,7 +2568,7 @@ body {
 }
 
 .btn-input-landing {
-    background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+    background: #DD4F24;
     border-radius: 120px !important;
     padding: 12px 27px;
     border: 0;
@@ -2566,13 +2576,13 @@ body {
 }
 
 .btn-input-landing:hover {
-    background: linear-gradient(180deg, #7f7ef7 0%, #7E7BFC 100%);
+    background: #DD4F24;
     color: #F6F6F6;
 }
 
 .card-body-primary {
-    background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
-    box-shadow: 0px 5px 15px rgba(123, 125, 252, 0.35);
+    background: #DD4F24;
+    box-shadow: 0px 10px 15px rgba(210, 84, 36, 0.26);
     border-radius: 20px;
 }
 
