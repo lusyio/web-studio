@@ -14,11 +14,10 @@ get_header(); ?>
 
             <?php
             if (have_posts()) : ?>
-            <img class="position-absolute richbee" src="/wp-content/themes/richbee/images/RICHBEE.png" alt="">
             <div class="row">
-                <div class="col">
-                    <h1 class="new text-center">
-                        <?= single_cat_title(); ?>
+                <div class="col text-center">
+                    <h1 class="new mb-4 position-relative"><?= single_cat_title(); ?>
+                        <div class="singletopp">RICHBEE</div>
                     </h1>
                 </div>
             </div>
