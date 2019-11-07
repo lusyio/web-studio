@@ -701,6 +701,10 @@ a img.aligncenter {
     font-weight: 300;
 }
 
+.contacts {
+    min-height: 400px;
+}
+
 .img-protfolio {
     -webkit-box-shadow: 5px 9px 25px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 5px 9px 25px 0px rgba(0, 0, 0, 0.25);
@@ -1839,7 +1843,7 @@ ymaps {
     border-bottom-right-radius: 20px;
 }
 
-.contacts ymaps{
+.contacts ymaps {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
