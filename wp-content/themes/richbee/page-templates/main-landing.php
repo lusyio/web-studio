@@ -590,7 +590,7 @@ Template Post Type: post, page, product
                             <div class="row portfolio">
                                 <div class="col">
                                     <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                                    <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                                    <p class="portfolio__tags"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
                                 </div>
                             </div>
 
@@ -678,7 +678,7 @@ Template Post Type: post, page, product
                             <div class="row portfolio">
                                 <div class="col">
                                     <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                                    <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                                    <p class="portfolio__tags"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
                                 </div>
                             </div>
 
@@ -765,7 +765,7 @@ Template Post Type: post, page, product
                             <div class="row portfolio">
                                 <div class="col">
                                     <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                                    <p class="portfolio__tags">Проектировка + Разработка + Дизайн</p>
+                                    <p class="portfolio__tags"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
                                 </div>
                             </div>
 
