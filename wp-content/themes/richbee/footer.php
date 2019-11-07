@@ -29,13 +29,13 @@
                                         <p class="prefooter-block-card__info">Если вам нужна разработка сайта или его
                                             продвижение, то предлагаем обсудить это:</p>
                                         <div class="prefooter-block-card-links">
-                                            <a href="tel:+79266556988" class="prefooter-block-card-links_link"><img
+                                            <a href="tel:<?php echo apply_filters('make_link_for_phone', get_option('header_contact_setting_phone')) ?>" class="prefooter-block-card-links_link"><img
                                                         class="mr-4" src="/wp-content/themes/richbee/svg/telephone.svg"
-                                                        alt="">8 (926) 655-69-88</a>
-                                            <a href="ailto:sales@richbee.ru"
+                                                        alt=""><?php echo apply_filters('make_title_for_phone', get_option('header_contact_setting_phone')) ?></a>
+                                            <a href="<?php echo get_option('header_contact_setting_email') ?>"
                                                class="prefooter-block-card-links_link"><img
                                                         class="mr-4" src="/wp-content/themes/richbee/svg/email.svg"
-                                                        alt="">sales@richbee.ru</a>
+                                                        alt=""><?php echo get_option('header_contact_setting_email') ?></a>
                                             <a href="https://telegram.me/mr_richbee"
                                                class="prefooter-block-card-links_link"><img class="mr-4"
                                                                                             src="/wp-content/themes/richbee/svg/telegram-footer.svg"
@@ -111,7 +111,7 @@
             player = new YT.Player('ytplayer', {
                 height: height + 'px',
                 width: '100%',
-                videoId: '<?= get_post_meta($post->ID, 'youtube_id', true); ?>'
+                videoId: '<?= get_option('header_youtube_setting_youtubeid') ?>'
             });
         }
 

@@ -48,7 +48,7 @@
                                 src="/wp-content/themes/richbee/svg/telegram-header.svg" alt=""></a>
                     <a title="WhatsApp" href="https://wa.me/79266556988"><img
                                 src="/wp-content/themes/richbee/svg/whatsapp-header.svg" alt=""></a>
-                    <a title="Позвонить" class="header-phone ml-3" href="tel:+79266556988">8 (926) 655-69-88</a>
+                    <a title="Позвонить" class="header-phone ml-3" href="tel:<?php echo apply_filters('make_link_for_phone', get_option('header_contact_setting_phone')) ?>"><?php echo apply_filters('make_title_for_phone', get_option('header_contact_setting_phone')) ?></a>
                     <p class="m-0 recall"><a href="#" data-toggle="modal" data-target="#uslugiModal"
                                              data-whatever="обратный звонок">Обратный звонок</a></p>
                 </div>

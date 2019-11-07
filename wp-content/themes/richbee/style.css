@@ -1099,7 +1099,7 @@ object {
 
 .singletopp {
     font-size: 2.5em;
-    color: #DD4F220d;
+    color: #fafafa;
     text-transform: uppercase;
     font-weight: bold;
     position: absolute;
@@ -1210,8 +1210,13 @@ object {
     color: #C4C4C4;
 }
 
+.portfolio-tabs__link:hover{
+    color: #000;
+}
+
 .portfolio-tabs__link.active {
-    color: #4B93FF;
+    color: #000;
+    font-weight: bold;
 }
 
 .portfolio-tabs-tags {
@@ -2295,6 +2300,14 @@ h2.sub {
     font-size: 24px !important;
     line-height: 30px !important;
     color: #0F0F0F !important;
+}
+
+h2.sub a{
+    color: #DD4F24;
+}
+
+h2.sub a:hover{
+    color: #DD4F24;
 }
 
 .text--secondary, .fifth-block .text--secondary {

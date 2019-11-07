@@ -637,35 +637,344 @@ function add_lusy_banner($atts)
         'url' => 'https://lusy.io/?promo=LIOLUSYIO', // параметр 4
         'url-name' => 'Lusy.io', // параметр 5
     ), $atts);
-    return "<div class=\"row\">
-                        <div class=\"col p-0 pl-md-3 pr-md-3\">
-                            <div class=\"card border-0 text-center\">
-                                <div class=\"card-body p-0 banner pt-4 pt-xl-5 pb-5\">
-                                    <div class=\"swiper-container vertical p-0\">
-                                        <div class=\"swiper-wrapper\">
-                                            <div class=\"swiper-slide swiper-slide-vertical\">
-                                                <h2 class=\"new m-0\">
-                                                {$params['h2-1']}
-                                                </h2>
-                                            </div>
-                                            <div class=\"swiper-slide swiper-slide-vertical\">
-                                                <h2 class=\"new m-0\">
-                                                    {$params['h2-2']}
-                                                </h2>
-                                            </div>
-                                            <div class=\"swiper-slide swiper-slide-vertical\">
-                                                <h2 class=\"new mt-0\">
-                                                    {$params['h2-3']}
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href=\"{$params['url']}\"
-                                       class=\"btn btn-promo-lusy text-inverse\">{$params['url-name']}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>";
+    return '';
+//    return "<div class=\"row\">
+//                        <div class=\"col p-0 pl-md-3 pr-md-3\">
+//                            <div class=\"card border-0 text-center\">
+//                                <div class=\"card-body p-0 banner pt-4 pt-xl-5 pb-5\">
+//                                    <div class=\"swiper-container vertical p-0\">
+//                                        <div class=\"swiper-wrapper\">
+//                                            <div class=\"swiper-slide swiper-slide-vertical\">
+//                                                <h2 class=\"new m-0\">
+//                                                {$params['h2-1']}
+//                                                </h2>
+//                                            </div>
+//                                            <div class=\"swiper-slide swiper-slide-vertical\">
+//                                                <h2 class=\"new m-0\">
+//                                                    {$params['h2-2']}
+//                                                </h2>
+//                                            </div>
+//                                            <div class=\"swiper-slide swiper-slide-vertical\">
+//                                                <h2 class=\"new mt-0\">
+//                                                    {$params['h2-3']}
+//                                                </h2>
+//                                            </div>
+//                                        </div>
+//                                    </div>
+//                                    <a href=\"{$params['url']}\"
+//                                       class=\"btn btn-promo-lusy text-inverse\">{$params['url-name']}</a>
+//                                </div>
+//                            </div>
+//                        </div>
+//                    </div>";
 }
 
 add_shortcode('lusy_banner', 'add_lusy_banner');
+
+/**
+ * СОЗДАНИЕ ПОЛЕЙ ДЛЯ ТЕЛЕФОНА И ПОЧТЫ НА СТРАНИЦЕ НАСТРОЕК
+ */
+add_action( 'admin_init', 'header_contact_settings_api_init' );
+function header_contact_settings_api_init() {
+    // Добавляем блок опций на базовую страницу "Общие настройки"
+    //контакты
+    add_settings_section(
+        'header_contact_setting_section', // секция
+        'Контактные данные',
+        'header_contact_setting_section_callback_function',
+        'general' // страница
+    );
+
+    // Добавляем поля опций. Указываем название, описание,
+    // функцию выводящую html код поля опции.
+    add_settings_field(
+        'header_contact_setting_name',
+        'Телефон',
+        'header_contact_setting_phone_function', // можно указать ''
+        'general', // страница
+        'header_contact_setting_section' // секция
+    );
+    add_settings_field(
+        'header_contact_setting_name2',
+        'e-mail',
+        'header_contact_setting_email_function',
+        'general', // страница
+        'header_contact_setting_section' // секция
+    );
+
+    //секция ютуба
+    add_settings_section(
+        'header_youtube_setting_section', // секция
+        'Настройки видео',
+        'header_youtube_setting_section_callback_function',
+        'general' // страница
+    );
+
+    // Добавляем поля опций. Указываем название, описание,
+    // функцию выводящую html код поля опции.
+    add_settings_field(
+        'header_youtube_setting_name',
+        'ID Youtube видео',
+        'header_youtube_setting_youtubeid_function', // можно указать ''
+        'general', // страница
+        'header_youtube_setting_section' // секция
+    );
+    add_settings_field(
+        'header_youtube_setting_name2',
+        'Превью Youtube',
+        'header_youtube_setting_youtubebg_function',
+        'general', // страница
+        'header_youtube_setting_section' // секция
+    );
+
+    //секция услуги
+    add_settings_section(
+        'header_services_setting_section', // секция
+        'Параметры услуг',
+        'header_services_setting_section_callback_function',
+        'general' // страница
+    );
+
+    // Добавляем поля опций. Указываем название, описание,
+    // функцию выводящую html код поля опции.
+    add_settings_field(
+        'header_services_setting_name',
+        'Корпоративный сайт стоимость',
+        'header_services_setting_coop_function', // можно указать ''
+        'general', // страница
+        'header_services_setting_section' // секция
+    );
+    add_settings_field(
+        'header_services_setting_name2',
+        'Интернет магазин стоимость',
+        'header_services_setting_shops_function',
+        'general', // страница
+        'header_services_setting_section' // секция
+    );
+    add_settings_field(
+        'header_services_setting_name3',
+        'Лендинг стоимость',
+        'header_services_setting_landing_function',
+        'general', // страница
+        'header_services_setting_section' // секция
+    );
+    add_settings_field(
+        'header_services_setting_name4',
+        'Разработка сервисов стоимость',
+        'header_services_setting_service_function',
+        'general', // страница
+        'header_services_setting_section' // секция
+    );
+    add_settings_field(
+        'header_services_setting_name5',
+        'SEO продвижение стоимость',
+        'header_services_setting_seo_function',
+        'general', // страница
+        'header_services_setting_section' // секция
+    );
+    add_settings_field(
+        'header_services_setting_name6',
+        'Яндекс.Директ стоимость',
+        'header_services_setting_direct_function',
+        'general', // страница
+        'header_services_setting_section' // секция
+    );
+    add_settings_field(
+        'header_services_setting_name7',
+        'Яндекс.Директ стоимость',
+        'header_services_setting_vk_function',
+        'general', // страница
+        'header_services_setting_section' // секция
+    );
+
+    // Регистрируем опции, чтобы они сохранялись при отправке
+    // $_POST параметров и чтобы callback функции опций выводили их значение.
+
+    //контакты
+    register_setting( 'general', 'header_contact_setting_phone' );
+    register_setting( 'general', 'header_contact_setting_email' );
+
+    //ютуб
+    register_setting( 'general', 'header_youtube_setting_youtubeid' );
+    register_setting( 'general', 'header_youtube_setting_youtubebg' );
+
+    //услуги
+    register_setting( 'general', 'header_services_setting_coop' );
+    register_setting( 'general', 'header_services_setting_shops' );
+    register_setting( 'general', 'header_services_setting_landing' );
+    register_setting( 'general', 'header_services_setting_service' );
+    register_setting( 'general', 'header_services_setting_seo' );
+    register_setting( 'general', 'header_services_setting_direct' );
+    register_setting( 'general', 'header_services_setting_vk' );
+
+
+}
+
+// ------------------------------------------------------------------
+// Сallback функция для секции
+// ------------------------------------------------------------------
+//
+// Функция срабатывает в начале секции, если не нужно выводить
+// никакой текст или делать что-то еще до того как выводить опции,
+// то функцию можно не использовать для этого укажите '' в третьем
+// параметре add_settings_section
+//
+
+// ------------------------------------------------------------------
+// Callback функции выводящие HTML код опций
+// ------------------------------------------------------------------
+//
+// Создаем text input теги
+//
+//Поля для сексции контакты
+function header_contact_setting_phone_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_contact_setting_phone"  
+		type="text" 
+		value="' . get_option( 'header_contact_setting_phone' ) . '" 
+		class="code2"
+	 />';
+}
+function header_contact_setting_email_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_contact_setting_email"  
+		type="text" 
+		value="' . get_option( 'header_contact_setting_email' ) . '" 
+		class="code2"
+	 />';
+}
+//Поля для сексии ютуба
+function header_youtube_setting_youtubeid_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_youtube_setting_youtubeid"  
+		type="text" 
+		value="' . get_option( 'header_youtube_setting_youtubeid' ) . '" 
+		class="code2"
+	 />';
+}
+
+function header_youtube_setting_youtubebg_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_youtube_setting_youtubebg"  
+		type="text" 
+		value="' . get_option( 'header_youtube_setting_youtubebg' ) . '" 
+		class="code2"
+	 />';
+}
+
+//Поля для секции услуги
+
+function header_services_setting_coop_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_services_setting_coop"  
+		type="text" 
+		value="' . get_option( 'header_services_setting_coop' ) . '" 
+		class="code2"
+	 />';
+}
+
+function header_services_setting_shops_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_services_setting_shops"  
+		type="text" 
+		value="' . get_option( 'header_services_setting_shops' ) . '" 
+		class="code2"
+	 />';
+}
+
+function header_services_setting_landing_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_services_setting_landing"  
+		type="text" 
+		value="' . get_option( 'header_services_setting_landing' ) . '" 
+		class="code2"
+	 />';
+}
+
+function header_services_setting_service_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_services_setting_service"  
+		type="text" 
+		value="' . get_option( 'header_services_setting_service' ) . '" 
+		class="code2"
+	 />';
+}
+
+function header_services_setting_seo_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_services_setting_seo"  
+		type="text" 
+		value="' . get_option( 'header_services_setting_seo' ) . '" 
+		class="code2"
+	 />';
+}
+
+function header_services_setting_direct_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_services_setting_direct"  
+		type="text" 
+		value="' . get_option( 'header_services_setting_direct' ) . '" 
+		class="code2"
+	 />';
+}
+
+function header_services_setting_vk_function() {
+    echo '<input 
+        class="regular-text"
+		name="header_services_setting_vk"  
+		type="text" 
+		value="' . get_option( 'header_services_setting_vk' ) . '" 
+		class="code2"
+	 />';
+}
+
+add_filter( 'make_link_for_phone', 'make_link_for_phone_filter' );
+add_filter( 'make_title_for_phone', 'make_title_for_phone_filter' );
+
+/**
+ * Фильтр для перевода номера телефона из 8(10 цифр) в +7(10 цифр)
+ * @param string $phone - номер телефона
+ * @return string
+ */
+function make_link_for_phone_filter($phone)
+{
+    $phone = trim($phone);
+    if (preg_match('~^8[0-9]{10}$~', $phone)) {
+        $result_phone = '+7' . mb_substr($phone, 1);
+        return $result_phone;
+    }
+    return $phone;
+}
+
+/**
+ * Фильтр для форматирования номера телефона в вид 8 *** *** ** **
+ *  * @param string $phone - номер телефона
+ *  * @return string
+ */
+function make_title_for_phone_filter($phone)
+{
+    $non_formatted_phone = trim($phone);
+    if (preg_match('~^\\+7[0-9]+$~', $non_formatted_phone)) {
+        $non_formatted_phone = '8' . mb_substr($non_formatted_phone, 2);
+    }
+    if (preg_match('~^8[0-9]{10}$~', $non_formatted_phone)) {
+        $formatted_phone = mb_substr($non_formatted_phone, 0, 1) . ' '
+            . mb_substr($non_formatted_phone, 1, 3) . ' '
+            . mb_substr($non_formatted_phone, 4, 3) . ' '
+            . mb_substr($non_formatted_phone, 6, 2) . ' '
+            . mb_substr($non_formatted_phone, 8, 2);
+    } else {
+        $formatted_phone = $non_formatted_phone;
+    }
+    return $formatted_phone;
+}

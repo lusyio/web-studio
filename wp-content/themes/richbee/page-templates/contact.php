@@ -18,11 +18,11 @@ Template Post Type: post, page, product
     <div class="row mt-5 contacts">
         <div class="col-sm-3 col-12">
             <p>Телефон для связи</p>
-            <h3><a href="tel:+79266556988" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/telephone.svg" alt="">8 (926) 655-69-88</a></h3>
+            <h3><a href="tel:<?php echo apply_filters('make_link_for_phone', get_option('header_contact_setting_phone')) ?>" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/telephone.svg" alt=""><?php echo apply_filters('make_title_for_phone', get_option('header_contact_setting_phone')) ?></a></h3>
         </div>
         <div class="col-sm-3 col-12">
             <p>Электронная почта</p>
-            <h3><a href="ailto:sales@richbee.ru" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/email.svg" alt="">sales@richbee.ru</a></h3>
+            <h3><a href="<?php echo get_option('header_contact_setting_email') ?>" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/email.svg" alt=""><?php echo get_option('header_contact_setting_email') ?></a></h3>
         </div>
         <div class="col-sm-6 col-12">
             <p>Адрес офиса</p>
