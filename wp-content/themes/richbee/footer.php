@@ -27,15 +27,25 @@
                                     <p class="prefooter-block-card__info">Если вам нужна разработка сайта или его
                                         продвижение, то предлагаем обсудить это:</p>
                                     <div class="prefooter-block-card-links">
-                                        <a href="tel:+79266556988" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/telephone.svg" alt="">8 (926) 655-69-88</a>
-                                        <a href="ailto:sales@richbee.ru" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/email.svg" alt="">sales@richbee.ru</a>
-                                        <a href="https://telegram.me/mr_richbee" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/telegram-footer.svg" alt="">Написать в Telegram</a>
-                                        <a href="https://wa.me/79266556988" class="prefooter-block-card-links_link"><img class="mr-4" src="/wp-content/themes/richbee/svg/whatsapp-footer.svg" alt="">Написать в WhatsApp</a>
+                                        <a href="tel:+79266556988" class="prefooter-block-card-links_link"><img
+                                                    class="mr-4" src="/wp-content/themes/richbee/svg/telephone.svg"
+                                                    alt="">8 (926) 655-69-88</a>
+                                        <a href="ailto:sales@richbee.ru" class="prefooter-block-card-links_link"><img
+                                                    class="mr-4" src="/wp-content/themes/richbee/svg/email.svg" alt="">sales@richbee.ru</a>
+                                        <a href="https://telegram.me/mr_richbee"
+                                           class="prefooter-block-card-links_link"><img class="mr-4"
+                                                                                        src="/wp-content/themes/richbee/svg/telegram-footer.svg"
+                                                                                        alt="">Написать в Telegram</a>
+                                        <a href="https://wa.me/79266556988" class="prefooter-block-card-links_link"><img
+                                                    class="mr-4"
+                                                    src="/wp-content/themes/richbee/svg/whatsapp-footer.svg" alt="">Написать
+                                            в WhatsApp</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-7 col-lg-6 col-12">
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true">
+                                <script type="text/javascript" charset="utf-8" async
+                                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true">
                                 </script>
                             </div>
                         </div>
@@ -55,17 +65,17 @@
                 <div class="col-12 col-lg-8 first-card">
                     <?php wp_nav_menu(array('theme_location' => 'second', 'container_class' => 'mt-4 footer-menu')); ?>
                 </div>
-                <div class="col-12 col-lg-4 second-card text-right">
+                <div class="col-12 col-lg-4 second-card text-lg-right text-center">
                     <a class="btn footer-btn">
                         Заполнить бриф
                     </a>
                 </div>
             </div>
-            <div class="row mt-5 more-info">
-                <div class="col-12 col-lg-8 first-card">
+            <div class="row mt-3 mt-lg-5 more-info">
+                <div class="col-12 col-lg-8 first-card text-lg-left text-center mb-lg-unset mb-3">
                     <span class="mr-4 footer-site-title">© <?php echo date('Y'); ?> Студия веб-разработки Richbee</span>
                 </div>
-                <div class="col-12 col-lg-4 second-card text-right">
+                <div class="col-12 col-lg-4 second-card text-lg-right text-center">
                     <a class="footer-policy" href="/wp-content/themes/richbee/politika-konfidencialnosti.pdf">Политика
                         конфиденциальности</a>
                 </div>
@@ -110,6 +120,22 @@
 
 <script>
     jQuery(document).ready(function ($) {
+
+        var swiperServises = new Swiper('.swiper-container-services', {
+            spaceBetween: 300,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    let name = ['УСЛУГИ ПО РАЗРАБОТКЕ', 'УСЛУГИ ПО ПРОДВИЖЕНИЮ'];
+                    return '<div class="col-12 col-sm-6 col-lg-4 ' + className + '">' +
+                        '<div class="btn w-100 second-block-content__dev">' + name[index] +
+                        '</div>' +
+                        '</div>';
+                },
+            },
+        });
+
         jQuery('.swiper-container-all').each(function () {
             var swiperAll = new Swiper(this, {
                 slidesPerView: 3,

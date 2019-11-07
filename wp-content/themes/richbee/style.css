@@ -1160,7 +1160,7 @@ object {
     color: #000000;
 }
 
-.portfolio-header__site:hover{
+.portfolio-header__site:hover {
     color: #000000;
 }
 
@@ -1472,8 +1472,8 @@ p.new {
 .first-block-card-img {
     position: absolute;
     z-index: 2;
-    right: -50px;
-    top: -10px;
+    right: -150px;
+    top: 0;
 }
 
 .second-block-bg {
@@ -1499,11 +1499,11 @@ p.new {
     display: block;
 }
 
-.post-block .swiper-slide{
+.post-block .swiper-slide {
     max-width: unset;
 }
 
-.post-block .swiper-slide img{
+.post-block .swiper-slide img {
     max-width: 290px;
 }
 
@@ -1519,25 +1519,44 @@ p.new {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
-    background: #323232;
-    box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.26);
-    border-radius: 15px;
-    text-transform: uppercase;
-    padding: 18px 27px 24px 27px;
-    margin-bottom: 53px;
-}
-
-.second-block-content__promotion {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
     color: #535353;
     background: #D8D8D8;
     box-shadow: 0px 10px 15px rgba(100, 100, 100, 0.06);
     border-radius: 15px;
     text-transform: uppercase;
-    padding: 18px 27px 24px 27px;
+    padding: 18px 24px 18px 24px;
+    margin-bottom: 53px;
+}
+
+.swiper-pagination-bullet.col-12:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.swiper-pagination-bullet.col-12 {
+    background: unset;
+    width: unset;
+    height: unset;
+    display: flex;
+    border-radius: unset;
+    opacity: unset;
+    border: none;
+}
+
+.swiper-pagination-bullet-active .second-block-content__dev {
+    color: #FFFFFF;
+    background: #323232;
+    box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.26);
+}
+
+.servises-pagination {
+    position: relative;
+}
+
+.servises-pagination .swiper-pagination-bullet {
+    height: unset;
 }
 
 .second-block-card-body__header {
@@ -1644,7 +1663,7 @@ p.new {
     color: #FFFFFF;
 }
 
-.video-block-content__link:hover{
+.video-block-content__link:hover {
     color: #FFFFFF;
 }
 
@@ -1724,7 +1743,7 @@ p.new {
 
 #menu-second .menu-item {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 29px;
     color: #FFFFFF;
 }
@@ -1778,7 +1797,7 @@ p.new {
     margin-bottom: 7px;
 }
 
-.prefooter-block-card-links_link:hover{
+.prefooter-block-card-links_link:hover {
     color: #040404;
 }
 
@@ -1788,6 +1807,9 @@ p.new {
     /* Firefox 3.5+ */
     -webkit-filter: grayscale(100%);
     /* Chrome 19+ & Safari 6+ */
+}
+
+ymaps {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -3693,8 +3715,12 @@ and (max-width: 1199.7px) {
         right: 28%;
     }
 
-    .first-block-card-img{
+    .first-block-card-img {
         right: -100px;
+    }
+
+    #menu-second .menu-item:not(:last-of-type) {
+        margin-right: 40px;
     }
 
 }
@@ -3709,22 +3735,22 @@ and (max-width: 991px) {
         text-align: center;
     }
 
-    .first-block-card-img{
+    .first-block-card-img {
         right: 0;
         top: 30px;
         max-width: 60%;
     }
 
-    .video-block-header{
+    .video-block-header {
         margin-top: 30px;
         margin-left: 0;
     }
 
-    .video-block-content{
+    .video-block-content {
         margin-left: 0;
     }
 
-    ymaps{
+    ymaps {
         border-top-right-radius: 0;
         border-bottom-left-radius: 20px;
     }
@@ -3819,6 +3845,11 @@ and (max-width: 991px) {
         bottom: 26%;
         right: 28%;
     }
+
+    #menu-second {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen
@@ -3836,7 +3867,7 @@ and (max-width: 767.8px) {
 
     }
 
-    .youtube-start-btn{
+    .youtube-start-btn {
         height: 75px;
         width: 75px;
     }
@@ -3963,16 +3994,16 @@ and (max-width: 575.7px) {
         width: 8%;
     }
 
-    .btn-see-all{
+    .btn-see-all {
         width: 100%;
         padding: 22px 33px;
     }
 
-    .first-block-card-img{
+    .first-block-card-img {
         top: 60%;
     }
 
-    .first-block__btn{
+    .first-block__btn {
         padding: 25px 14px;
     }
 
@@ -4120,7 +4151,7 @@ and (max-width: 575.7px) {
         padding: 0;
     }
 
-    .prefooter-block-card-body{
+    .prefooter-block-card-body {
         padding: 30px 15px 45px 15px;
     }
 }

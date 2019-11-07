@@ -222,7 +222,7 @@
                     firstImg = '"' + firstImg + '"';
                     container.find('.swiper-slide').each(function (i) {
                         src = $(this).find('img').attr('src');
-                        if (src != undefined) {
+                        if (src !== undefined) {
                             srcList.push(src);
                         }
                     });
