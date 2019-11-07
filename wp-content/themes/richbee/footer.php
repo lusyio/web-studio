@@ -19,37 +19,44 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="prefooter-block-card">
-                        <div class="row">
-                            <div class="col-xl-5 col-lg-6 col-12">
-                                <div class="prefooter-block-card-body">
-                                    <p class="prefooter-block-card__header">Пообщаемся?</p>
-                                    <p class="prefooter-block-card__info">Если вам нужна разработка сайта или его
-                                        продвижение, то предлагаем обсудить это:</p>
-                                    <div class="prefooter-block-card-links">
-                                        <a href="tel:+79266556988" class="prefooter-block-card-links_link"><img
-                                                    class="mr-4" src="/wp-content/themes/richbee/svg/telephone.svg"
-                                                    alt="">8 (926) 655-69-88</a>
-                                        <a href="ailto:sales@richbee.ru" class="prefooter-block-card-links_link"><img
-                                                    class="mr-4" src="/wp-content/themes/richbee/svg/email.svg" alt="">sales@richbee.ru</a>
-                                        <a href="https://telegram.me/mr_richbee"
-                                           class="prefooter-block-card-links_link"><img class="mr-4"
-                                                                                        src="/wp-content/themes/richbee/svg/telegram-footer.svg"
-                                                                                        alt="">Написать в Telegram</a>
-                                        <a href="https://wa.me/79266556988" class="prefooter-block-card-links_link"><img
-                                                    class="mr-4"
-                                                    src="/wp-content/themes/richbee/svg/whatsapp-footer.svg" alt="">Написать
-                                            в WhatsApp</a>
+                    <?php if (is_page('kontakty') !== true): ?>
+
+                        <div class="prefooter-block-card">
+                            <div class="row">
+                                <div class="col-xl-5 col-lg-6 col-12">
+                                    <div class="prefooter-block-card-body">
+                                        <p class="prefooter-block-card__header">Пообщаемся?</p>
+                                        <p class="prefooter-block-card__info">Если вам нужна разработка сайта или его
+                                            продвижение, то предлагаем обсудить это:</p>
+                                        <div class="prefooter-block-card-links">
+                                            <a href="tel:+79266556988" class="prefooter-block-card-links_link"><img
+                                                        class="mr-4" src="/wp-content/themes/richbee/svg/telephone.svg"
+                                                        alt="">8 (926) 655-69-88</a>
+                                            <a href="ailto:sales@richbee.ru"
+                                               class="prefooter-block-card-links_link"><img
+                                                        class="mr-4" src="/wp-content/themes/richbee/svg/email.svg"
+                                                        alt="">sales@richbee.ru</a>
+                                            <a href="https://telegram.me/mr_richbee"
+                                               class="prefooter-block-card-links_link"><img class="mr-4"
+                                                                                            src="/wp-content/themes/richbee/svg/telegram-footer.svg"
+                                                                                            alt="">Написать в
+                                                Telegram</a>
+                                            <a href="https://wa.me/79266556988" class="prefooter-block-card-links_link"><img
+                                                        class="mr-4"
+                                                        src="/wp-content/themes/richbee/svg/whatsapp-footer.svg" alt="">Написать
+                                                в WhatsApp</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-7 col-lg-6 col-12">
-                                <script type="text/javascript" charset="utf-8" async
-                                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true">
-                                </script>
+                                <div class="col-xl-7 col-lg-6 col-12">
+                                    <script type="text/javascript" charset="utf-8" async
+                                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add05ca22980767467f952afb09c0a19fdd9a8f866442fca49941686f7df91d3b&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true">
+                                    </script>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
+
                 </div>
             </div>
         </div>

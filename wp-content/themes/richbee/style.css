@@ -1839,6 +1839,12 @@ ymaps {
     border-bottom-right-radius: 20px;
 }
 
+.contacts ymaps{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
 .post-block-header {
     font-weight: 900;
     font-size: 36px;
