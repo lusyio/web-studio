@@ -661,7 +661,7 @@ function add_lusy_banner($atts)
                                         </div>
                                     </div>
                                     <a href=\"{$params['url']}\"
-                                       class=\"btn btn-input-landing text-inverse\">{$params['url-name']}</a>
+                                       class=\"btn btn-promo-lusy text-inverse\">{$params['url-name']}</a>
                                 </div>
                             </div>
                         </div>

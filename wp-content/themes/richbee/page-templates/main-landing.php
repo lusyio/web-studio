@@ -539,7 +539,7 @@ Template Post Type: post, page, product
 
                             <div class="row mt-custom-3">
                                 <div class="col">
-                                    <a href="/portfolio/" class="btn btn-see-all">
+                                    <a href="/portfolio/#all" class="btn btn-see-all">
                                         Посмотреть все работы <img class="ml-4"
                                                                    src="/wp-content/themes/richbee/svg/landing-pageportfolio.svg"
                                                                    alt="">
@@ -627,7 +627,7 @@ Template Post Type: post, page, product
 
                             <div class="row mt-custom-3">
                                 <div class="col">
-                                    <a href="/portfolio/" class="btn btn-see-all">
+                                    <a href="/portfolio/#coop" class="btn btn-see-all">
                                         Посмотреть все работы <img class="ml-4"
                                                                    src="/wp-content/themes/richbee/svg/landing-pageportfolio.svg"
                                                                    alt="">
@@ -715,7 +715,7 @@ Template Post Type: post, page, product
 
                             <div class="row mt-custom-3">
                                 <div class="col">
-                                    <a href="/portfolio/" class="btn btn-see-all">
+                                    <a href="/portfolio/#shops" class="btn btn-see-all">
                                         Посмотреть все работы <img class="ml-4"
                                                                    src="/wp-content/themes/richbee/svg/landing-pageportfolio.svg"
                                                                    alt="">
@@ -802,7 +802,7 @@ Template Post Type: post, page, product
 
                             <div class="row mt-custom-3">
                                 <div class="col">
-                                    <a href="/portfolio/" class="btn btn-see-all">
+                                    <a href="/portfolio/#service" class="btn btn-see-all">
                                         Посмотреть все работы <img class="ml-4"
                                                                    src="/wp-content/themes/richbee/svg/landing-pageportfolio.svg"
                                                                    alt="">

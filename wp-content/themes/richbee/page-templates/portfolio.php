@@ -343,4 +343,22 @@ Template Post Type: post, page, product
     </div>
 </div>
 
+<script>
+    jQuery(document).ready(function ($) {
+        var pathname = window.location.href;
+        if (pathname.indexOf('all') > -1) {
+            $('#allTab').trigger('click');
+        }
+        if (pathname.indexOf('shops') > -1) {
+            $('#shopsTab').trigger('click');
+        }
+        if (pathname.indexOf('coop') > -1) {
+            $('#coopTab').trigger('click');
+        }
+        if (pathname.indexOf('service') > -1) {
+            $('#serviceTab').trigger('click');
+        }
+    })
+</script>
+
 <?php get_footer(); ?>

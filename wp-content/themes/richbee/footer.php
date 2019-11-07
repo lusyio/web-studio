@@ -71,8 +71,8 @@
                     </a>
                 </div>
             </div>
-            <div class="row mt-3 mt-lg-5 more-info">
-                <div class="col-12 col-lg-8 first-card text-lg-left text-center mb-lg-unset mb-3">
+            <div class="row mt-4 mt-lg-5 more-info">
+                <div class="col-12 col-lg-8 first-card text-lg-left text-center mb-lg-unset mb-4">
                     <span class="mr-4 footer-site-title">© <?php echo date('Y'); ?> Студия веб-разработки Richbee</span>
                 </div>
                 <div class="col-12 col-lg-4 second-card text-lg-right text-center">

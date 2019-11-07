@@ -1095,7 +1095,7 @@ object {
 
 .singletopp {
     font-size: 2.5em;
-    color: #7184fd0d;
+    color: #DD4F220d;
     text-transform: uppercase;
     font-weight: bold;
     position: absolute;
@@ -1154,7 +1154,9 @@ object {
 }
 
 .swiper-container-services{
+    margin: 0 auto;
     overflow: hidden;
+    list-style: none;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -1390,6 +1392,19 @@ p.new {
     line-height: 48px;
     color: #040404;
     margin-bottom: 50px;
+}
+
+.btn-promo-lusy:hover{
+    background: linear-gradient(180deg, #7f7ef7 0%, #7E7BFC 100%);
+    color: #F6F6F6;
+}
+
+.btn-promo-lusy{
+    background: linear-gradient(180deg, #7085FE 0%, #7E7BFC 100%);
+    border-radius: 120px !important;
+    padding: 12px 27px;
+    border: 0;
+    transition: 100ms;
 }
 
 .first-block__btn {
@@ -3978,6 +3993,10 @@ and (max-width: 767.8px) {
     #tabPortfolio .nav-item:nth-of-type(3) .portfolio-tabs__link {
         margin: 0;
     }
+
+    .single-post > ul, ol{
+        padding: 15px 35px 20px;
+    }
 }
 
 @media screen
@@ -3986,6 +4005,10 @@ and (max-width: 575.7px) {
     .uslugi .card {
         width: fit-content;
         margin: auto;
+    }
+
+    .banner {
+        display: none;
     }
 
     #tabPortfolio {
