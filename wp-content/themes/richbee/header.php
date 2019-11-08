@@ -39,7 +39,7 @@
                     <?php else : ?>
                         <a class="site-title"
                            href="<?php echo esc_url(home_url('/')); ?>"><?php esc_url(bloginfo('name')); ?></a>
-                        <p class="site-title-info m-0">Агентство интернет-маркетинга</p>
+                        <p class="site-title-info m-0">Студия веб-разработки</p>
                     <?php endif; ?>
 
                 </div>

@@ -27,10 +27,10 @@ Template Post Type: post, page, product
         </div>
         <div class="col-12 col-lg-6">
             <div class="first-block-card">
-                <p class="first-block-card-header">История о том, <a href="#" class="first-block-card-header__link">как
+                <p class="first-block-card-header">История о том, <a href="/portfolio/rubezh-system/" class="first-block-card-header__link">как
                         мы производство щебня оцифровывали</a></p>
                 <p class="first-block-card-content">EPR-система для <span>ООО "Рубеж В"</span></p>
-                <p class="first-block-card-link"><a href="#">Читать подробнее...</a></p>
+                <p class="first-block-card-link"><a href="/portfolio/rubezh-system/">Читать подробнее...</a></p>
                 <img class="first-block-card-img" src="/wp-content/themes/richbee/images/newstyle/rubezh-v.png" alt="">
             </div>
         </div>
