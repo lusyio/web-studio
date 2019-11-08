@@ -52,7 +52,7 @@ Template Post Type: post, page, product
     </div>
 </div>
 
-<?php //if (get_option('header_youtube_setting_youtubeid') != ''): ?>
+<?php if (get_option('header_youtube_setting_youtubeid') != ''): ?>
 </div></div>
     <div class="video-bg">
         <div class="container video-block">
@@ -72,7 +72,7 @@ Template Post Type: post, page, product
             </div>
         </div>
     </div>
-<?php //endif; ?>
+<?php endif; ?>
 </div>
 </div>
 
