@@ -76,7 +76,7 @@ Template Post Type: post, page, product
 </div>
 </div>
 
-<div class="second-block-bg bg-white">
+<div class="second-block-bg new-portfolio-block">
     <div class="container position-relative second-block mb-5">
         <div class="row">
             <div class="col-12 col-lg-8">

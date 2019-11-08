@@ -1705,6 +1705,17 @@ p.new {
     box-shadow: none;
 }
 
+.swiper-pagination-bullet {
+    opacity: .5;
+    transition: 0.2s;
+    border: 1px solid white;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    transition: 0.2s;
+}
+
 .swiper-pagination-bullet.col-12 {
     background: unset;
     width: unset;
@@ -2906,7 +2917,12 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    border: 1px solid #02021E;
+    border: 1px solid #949494;
+}
+
+.new-portfolio-block {
+    padding-bottom: 378px;
+    margin-bottom: -370px;
 }
 
 .second-block .card {
