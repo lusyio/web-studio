@@ -73,7 +73,7 @@
                     <?php wp_nav_menu(array('theme_location' => 'second', 'container_class' => 'mt-4 footer-menu')); ?>
                 </div>
                 <div class="col-12 col-lg-4 second-card text-lg-right text-center">
-                    <a class="btn footer-btn">
+                    <a href="/brief/" class="btn footer-btn">
                         Заполнить бриф
                     </a>
                 </div>

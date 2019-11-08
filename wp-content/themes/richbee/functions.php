@@ -407,7 +407,7 @@ add_action('init', 'register_my_menus');
 
 add_filter('caldera_forms_field_attributes', function ($attrs, $field, $form) {
     if ('email' === Caldera_Forms_Field_Util::get_type($field, $form) || 'phone' === Caldera_Forms_Field_Util::get_type($field, $form)) {
-        $attrs['class'] .= ' form-control input-landing';
+        $attrs['class'] .= ' form-control';
     }
     return $attrs;
 }, 20, 3);
@@ -416,8 +416,21 @@ add_filter('caldera_forms_field_attributes', function ($attrs, $field, $form) {
  * Удаляем div-обертку radio-input'ов
  */
 add_filter('caldera_forms_render_field_structure_type-radio', function ($field_structure) {
-    $field_structure['wrapper_before'] = '';
-    $field_structure['wrapper_after'] = '';
+    $field_structure['wrapper_before'] = '<div class="row">';
+    $field_structure['field_before'] = '<div class="col d-flex flex-wrap">';
+    $field_structure['field_after'] = '</div>';
+    $field_structure['wrapper_after'] = '</div>';
+    return $field_structure;
+});
+
+/**
+ * Удаляем div-обертку checkbox-input'ов
+ */
+add_filter('caldera_forms_render_field_structure_type-checkbox', function ($field_structure) {
+    $field_structure['wrapper_before'] = '<div class="row">';
+    $field_structure['field_before'] = '<div class="col d-flex flex-wrap">';
+    $field_structure['field_after'] = '</div>';
+    $field_structure['wrapper_after'] = '</div>';
     return $field_structure;
 });
 
@@ -426,6 +439,18 @@ add_filter('caldera_forms_render_field_structure_type-radio', function ($field_s
  */
 add_filter('caldera_forms_render_get_field_type-radio', function ($field) {
     if ($field['type'] == 'radio' && isset($field['config']['option'])) {
+        foreach ($field['config']['option'] as $key => $value) {
+            $field['config']['option'][$key]['label'] = '<span>' . $value['label'] . '</span>';
+        }
+    }
+    return $field;
+});
+
+/**
+ * Оборачиваем текст checkbox-input'ов в <span>
+ */
+add_filter('caldera_forms_render_get_field_type-checkbox', function ($field) {
+    if ($field['type'] == 'checkbox' && isset($field['config']['option'])) {
         foreach ($field['config']['option'] as $key => $value) {
             $field['config']['option'][$key]['label'] = '<span>' . $value['label'] . '</span>';
         }
@@ -445,7 +470,8 @@ add_filter('caldera_forms_render_field_structure', function ($field_structure) {
         'fld_4575049',
         'fld_945005',
         'fld_3821774',
-        'fld_4262387'
+        'fld_4262387',
+        'fld_6476113'
 
     ];
     if (in_array($field_structure['id'], $elementIds)) {
@@ -535,6 +561,12 @@ add_filter('caldera_forms_render_field_structure', function ($field_structure) {
         $field_structure['field_before'] = '<div class="input-group-append">';
         $field_structure['field_after'] = '</div></div>';
     }
+
+    if ($field_structure['id'] == 'fld_5335556') {
+        $field_structure['wrapper_before'] = '<div class="row"><div class="col-lg-6 col-12">';
+        $field_structure['wrapper_after'] = '</div></div>';
+    }
+
 
     return $field_structure;
 });

@@ -18,10 +18,10 @@ Template Post Type: post, page, product
                 интернет-магазины</p>
             <div class="row">
                 <div class="col-lg-9 col-12">
-                    <div class="btn w-100 first-block__btn">
+                    <a href="/brief/" class="btn w-100 first-block__btn">
                         Расчитать стоимость онлайн <img src="/wp-content/themes/richbee/svg/calculator.svg" class="ml-4"
                                                         alt="">
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

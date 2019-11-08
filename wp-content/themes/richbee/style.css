@@ -1210,7 +1210,7 @@ object {
     color: #C4C4C4;
 }
 
-.portfolio-tabs__link:hover{
+.portfolio-tabs__link:hover {
     color: #000;
 }
 
@@ -1369,6 +1369,142 @@ p.new {
 .image-bg-fluid {
     background-image: url(/wp-content/themes/richbee/images/Group%205.png);
     height: 840px;
+}
+
+.brief-header {
+    margin-bottom: 87px;
+}
+
+.brief-header__title {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 129.2%;
+    color: #02021E;
+}
+
+.brief-header__content {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #040404;
+    margin-bottom: 0;
+}
+
+.brief-header__link {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #DD4F24;
+}
+
+.brief-header__link:hover {
+    color: #DD4F24;
+}
+
+.brief-title {
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 129.2%;
+    color: #02021E;
+}
+
+.brief [type='checkbox'], .brief [type='radio']{
+    display: none;
+}
+
+.brief input:hover {
+    cursor: pointer;
+}
+
+.brief input:checked ~ span {
+    background: #DD4F24;
+    color: #fff;
+}
+
+.brief .checkbox span:active, .brief .radio span:active {
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.brief .checkbox span, .brief .radio span  {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #151515;
+    background: #F1F1F1;
+    border-radius: 15px;
+    padding: 7px 17px;
+    -webkit-transition: ease-in 150ms;
+    -moz-transition: ease-in 150ms;
+    -ms-transition: ease-in 150ms;
+    -o-transition: ease-in 150ms;
+    transition: ease-in 150ms;
+    margin-right: 14px;
+    margin-bottom: 12px;
+    display: block;
+    white-space: nowrap;
+}
+
+.brief-input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 48px;
+    color: #B5B5B5;
+}
+
+.brief {
+    padding-bottom: 150px;
+}
+
+.brief-btn {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 32px;
+    text-align: center;
+    background: #DD4F24;
+    box-shadow: 0px 10px 15px rgba(210, 84, 36, 0.26);
+    border-radius: 45px;
+    -webkit-transition: ease-in 200ms;
+    -moz-transition: ease-in 200ms;
+    -ms-transition: ease-in 200ms;
+    -o-transition: ease-in 200ms;
+    transition: ease-in 200ms;
+    margin-top: 75px;
+}
+
+.brief-btn:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    color: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(210, 84, 36, 0.5);
+    cursor: pointer;
+}
+
+.brief-input {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 48px;
+    color: #151515;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #828282;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1831,7 +1967,7 @@ p.new {
     margin-bottom: 7px;
 }
 
-.prefooter-block-card-links_link img{
+.prefooter-block-card-links_link img {
     width: 30px;
     height: 48px;
 }
@@ -2302,11 +2438,11 @@ h2.sub {
     color: #0F0F0F !important;
 }
 
-h2.sub a{
+h2.sub a {
     color: #DD4F24;
 }
 
-h2.sub a:hover{
+h2.sub a:hover {
     color: #DD4F24;
 }
 
