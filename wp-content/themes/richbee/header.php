@@ -77,39 +77,7 @@
         <div class="container">
             <div class="row">
 
-                <?php
-                $cats = get_the_category();
-                $cat = $cats[0];
-                $cat_slug = $cat->slug; // ярлык рубрики
-                $cat_id = $cat->cat_ID; // ID рубрики
-                $cat_name = $cat->name; // название рубрики
-                ?>
-                <?php if ($cat_slug == 'portfolio'): ?>
-                    <div class="container">
-                        <div class="row mb-5">
-                            <div class="col">
-                                <h1 class="new p-0 position-relative">
-                                    <?= get_the_title() ?>
-                                    <div class="singletopp"><?php $cat = get_the_category();
-                                        echo $cat[0]->cat_name; ?></div>
-                                </h1>
-                                <h3 class="gray mt-0 mb-5">
-                                    <?= get_post_meta($post->ID, 'biscat', true); ?>
-                                </h3>
-                                <div class="row">
-                                    <div class="col-12 col-lg-8 offset-lg-2">
-                                        <p class="new">
-                                            <?= get_the_content() ?>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card rectangle mt-5">
-                                    <img src="<?= get_the_post_thumbnail_url($post->ID, 'full') ?>" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <?php endif; ?>
+              
 
                 <?php endif; ?>
             </div>
