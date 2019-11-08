@@ -185,7 +185,7 @@
             </div>
         </div>
 
-        <?php if (get_post_meta($post->ID, 'youtube_id', true) != ''): ?>
+        <?php if (get_option('header_youtube_setting_youtubeid') != ''): ?>
             <div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog"
                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-960 modal-dialog-centered" role="document">

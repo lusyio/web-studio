@@ -401,7 +401,7 @@ Template Post Type: post, page, product
     </div>
 </div>
 
-<?php if (get_post_meta($post->ID, 'youtube_id', true) != ''): ?>
+<?php if (get_option('header_youtube_setting_youtubeid') != ''): ?>
     <div class="video-bg">
         <div class="container video-block">
             <div class="row">
