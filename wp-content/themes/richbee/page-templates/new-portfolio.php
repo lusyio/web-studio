@@ -39,7 +39,7 @@ Template Post Type: post, page, product
                     <div class="post-block-content"><?php the_content(); ?></div>
                     <p class="post-block-site">Адрес сайта:
                         <a class="post-block-site__link"
-                           href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                           href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>" target="_blank">
                             <?php
                             $url = get_post_meta(get_the_ID(), 'website', true);;
                             $domain = parse_url($url, PHP_URL_HOST);
@@ -52,7 +52,8 @@ Template Post Type: post, page, product
     </div>
 </div>
 
-<?php if (get_option('header_youtube_setting_youtubeid') != ''): ?>
+<?php //if (get_option('header_youtube_setting_youtubeid') != ''): ?>
+</div></div>
     <div class="video-bg">
         <div class="container video-block">
             <div class="row">
@@ -71,7 +72,7 @@ Template Post Type: post, page, product
             </div>
         </div>
     </div>
-<?php endif; ?>
+<?php //endif; ?>
 </div>
 </div>
 
