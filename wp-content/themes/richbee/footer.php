@@ -93,7 +93,7 @@
 </div><!-- #page -->
 
 
-<?php if (get_post_meta($post->ID, 'youtube_id', true) !== ''): ?>
+<?php if (get_post_meta($post->ID, 'youtube_id', true) != ''): ?>
     <script>
         // Load the IFrame Player API code asynchronously.
         var tag = document.createElement('script');

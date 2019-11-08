@@ -37,7 +37,7 @@ Template Post Type: post, page, product
                 <div class="col">
                     <p class="post-block-title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
                     <div class="post-block-content"><?php the_content(); ?></div>
-                    <p class="post-block-site">Андрес сайта:
+                    <p class="post-block-site">Адрес сайта:
                         <a class="post-block-site__link"
                            href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                             <?php
@@ -52,7 +52,7 @@ Template Post Type: post, page, product
     </div>
 </div>
 
-<?php if (get_post_meta($post->ID, 'youtube_id', true) !== ''): ?>
+<?php if (get_post_meta($post->ID, 'youtube_id', true) != ''): ?>
     <div class="video-bg">
         <div class="container video-block">
             <div class="row">
