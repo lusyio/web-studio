@@ -635,6 +635,16 @@ add_filter('caldera_forms_mailer', function ($mail, $data, $form) {
         $mail['message'] = preg_replace('~consult-phone~', 'Номер телефона:', $mail['message']);
     }
 
+    if ('CF5dc566e9237cf' == $form['ID']) {
+        $mail['message'] = preg_replace('~service-brief~', 'Выбранные услуги:', $mail['message']);
+        $mail['message'] = preg_replace('~money-brief~', 'Выбранный бюджет:', $mail['message']);
+        $mail['message'] = preg_replace('~task-brief~', 'Описание задачи:', $mail['message']);
+        $mail['message'] = preg_replace('~name-brief~', 'Имя заказчика:', $mail['message']);
+        $mail['message'] = preg_replace('~company-brief~', 'Название компании:', $mail['message']);
+        $mail['message'] = preg_replace('~phone-brief~', 'Номер телефона:', $mail['message']);
+        $mail['message'] = preg_replace('~email-brief~', 'Email:', $mail['message']);
+    }
+
     return $mail;
 
 }, 10, 3);
