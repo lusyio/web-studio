@@ -1432,6 +1432,10 @@ p.new {
     transform: translateY(2px);
 }
 
+.brief .checkbox span:hover, .brief .radio span:hover{
+    cursor: pointer;
+}
+
 .brief .checkbox span, .brief .radio span  {
     font-weight: normal;
     font-size: 14px;
@@ -1494,6 +1498,7 @@ p.new {
 }
 
 .brief-input {
+    margin-bottom: 18px;
     font-weight: 300;
     font-size: 16px;
     line-height: 48px;

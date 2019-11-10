@@ -413,6 +413,16 @@ add_filter('caldera_forms_field_attributes', function ($attrs, $field, $form) {
 }, 20, 3);
 
 /**
+ * Добавляем классы инпутам со следующим ID
+ */
+add_filter('caldera_forms_field_attributes', function ($attrs, $field, $form) {
+    if ('fld_6476113' === $field['ID'] || 'fld_3133597' === $field['ID'] || 'fld_902668' === $field['ID'] || 'fld_900942' === $field['ID'] || 'fld_634541' === $field['ID']) {
+        $attrs['class'] .= ' form-control brief-input';
+    }
+    return $attrs;
+}, 20, 3);
+
+/**
  * Удаляем div-обертку radio-input'ов
  */
 add_filter('caldera_forms_render_field_structure_type-radio', function ($field_structure) {
@@ -563,10 +573,19 @@ add_filter('caldera_forms_render_field_structure', function ($field_structure) {
     }
 
     if ($field_structure['id'] == 'fld_5335556') {
-        $field_structure['wrapper_before'] = '<div class="row"><div class="col-lg-6 col-12">';
-        $field_structure['wrapper_after'] = '</div></div>';
+        $field_structure['wrapper_before'] = '<div class="col-lg-6 col-12">';
+        $field_structure['wrapper_after'] = '</div>';
     }
 
+    if ($field_structure['id'] == 'fld_3133597' || $field_structure['id'] === 'fld_900942' ) {
+        $field_structure['wrapper_before'] = '<div class="row"><div class="col-lg-6 col-12">';
+        $field_structure['wrapper_after'] = '</div>';
+    }
+
+    if ($field_structure['id'] == 'fld_902668' || $field_structure['id'] === 'fld_634541' ) {
+        $field_structure['wrapper_before'] = '<div class="col-lg-6 col-12">';
+        $field_structure['wrapper_after'] = '</div></div>';
+    }
 
     return $field_structure;
 });
@@ -706,8 +725,9 @@ add_shortcode('lusy_banner', 'add_lusy_banner');
 /**
  * СОЗДАНИЕ ПОЛЕЙ ДЛЯ ТЕЛЕФОНА И ПОЧТЫ НА СТРАНИЦЕ НАСТРОЕК
  */
-add_action( 'admin_init', 'header_contact_settings_api_init' );
-function header_contact_settings_api_init() {
+add_action('admin_init', 'header_contact_settings_api_init');
+function header_contact_settings_api_init()
+{
     // Добавляем блок опций на базовую страницу "Общие настройки"
     //контакты
     add_settings_section(
@@ -823,21 +843,21 @@ function header_contact_settings_api_init() {
     // $_POST параметров и чтобы callback функции опций выводили их значение.
 
     //контакты
-    register_setting( 'general', 'header_contact_setting_phone' );
-    register_setting( 'general', 'header_contact_setting_email' );
+    register_setting('general', 'header_contact_setting_phone');
+    register_setting('general', 'header_contact_setting_email');
 
     //ютуб
-    register_setting( 'general', 'header_youtube_setting_youtubeid' );
-    register_setting( 'general', 'header_youtube_setting_youtubebg' );
+    register_setting('general', 'header_youtube_setting_youtubeid');
+    register_setting('general', 'header_youtube_setting_youtubebg');
 
     //услуги
-    register_setting( 'general', 'header_services_setting_coop' );
-    register_setting( 'general', 'header_services_setting_shops' );
-    register_setting( 'general', 'header_services_setting_landing' );
-    register_setting( 'general', 'header_services_setting_service' );
-    register_setting( 'general', 'header_services_setting_seo' );
-    register_setting( 'general', 'header_services_setting_direct' );
-    register_setting( 'general', 'header_services_setting_vk' );
+    register_setting('general', 'header_services_setting_coop');
+    register_setting('general', 'header_services_setting_shops');
+    register_setting('general', 'header_services_setting_landing');
+    register_setting('general', 'header_services_setting_service');
+    register_setting('general', 'header_services_setting_seo');
+    register_setting('general', 'header_services_setting_direct');
+    register_setting('general', 'header_services_setting_vk');
 
 
 }
@@ -859,119 +879,132 @@ function header_contact_settings_api_init() {
 // Создаем text input теги
 //
 //Поля для сексции контакты
-function header_contact_setting_phone_function() {
+function header_contact_setting_phone_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_contact_setting_phone"  
 		type="text" 
-		value="' . get_option( 'header_contact_setting_phone' ) . '" 
-		class="code2"
-	 />';
-}
-function header_contact_setting_email_function() {
-    echo '<input 
-        class="regular-text"
-		name="header_contact_setting_email"  
-		type="text" 
-		value="' . get_option( 'header_contact_setting_email' ) . '" 
-		class="code2"
-	 />';
-}
-//Поля для сексии ютуба
-function header_youtube_setting_youtubeid_function() {
-    echo '<input 
-        class="regular-text"
-		name="header_youtube_setting_youtubeid"  
-		type="text" 
-		value="' . get_option( 'header_youtube_setting_youtubeid' ) . '" 
+		value="' . get_option('header_contact_setting_phone') . '" 
 		class="code2"
 	 />';
 }
 
-function header_youtube_setting_youtubebg_function() {
+function header_contact_setting_email_function()
+{
+    echo '<input 
+        class="regular-text"
+		name="header_contact_setting_email"  
+		type="text" 
+		value="' . get_option('header_contact_setting_email') . '" 
+		class="code2"
+	 />';
+}
+
+//Поля для сексии ютуба
+function header_youtube_setting_youtubeid_function()
+{
+    echo '<input 
+        class="regular-text"
+		name="header_youtube_setting_youtubeid"  
+		type="text" 
+		value="' . get_option('header_youtube_setting_youtubeid') . '" 
+		class="code2"
+	 />';
+}
+
+function header_youtube_setting_youtubebg_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_youtube_setting_youtubebg"  
 		type="text" 
-		value="' . get_option( 'header_youtube_setting_youtubebg' ) . '" 
+		value="' . get_option('header_youtube_setting_youtubebg') . '" 
 		class="code2"
 	 />';
 }
 
 //Поля для секции услуги
 
-function header_services_setting_coop_function() {
+function header_services_setting_coop_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_services_setting_coop"  
 		type="text" 
-		value="' . get_option( 'header_services_setting_coop' ) . '" 
+		value="' . get_option('header_services_setting_coop') . '" 
 		class="code2"
 	 />';
 }
 
-function header_services_setting_shops_function() {
+function header_services_setting_shops_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_services_setting_shops"  
 		type="text" 
-		value="' . get_option( 'header_services_setting_shops' ) . '" 
+		value="' . get_option('header_services_setting_shops') . '" 
 		class="code2"
 	 />';
 }
 
-function header_services_setting_landing_function() {
+function header_services_setting_landing_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_services_setting_landing"  
 		type="text" 
-		value="' . get_option( 'header_services_setting_landing' ) . '" 
+		value="' . get_option('header_services_setting_landing') . '" 
 		class="code2"
 	 />';
 }
 
-function header_services_setting_service_function() {
+function header_services_setting_service_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_services_setting_service"  
 		type="text" 
-		value="' . get_option( 'header_services_setting_service' ) . '" 
+		value="' . get_option('header_services_setting_service') . '" 
 		class="code2"
 	 />';
 }
 
-function header_services_setting_seo_function() {
+function header_services_setting_seo_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_services_setting_seo"  
 		type="text" 
-		value="' . get_option( 'header_services_setting_seo' ) . '" 
+		value="' . get_option('header_services_setting_seo') . '" 
 		class="code2"
 	 />';
 }
 
-function header_services_setting_direct_function() {
+function header_services_setting_direct_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_services_setting_direct"  
 		type="text" 
-		value="' . get_option( 'header_services_setting_direct' ) . '" 
+		value="' . get_option('header_services_setting_direct') . '" 
 		class="code2"
 	 />';
 }
 
-function header_services_setting_vk_function() {
+function header_services_setting_vk_function()
+{
     echo '<input 
         class="regular-text"
 		name="header_services_setting_vk"  
 		type="text" 
-		value="' . get_option( 'header_services_setting_vk' ) . '" 
+		value="' . get_option('header_services_setting_vk') . '" 
 		class="code2"
 	 />';
 }
 
-add_filter( 'make_link_for_phone', 'make_link_for_phone_filter' );
-add_filter( 'make_title_for_phone', 'make_title_for_phone_filter' );
+add_filter('make_link_for_phone', 'make_link_for_phone_filter');
+add_filter('make_title_for_phone', 'make_title_for_phone_filter');
 
 /**
  * Фильтр для перевода номера телефона из 8(10 цифр) в +7(10 цифр)
