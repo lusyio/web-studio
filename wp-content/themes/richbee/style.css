@@ -1415,10 +1415,6 @@ p.new {
     display: none;
 }
 
-.brief input:hover {
-    cursor: pointer;
-}
-
 .brief input:checked ~ span {
     background: #DD4F24;
     color: #fff;
