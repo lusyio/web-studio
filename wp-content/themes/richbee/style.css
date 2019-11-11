@@ -1438,7 +1438,7 @@ p.new {
 
 .brief .checkbox span, .brief .radio span  {
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.9rem;
     line-height: 16px;
     color: #151515;
     background: #F1F1F1;
