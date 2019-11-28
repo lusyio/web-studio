@@ -53,7 +53,7 @@ Template Post Type: post, page, product
 </div>
 
 <?php if (get_option('header_youtube_setting_youtubeid') != ''): ?>
-</div></div>
+    </div></div>
     <div class="video-bg">
         <div class="container video-block">
             <div class="row">
@@ -141,12 +141,14 @@ Template Post Type: post, page, product
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <h3 class="text-center second-block-card-body__header">
-                                                Корпоративный сайт
-                                            </h3>
-                                            <p class="text-center second-block-card-body__content">
-                                                <?= (get_option('header_services_setting_coop')) ? get_option('header_services_setting_coop') : 'от 80.000 рублей'; ?>
-                                            </p>
+                                            <div>
+                                                <h3 class="text-center second-block-card-body__header">
+                                                    Корпоративный сайт
+                                                </h3>
+                                                <p class="text-center second-block-card-body__content">
+                                                    <?= (get_option('header_services_setting_coop')) ? get_option('header_services_setting_coop') : 'от 80.000 рублей'; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>

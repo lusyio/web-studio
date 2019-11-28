@@ -25,9 +25,10 @@ Template Post Type: post, page, product
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 p-md-unset p-0">
             <div class="first-block-card">
-                <p class="first-block-card-header">История о том, <a href="/portfolio/rubezh-system/" class="first-block-card-header__link">как
+                <p class="first-block-card-header">История о том, <a href="/portfolio/rubezh-system/"
+                                                                     class="first-block-card-header__link">как
                         мы производство щебня оцифровывали</a></p>
                 <p class="first-block-card-content">EPR-система для <span>ООО "Рубеж В"</span></p>
                 <p class="first-block-card-link"><a href="/portfolio/rubezh-system/">Читать подробнее...</a></p>
@@ -104,12 +105,14 @@ Template Post Type: post, page, product
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <h3 class="text-center second-block-card-body__header">
-                                                Корпоративный сайт
-                                            </h3>
-                                            <p class="text-center second-block-card-body__content">
-                                                <?= (get_option('header_services_setting_coop')) ? get_option('header_services_setting_coop') : 'от 80.000 рублей'; ?>
-                                            </p>
+                                            <div>
+                                                <h3 class="second-block-card-body__header">
+                                                    Корпоративный сайт
+                                                </h3>
+                                                <p class="second-block-card-body__content">
+                                                    <?= (get_option('header_services_setting_coop')) ? get_option('header_services_setting_coop') : 'от 80.000 рублей'; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -150,12 +153,14 @@ Template Post Type: post, page, product
                                                     </defs>
                                                 </svg>
                                             </div>
-                                            <h3 class="second-block-card-body__header">
-                                                Интернет-магазин
-                                            </h3>
-                                            <p class="text-center second-block-card-body__content">
-                                                <?= (get_option('header_services_setting_shops')) ? get_option('header_services_setting_shops') : 'от 110.000 рублей'; ?>
-                                            </p>
+                                            <div>
+                                                <h3 class="second-block-card-body__header">
+                                                    Интернет-магазин
+                                                </h3>
+                                                <p class="text-center second-block-card-body__content">
+                                                    <?= (get_option('header_services_setting_shops')) ? get_option('header_services_setting_shops') : 'от 110.000 рублей'; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -209,12 +214,14 @@ Template Post Type: post, page, product
                                                           fill="#DD4F24"/>
                                                 </svg>
                                             </div>
-                                            <h3 class="second-block-card-body__header">
-                                                Лендинг
-                                            </h3>
-                                            <p class="text-center second-block-card-body__content">
-                                                <?= (get_option('header_services_setting_landing')) ? get_option('header_services_setting_landing') : 'от 50.000 рублей'; ?>
-                                            </p>
+                                            <div>
+                                                <h3 class="second-block-card-body__header">
+                                                    Лендинг
+                                                </h3>
+                                                <p class="second-block-card-body__content">
+                                                    <?= (get_option('header_services_setting_landing')) ? get_option('header_services_setting_landing') : 'от 50.000 рублей'; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -257,12 +264,14 @@ Template Post Type: post, page, product
                                                     </defs>
                                                 </svg>
                                             </div>
-                                            <h3 class="second-block-card-body__header">
-                                                Разработка сервисов
-                                            </h3>
-                                            <p class="text-center second-block-card-body__content">
-                                                <?= (get_option('header_services_setting_service')) ? get_option('header_services_setting_service') : 'от 150.000 рублей'; ?>
-                                            </p>
+                                            <div>
+                                                <h3 class="second-block-card-body__header">
+                                                    Разработка сервисов
+                                                </h3>
+                                                <p class="second-block-card-body__content">
+                                                    <?= (get_option('header_services_setting_service')) ? get_option('header_services_setting_service') : 'от 150.000 рублей'; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -304,12 +313,14 @@ Template Post Type: post, page, product
                                                 </svg>
 
                                             </div>
-                                            <h3 class="second-block-card-body__header">
-                                                SEO продвижение
-                                            </h3>
-                                            <p class="text-center second-block-card-body__content">
-                                                <?= (get_option('header_services_setting_seo')) ? get_option('header_services_setting_seo') : 'от 10.000 рублей'; ?>
-                                            </p>
+                                            <div>
+                                                <h3 class="second-block-card-body__header">
+                                                    SEO продвижение
+                                                </h3>
+                                                <p class="second-block-card-body__content">
+                                                    <?= (get_option('header_services_setting_seo')) ? get_option('header_services_setting_seo') : 'от 10.000 рублей'; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -348,12 +359,14 @@ Template Post Type: post, page, product
                                                 </svg>
 
                                             </div>
-                                            <h3 class="second-block-card-body__header">
-                                                Яндекс.Директ
-                                            </h3>
-                                            <p class="text-center second-block-card-body__content">
-                                                <?= (get_option('header_services_setting_direct')) ? get_option('header_services_setting_direct') : 'от 25.000 рублей'; ?>
-                                            </p>
+                                            <div>
+                                                <h3 class="second-block-card-body__header">
+                                                    Яндекс.Директ
+                                                </h3>
+                                                <p class="second-block-card-body__content">
+                                                    <?= (get_option('header_services_setting_direct')) ? get_option('header_services_setting_direct') : 'от 25.000 рублей'; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -383,12 +396,14 @@ Template Post Type: post, page, product
                                                     </defs>
                                                 </svg>
                                             </div>
-                                            <h3 class="second-block-card-body__header">
-                                                Реклама ВКонтакте
-                                            </h3>
-                                            <p class="text-center second-block-card-body__content">
-                                                <?= (get_option('header_services_setting_vk')) ? get_option('header_services_setting_vk') : 'от 30.000 рублей'; ?>
-                                            </p>
+                                            <div>
+                                                <h3 class="second-block-card-body__header">
+                                                    Реклама ВКонтакте
+                                                </h3>
+                                                <p class="second-block-card-body__content">
+                                                    <?= (get_option('header_services_setting_vk')) ? get_option('header_services_setting_vk') : 'от 30.000 рублей'; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>

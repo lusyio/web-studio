@@ -1411,7 +1411,7 @@ p.new {
     color: #02021E;
 }
 
-.brief [type='checkbox'], .brief [type='radio']{
+.brief [type='checkbox'], .brief [type='radio'] {
     display: none;
 }
 
@@ -1428,11 +1428,11 @@ p.new {
     transform: translateY(2px);
 }
 
-.brief .checkbox span:hover, .brief .radio span:hover{
+.brief .checkbox span:hover, .brief .radio span:hover {
     cursor: pointer;
 }
 
-.brief .checkbox span, .brief .radio span  {
+.brief .checkbox span, .brief .radio span {
     font-weight: normal;
     font-size: 0.9rem;
     line-height: 16px;
@@ -1534,7 +1534,7 @@ p.new {
 
 .first-block__content {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 48px;
     color: #040404;
     margin-bottom: 50px;
@@ -1594,7 +1594,7 @@ p.new {
     position: relative;
     z-index: 4;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 48px;
     color: #FFFFFF;
     margin-bottom: 30px;
@@ -1602,7 +1602,7 @@ p.new {
 
 .first-block-card-header__link {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 48px;
     color: #FFFFFF;
 }
@@ -4190,6 +4190,76 @@ and (max-width: 575.7px) {
 
     .banner {
         display: none;
+    }
+
+    .first-block__header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .first-block__content {
+        text-align: center;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+
+    .first-block-card-header, .first-block-card-header__link {
+        line-height: 26px;
+    }
+
+    .first-block-card-header__link {
+        display: block;
+    }
+
+    .first-block-card {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        padding: 72px 20px 60px 20px;
+    }
+
+    .second-block-header, .second-block-header__span {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .second-block .card-body {
+        display: flex;
+        padding: 15px;
+    }
+
+    .second-block-card-body {
+        padding-left: 0;
+        padding-right: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .second-block-card-body__header {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .second-block-card-body svg {
+        max-width: 48px;
+        max-height: 48px;
+    }
+
+    .second-block-card-body__content {
+        margin-bottom: 3px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+    }
+
+    .second-block-content {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
     }
 
     .swiper-container-services .swiper-slide {
