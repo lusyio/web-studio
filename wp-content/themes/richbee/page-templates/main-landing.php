@@ -506,7 +506,7 @@ Template Post Type: post, page, product
                                        class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                                 </div>
                                 <div class="col-sm-6 col-12 text-sm-right text-left m-sm-auto mt-3">
-                                    <a class="portfolio-header__site"
+                                    <a class="portfolio-header__site d-sm-block d-none"
                                        href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                         <?php
                                         $url = get_post_meta(get_the_ID(), 'website', true);;
@@ -521,9 +521,17 @@ Template Post Type: post, page, product
                             </div>
 
                             <div class="row portfolio">
-                                <div class="col">
-                                    <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                                    <p class="portfolio__tags"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
+                                <div class="col d-sm-block d-flex justify-content-between">
+                                    <p class="portfolio__title d-sm-block d-none"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
+                                    <a class="portfolio-header__site d-sm-none d-flex"
+                                       href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                                        <?php
+                                        $url = get_post_meta(get_the_ID(), 'website', true);;
+                                        $domain = parse_url($url, PHP_URL_HOST);
+                                        echo $domain;
+                                        ?>
+                                    </a>
+                                    <p class="portfolio__tags d-sm-block d-flex"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
                                 </div>
                             </div>
 
@@ -548,11 +556,13 @@ Template Post Type: post, page, product
                                         <div class="swiper-slide swiper-slide__last">
                                         </div>
                                     </div>
+                                    <div class="swiper-pagination-all portfolio-bullets d-sm-none d-block"></div>
                                 </div>
                             </div>
 
                             <div class="row portfolio-content">
                                 <div class="col-lg-9 col-12 portfolio-content__text">
+                                    <p class="portfolio__title d-sm-none d-block"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
                                     <?php the_content(); ?>
                                 </div>
                             </div>
@@ -594,7 +604,7 @@ Template Post Type: post, page, product
                                        class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                                 </div>
                                 <div class="col-sm-6 col-12 text-sm-right text-left m-sm-auto mt-3">
-                                    <a class="portfolio-header__site"
+                                    <a class="portfolio-header__site d-sm-block d-none"
                                        href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                         <?php
                                         $url = get_post_meta(get_the_ID(), 'website', true);;
@@ -609,9 +619,17 @@ Template Post Type: post, page, product
                             </div>
 
                             <div class="row portfolio">
-                                <div class="col">
-                                    <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                                    <p class="portfolio__tags"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
+                                <div class="col d-sm-block d-flex justify-content-between">
+                                    <p class="portfolio__title d-sm-block d-none"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
+                                    <a class="portfolio-header__site d-sm-none d-flex"
+                                       href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                                        <?php
+                                        $url = get_post_meta(get_the_ID(), 'website', true);;
+                                        $domain = parse_url($url, PHP_URL_HOST);
+                                        echo $domain;
+                                        ?>
+                                    </a>
+                                    <p class="portfolio__tags d-sm-block d-flex"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
                                 </div>
                             </div>
 
@@ -636,11 +654,13 @@ Template Post Type: post, page, product
                                         <div class="swiper-slide swiper-slide__last">
                                         </div>
                                     </div>
+                                    <div class="swiper-pagination-coop portfolio-bullets d-sm-none d-block"></div>
                                 </div>
                             </div>
 
                             <div class="row portfolio-content">
                                 <div class="col-lg-9 col-12 portfolio-content__text">
+                                    <p class="portfolio__title d-sm-none d-block"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
                                     <?php the_content(); ?>
                                 </div>
                             </div>
@@ -682,7 +702,7 @@ Template Post Type: post, page, product
                                        class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                                 </div>
                                 <div class="col-sm-6 col-12 text-sm-right text-left m-sm-auto mt-3">
-                                    <a class="portfolio-header__site"
+                                    <a class="portfolio-header__site d-sm-block d-none"
                                        href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                         <?php
                                         $url = get_post_meta(get_the_ID(), 'website', true);;
@@ -697,9 +717,17 @@ Template Post Type: post, page, product
                             </div>
 
                             <div class="row portfolio">
-                                <div class="col">
-                                    <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                                    <p class="portfolio__tags"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
+                                <div class="col d-sm-block d-flex justify-content-between">
+                                    <p class="portfolio__title d-sm-block d-none"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
+                                    <a class="portfolio-header__site d-sm-none d-flex"
+                                       href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                                        <?php
+                                        $url = get_post_meta(get_the_ID(), 'website', true);;
+                                        $domain = parse_url($url, PHP_URL_HOST);
+                                        echo $domain;
+                                        ?>
+                                    </a>
+                                    <p class="portfolio__tags d-sm-block d-flex"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
                                 </div>
                             </div>
 
@@ -724,11 +752,13 @@ Template Post Type: post, page, product
                                         <div class="swiper-slide swiper-slide__last">
                                         </div>
                                     </div>
+                                    <div class="swiper-pagination-shops portfolio-bullets d-sm-none d-block"></div>
                                 </div>
                             </div>
 
                             <div class="row portfolio-content">
                                 <div class="col-lg-9 col-12 portfolio-content__text">
+                                    <p class="portfolio__title d-sm-none d-block"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
                                     <?php the_content(); ?>
                                 </div>
                             </div>
@@ -769,7 +799,7 @@ Template Post Type: post, page, product
                                        class="h3 portfolio-header__content m-0"><?php the_title(); ?></a>
                                 </div>
                                 <div class="col-sm-6 col-12 text-sm-right text-left m-sm-auto mt-3">
-                                    <a class="portfolio-header__site"
+                                    <a class="portfolio-header__site d-sm-block d-none"
                                        href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
                                         <?php
                                         $url = get_post_meta(get_the_ID(), 'website', true);;
@@ -784,9 +814,17 @@ Template Post Type: post, page, product
                             </div>
 
                             <div class="row portfolio">
-                                <div class="col">
-                                    <p class="portfolio__title"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
-                                    <p class="portfolio__tags"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
+                                <div class="col d-sm-block d-flex justify-content-between">
+                                    <p class="portfolio__title d-sm-block d-none"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
+                                    <a class="portfolio-header__site d-sm-none d-flex"
+                                       href="<?php echo get_post_meta(get_the_ID(), 'website', true); ?>">
+                                        <?php
+                                        $url = get_post_meta(get_the_ID(), 'website', true);;
+                                        $domain = parse_url($url, PHP_URL_HOST);
+                                        echo $domain;
+                                        ?>
+                                    </a>
+                                    <p class="portfolio__tags d-sm-block d-flex"><?php echo get_post_meta(get_the_ID(), 'tags', true); ?></p>
                                 </div>
                             </div>
 
@@ -811,11 +849,13 @@ Template Post Type: post, page, product
                                         <div class="swiper-slide swiper-slide__last">
                                         </div>
                                     </div>
+                                    <div class="swiper-pagination-service portfolio-bullets d-sm-none d-block"></div>
                                 </div>
                             </div>
 
                             <div class="row portfolio-content">
                                 <div class="col-lg-9 col-12 portfolio-content__text">
+                                    <p class="portfolio__title d-sm-none d-block"><?php echo get_post_meta(get_the_ID(), 'biscat', true); ?></p>
                                     <?php the_content(); ?>
                                 </div>
                             </div>

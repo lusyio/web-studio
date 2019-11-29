@@ -164,6 +164,11 @@
                     nextEl: $(this).parents('.position-relative').find('.swiper-button-next__all'),
                     prevEl: $(this).parents('.position-relative').find('.swiper-button-prev__all'),
                 },
+                pagination: {
+                    el: '.swiper-pagination-all',
+                    type: 'bullets',
+                    clickable: true,
+                },
             });
         });
 
@@ -189,6 +194,11 @@
                     navigation: {
                         nextEl: $(this).parents('.position-relative').find('.swiper-button-next__coop'),
                         prevEl: $(this).parents('.position-relative').find('.swiper-button-prev__coop'),
+                    },
+                    pagination: {
+                        el: '.swiper-pagination-coop',
+                        type: 'bullets',
+                        clickable: true,
                     },
                 });
                 swiperCoop.update();
@@ -218,6 +228,11 @@
                         nextEl: $(this).parents('.position-relative').find('.swiper-button-next__shops'),
                         prevEl: $(this).parents('.position-relative').find('.swiper-button-prev__shops'),
                     },
+                    pagination: {
+                        el: '.swiper-pagination-shops',
+                        type: 'bullets',
+                        clickable: true,
+                    },
                 });
                 swiperShops.update();
             });
@@ -245,6 +260,11 @@
                     navigation: {
                         nextEl: $(this).parents('.position-relative').find('.swiper-button-next__service'),
                         prevEl: $(this).parents('.position-relative').find('.swiper-button-prev__service'),
+                    },
+                    pagination: {
+                        el: '.swiper-pagination-service',
+                        type: 'bullets',
+                        clickable: true,
                     },
                 });
                 swiperService.update();
