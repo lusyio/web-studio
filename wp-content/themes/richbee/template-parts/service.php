@@ -48,7 +48,7 @@ Template Post Type: post, page, product
     </div>
     <div class="row">
         <div class="col-12">
-            <a class="service-calculate" href="#">РАСЧИТАТЬ СТОИМОСТЬ ОНЛАЙН <img
+            <a class="service-calculate" href="/brief/">РАСЧИТАТЬ СТОИМОСТЬ ОНЛАЙН <img
                         src="/wp-content/themes/richbee/svg/calculator.svg" class="ml-4" alt=""></a>
         </div>
     </div>
