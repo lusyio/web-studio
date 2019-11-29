@@ -9,6 +9,21 @@
 
 get_header(); ?>
 
+<?php
+$category = get_the_category();
+$category_parent_id = $category[0]->category_parent;
+if ($category_parent_id != 0) {
+    $category_parent = get_term($category_parent_id, 'category');
+    $css_slug = $category_parent->slug;
+} else {
+    $css_slug = $category[0]->slug;
+}
+if ($css_slug == 'services'): ?>
+
+    <?php get_template_part('template-parts/service', 'post'); ?>
+
+<?php else: ?>
+
     <div class="container">
         <div class="row">
             <div class="col text-center">
@@ -53,6 +68,8 @@ get_header(); ?>
 
         </main><!-- #main -->
     </section><!-- #primary -->
+
+<?php endif; ?>
     <script src="/wp-content/themes/richbee/inc/assets/js/swiper.min.js"></script>
     <script>
         jQuery(document).ready(function () {

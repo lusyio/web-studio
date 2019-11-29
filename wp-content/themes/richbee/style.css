@@ -1944,6 +1944,7 @@ p.new {
 
 .prefooter-block {
     margin-bottom: -131px;
+    background: #f6f7f8;
 }
 
 .prefooter-block-card-body {
@@ -3190,6 +3191,92 @@ body {
     right: 30%
 }
 
+/******************************************************************************/
+/*Service
+/******************************************************************************/
+
+.service-header__title {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 5.1875rem;
+    text-align: center;
+    color: #02021E;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 3.75rem;
+}
+
+.service-header__text {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 3.75rem;
+}
+
+.service-header__price {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #B9B9B9;
+    margin-bottom: 6.25rem;
+}
+
+.service-content__title {
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 26px;
+    color: #101010;
+    margin-bottom: 20px;
+}
+
+.service-content__text {
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 26px;
+    color: #5C5C5C;
+    margin-bottom: 40px;
+}
+
+.service-calculate:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    color: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(210, 84, 36, 0.5);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.service-calculate {
+    -webkit-transition: ease-in-out 200ms;
+    -moz-transition: ease-in-out 200ms;
+    -ms-transition: ease-in-out 200ms;
+    -o-transition: ease-in-out 200ms;
+    transition: ease-in-out 200ms;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 32px 46px;
+    background: #DD4F24;
+    box-shadow: 0px 10px 15px rgba(210, 84, 36, 0.26);
+    border-radius: 45px;
+    display: table;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+/******************************************************************************/
+/*Service
+/******************************************************************************/
+
 @keyframes swipe-text {
     0% {
         opacity: 0;
@@ -4208,7 +4295,7 @@ and (max-width: 575.7px) {
         margin-left: 20px;
     }
 
-    #menu-second .menu-item:not(:last-of-type){
+    #menu-second .menu-item:not(:last-of-type) {
         margin-right: 20px;
     }
 
