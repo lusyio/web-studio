@@ -39,6 +39,10 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic');
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     -webkit-font-smoothing: auto;
@@ -1205,17 +1209,17 @@ object {
 
 .portfolio-tabs__link {
     font-weight: normal;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 26px;
-    color: #C4C4C4;
+    color: #d5d5d5;
 }
 
 .portfolio-tabs__link:hover {
-    color: #000;
+    color: #DD4F24;
 }
 
 .portfolio-tabs__link.active {
-    color: #000;
+    color: #DD4F24;
     font-weight: bold;
 }
 
@@ -1810,7 +1814,7 @@ p.new {
 
 .video-block-header {
     font-weight: 300;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 60px;
     color: #FFFFFF;
     margin-bottom: 28px;
@@ -1819,14 +1823,14 @@ p.new {
 
 .video-block-header__span {
     font-weight: bold;
-    font-size: 36px;
+    font-size:  2.25rem;
     line-height: 60px;
     color: #FFFFFF;
 }
 
 .video-block-content {
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 48px;
     color: #D5D5D5;
     margin-bottom: 0;
@@ -1840,7 +1844,7 @@ p.new {
 
 .video-block-content__link {
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 48px;
     color: #FFFFFF;
 }
@@ -4192,6 +4196,64 @@ and (max-width: 575.7px) {
         display: none;
     }
 
+    .portfolio-tabs-main #tabPortfolio{
+        justify-content: unset;
+    }
+
+    #tabPortfolio .nav-item:not(:first-of-type) .portfolio-tabs__link{
+        margin-left: 0;
+    }
+
+    .second-block-bg{
+        padding-bottom: 20px;
+    }
+
+    .video-block-content span{
+        margin-top: 20px;
+        display: block;
+    }
+
+    #tabPortfolio .nav-item:nth-of-type(3) .portfolio-tabs__link{
+        margin-right: 20px;
+    }
+
+    .third-block__header{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #02021E;
+        text-align: left;
+    }
+
+    .video-block-header, .video-block-header__span{
+        margin-bottom: 35px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .video-block-content, .video-block-content__link{
+        font-weight: 300;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .youtube-bg{
+        margin-bottom: 35px;
+    }
+
+    .first-block-card-img {
+        transform: scale(-1, 1);
+        max-width: 170%;
+        right: -330px;
+        height: 530px;
+        width: auto;
+        top: -2%;
+    }
+
+    .video-bg{
+        padding: 80px 20px 80px 20px;
+    }
+
     .first-block__header {
         text-align: center;
         margin-bottom: 20px;
@@ -4215,7 +4277,14 @@ and (max-width: 575.7px) {
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         border-radius: 0;
-        padding: 72px 20px 60px 20px;
+        padding: 72px 50px 60px 20px;
+        margin-top: 70px;
+        margin-bottom: 84px;
+        overflow: hidden;
+    }
+
+    .first-block-card-content {
+        margin-bottom: 35px;
     }
 
     .second-block-header, .second-block-header__span {
@@ -4266,12 +4335,8 @@ and (max-width: 575.7px) {
         max-width: unset !important;
     }
 
-    #tabPortfolio {
-        display: block;
-    }
-
-    #tabPortfolio .nav-item:not(:first-of-type) .portfolio-tabs__link {
-        margin: 0;
+    #tabPortfolio .portfolio-tabs__link {
+        margin-right: 20px;
     }
 
     .swiper-button-next {
@@ -4287,12 +4352,12 @@ and (max-width: 575.7px) {
         padding: 22px 33px;
     }
 
-    .first-block-card-img {
-        top: 60%;
+    .first-block__btn {
+        padding: 20px;
     }
 
-    .first-block__btn {
-        padding: 25px 14px;
+    .first-block__btn img {
+        display: none;
     }
 
     .swiper-slide {

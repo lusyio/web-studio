@@ -420,17 +420,23 @@ Template Post Type: post, page, product
     <div class="video-bg">
         <div class="container video-block">
             <div class="row">
-                <div class="col-lg-6 col-12 position-relative">
+                <div class="col-lg-6 col-12 position-relative order-sm-1 order-2">
                     <img class="youtube-bg" src="<?= get_option('header_youtube_setting_youtubebg') ?>" alt="">
                     <span class="youtube-start-btn" data-toggle="modal" data-target="#youtubeModal"></span>
                 </div>
-                <div class="col-lg-6 col-12 m-auto">
+                <div class="col-lg-6 col-12 m-auto order-sm-2 order-1">
                     <p class="video-block-header">Посмотрите, <span class="video-block-header__span">как проходит разработка в нашей студии</span>
                     </p>
-                    <p class="video-block-content">Показываем процесс разработки сайта <a
+                    <p class="video-block-content d-sm-block d-none">Показываем процесс разработки сайта <a
                                 class="video-block-content__link"
                                 href="http://cherchen.ru/">cherchen.ru</a>
                         для автора Александры Черчень (длительность - 2 минуты)</p>
+                </div>
+                <div class="col-lg-6 col-12 m-auto d-sm-none d-block order-3">
+                    <p class="video-block-content">Показываем процесс разработки сайта <a
+                                class="video-block-content__link"
+                                href="http://cherchen.ru/">cherchen.ru</a>
+                        для автора Александры Черчень <span>(длительность - 2 минуты)</span></p>
                 </div>
             </div>
         </div>
@@ -442,7 +448,7 @@ Template Post Type: post, page, product
         <div class="container third-block position-relative">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-12 offset-0">
-                    <h2 class="third-block__header text-center">
+                    <h2 class="third-block__header">
                         Примеры последних реализованных проектов
                     </h2>
                 </div>
