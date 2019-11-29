@@ -25,6 +25,12 @@ Template Post Type: post, page, product
             </p>
         </div>
     </div>
+    <div class="row d-sm-none d-flex">
+        <div class="col-12">
+            <a class="service-calculate mt-0 mb-5" href="/brief/">РАСЧИТАТЬ СТОИМОСТЬ ОНЛАЙН <img
+                        src="/wp-content/themes/richbee/svg/calculator.svg" class="ml-4" alt=""></a>
+        </div>
+    </div>
     <?php
     $metas = get_post_meta($post->ID, 'service-tag');
     ?>
@@ -46,7 +52,7 @@ Template Post Type: post, page, product
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row d-sm-flex d-none">
         <div class="col-12">
             <a class="service-calculate" href="/brief/">РАСЧИТАТЬ СТОИМОСТЬ ОНЛАЙН <img
                         src="/wp-content/themes/richbee/svg/calculator.svg" class="ml-4" alt=""></a>
@@ -57,7 +63,7 @@ Template Post Type: post, page, product
 </div>
 
 <?php if (get_option('header_youtube_setting_youtubeid') != ''): ?>
-    <div class="video-bg">
+    <div class="video-bg mt-sm-none mt-5">
         <div class="container video-block">
             <div class="row">
                 <div class="col-lg-6 col-12 position-relative order-sm-1 order-2">

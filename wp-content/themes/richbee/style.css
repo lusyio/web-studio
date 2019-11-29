@@ -4273,6 +4273,40 @@ and (max-width: 767.8px) {
 @media screen
 and (max-width: 575.7px) {
 
+    .service-header__title, .service-header__text, .service-header__price {
+        text-align: left;
+    }
+
+    .service-header__text{
+        font-size: 19px;
+    }
+
+    .service-content__title {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    .service-content__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .service-calculate img {
+        display: none;
+    }
+
+    .service-header__title{
+        font-size: 3.1rem;
+    }
+
+    .service-calculate {
+        padding: 20px 24px;
+        margin-left: 0;
+    }
+
     .uslugi .card {
         width: fit-content;
         margin: auto;
