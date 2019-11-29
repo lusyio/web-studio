@@ -63,16 +63,16 @@
     </div>
     <footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
         <div class="container">
-            <div class="row">
+            <div class="row d-sm-flex d-none">
                 <div class="col">
                     <hr class="footer-hr">
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-8 first-card">
+                <div class="col-12 col-lg-8 order-sm-1 order-2 first-card">
                     <?php wp_nav_menu(array('theme_location' => 'second', 'container_class' => 'mt-4 footer-menu')); ?>
                 </div>
-                <div class="col-12 col-lg-4 second-card text-lg-right text-center">
+                <div class="col-12 col-lg-4 order-sm-2 order-1 second-card text-lg-right text-center">
                     <a href="/brief/" class="btn footer-btn">
                         Заполнить бриф
                     </a>
