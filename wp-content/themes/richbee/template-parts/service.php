@@ -11,7 +11,10 @@ Template Post Type: post, page, product
     <div class="row service-header">
         <div class="col-lg-8 offset-lg-2 col-12 offset-0">
             <h1 class="service-header__title">
-                <?php echo the_title(); ?>
+                <?php
+                $title = get_the_title();
+                $tit = preg_split('~\(:\)~', $title, 2);
+                echo $tit[0]; ?>
             </h1>
             <p class="service-header__text">
                 <?php

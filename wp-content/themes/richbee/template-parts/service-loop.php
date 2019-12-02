@@ -7,7 +7,7 @@
                 <p class="second-block-content">Разрабатываем CRM- и ERP- системы, программы лояльности, отзовики и
                     любые другие онлайн-сервисы + создаем под ключ корпоративные сайты, интернет-магазины и
                     лендинги.</p>
-                <div class="swiper-pagination servises-pagination row"></div>
+                <div class="swiper-pagination servises-pagination btn-group"></div>
             </div>
         </div>
         <div class="swiper-container-services">

@@ -15,7 +15,7 @@
     </div><!-- .container -->
     </div><!-- #content -->
     <?php get_template_part('footer-widget'); ?>
-    <div class="prefooter-block">
+    <div class="prefooter-block pt-5">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -134,9 +134,7 @@
                 clickable: true,
                 renderBullet: function (index, className) {
                     let name = ['УСЛУГИ ПО РАЗРАБОТКЕ', 'УСЛУГИ ПО ПРОДВИЖЕНИЮ'];
-                    return '<div class="col-12 col-sm-6 col-lg-4 ' + className + '">' +
-                        '<div class="btn w-100 second-block-content__dev">' + name[index] +
-                        '</div>' +
+                    return '<div class="btn second-block-content__dev ' + className + '">' + name[index] +
                         '</div>';
                 },
             },

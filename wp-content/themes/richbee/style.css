@@ -1689,6 +1689,20 @@ p.new {
     margin-bottom: 35px;
 }
 
+.btn-group > .btn-group:not(:first-child) > .second-block-content__dev.btn, .btn-group > .second-block-content__dev.btn:not(:first-child) {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.btn-group > .btn-group:not(:last-child) > .second-block-content__dev.btn, .btn-group > .second-block-content__dev.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.second-block-content__dev:not(:last-of-type) {
+    margin-right: 48px;
+}
+
 .second-block-content__dev {
     font-weight: normal;
     font-size: 14px;
@@ -1700,6 +1714,8 @@ p.new {
     text-transform: uppercase;
     padding: 18px 24px 18px 24px;
     margin-bottom: 53px;
+    min-width: 225px;
+    border-color: #D8D8D8 !important;
 }
 
 .swiper-pagination-bullet.col-12:focus {
@@ -1730,10 +1746,13 @@ p.new {
     border: none;
 }
 
-.swiper-pagination-bullet-active .second-block-content__dev {
+.swiper-pagination-bullet-active.second-block-content__dev {
     color: #FFFFFF;
     background: #323232;
+    border-color: #323232 !important;
     box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.26);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .servises-pagination {
@@ -4277,8 +4296,30 @@ and (max-width: 575.7px) {
         text-align: left;
     }
 
-    .service-header__text{
+    .service-header__text {
         font-size: 19px;
+    }
+
+    .prefooter-block-card-links_link {
+        font-size: 18px;
+    }
+
+    .btn-group > .btn-group:not(:first-child) > .second-block-content__dev.btn, .btn-group > .second-block-content__dev.btn:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .second-block-content__dev {
+        min-width: fit-content;
+    }
+
+    .second-block-content__dev:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .btn-group > .btn-group:not(:last-child) > .second-block-content__dev.btn, .btn-group > .second-block-content__dev.btn:not(:last-child):not(.dropdown-toggle) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     .service-content__title {
@@ -4298,7 +4339,7 @@ and (max-width: 575.7px) {
         display: none;
     }
 
-    .service-header__title{
+    .service-header__title {
         font-size: 3.1rem;
     }
 
@@ -4542,6 +4583,10 @@ and (max-width: 575.7px) {
 
     .swiper-slide img {
         max-width: 100%;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border: none;
     }
 
     #tabPortfolio .nav-link {
