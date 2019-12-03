@@ -1734,6 +1734,10 @@ p.new {
     border: 1px solid white;
 }
 
+.btn-group .swiper-pagination-bullet{
+    opacity: 1;
+}
+
 .swiper-pagination-bullet-active {
     opacity: 1;
     transition: 0.2s;
