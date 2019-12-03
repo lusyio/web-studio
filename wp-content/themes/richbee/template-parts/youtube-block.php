@@ -9,7 +9,7 @@
                 <div class="col-lg-6 col-12 m-auto order-sm-2 order-1">
                     <p class="video-block-header">Посмотрите, <span class="video-block-header__span">как проходит разработка в нашей студии</span>
                     </p>
-                    <p class="video-block-content d-sm-block d-none">Показываем процесс разработки сайта <a
+                    <p class="video-block-content d-sm-block d-none">Процесс разработки сайта <a
                             class="video-block-content__link"
                             href="http://cherchen.ru/">cherchen.ru</a>
                         для автора Александры Черчень (длительность - 2 минуты)</p>

@@ -11,7 +11,7 @@ Template Post Type: post, page, product
     <div class="row">
         <div class="col-12 col-lg-6">
             <h2 class="first-block__header">
-                Студия веб-разработки
+                Студия <br class="d-sm-none d-block"> веб-разработки
             </h2>
             <p class="first-block__content">Разрабатываем системы управления и автоматизации для бизнеса, корпоративные
                 сайты и
