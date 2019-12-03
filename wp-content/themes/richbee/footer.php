@@ -285,5 +285,12 @@
 <noscript>
     <div><img src="https://mc.yandex.ru/watch/27860136" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript> <!-- /Yandex.Metrika counter -->
+
+
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+    VK.Widgets.CommunityMessages("vk_community_messages", 89243398, {expandTimeout: "5000",disableExpandChatSound: "1",tooltipButtonText: "Есть вопрос?"});
+</script>
 </body>
 </html>

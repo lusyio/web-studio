@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="icon" href="https://richbee.ru/favicon.png" type="image/png">
     <?php wp_head(); ?>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 </head>
 
 <body <?php body_class(); ?>>
