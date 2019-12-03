@@ -4330,9 +4330,9 @@ and (max-width: 575.7px) {
 
     .service-header__text {
         font-weight: 300;
-        font-size: 16px;
-        line-height: 22px;
-        padding-right: 21%;
+        font-size: 19px;
+        line-height: 25px;
+        padding-right: 20%;
     }
 
     .second-block-bg {
@@ -4441,7 +4441,7 @@ and (max-width: 575.7px) {
     }
 
     .video-block-content span {
-        margin-top: 20px;
+        margin-top: 15px;
         display: block;
         font-weight: 300;
         font-size: 15px;
