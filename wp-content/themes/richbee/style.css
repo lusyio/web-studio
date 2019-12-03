@@ -37,13 +37,15 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic');*/
 
 html {
     overflow-x: hidden;
 }
 
 body {
+    font-family: 'lato', sans-serif !important;
     margin: 0;
     -webkit-font-smoothing: auto;
 }
@@ -1541,6 +1543,7 @@ p.new {
     line-height: 48px;
     color: #040404;
     margin-bottom: 50px;
+    padding-right: 10px;
 }
 
 .btn-promo-lusy:hover {
@@ -3757,6 +3760,10 @@ body {
     color: #0F0F0F;
 }
 
+.btn-group {
+    width: 100%;
+}
+
 @keyframes slideme {
     0% {
         left: -30px;
@@ -4299,6 +4306,10 @@ and (max-width: 575.7px) {
     .service-header__text {
         font-size: 19px;
     }
+    
+    .second-block-bg{
+        background: #fff;
+    }
 
     .prefooter-block-card-links_link {
         font-size: 18px;
@@ -4310,7 +4321,7 @@ and (max-width: 575.7px) {
     }
 
     .second-block-content__dev {
-        min-width: fit-content;
+        min-width: unset;
     }
 
     .second-block-content__dev:not(:last-of-type) {
@@ -4453,6 +4464,7 @@ and (max-width: 575.7px) {
         text-align: center;
         line-height: 22px;
         margin-bottom: 30px;
+        padding-right: 0;
     }
 
     .first-block-card-header, .first-block-card-header__link {
