@@ -3629,49 +3629,49 @@ body {
     transform-origin: center;
 }
 
-#service-icon:hover #svg-service {
+.card-services:hover > #svg-service {
     -webkit-animation: landing-right 4s normal infinite;
     -o-animation: landing-right 4s normal infinite;
     animation: landing-right 4s normal infinite;
 }
 
-#shop:hover #svg-shop-1 {
+.card-services:hover > #svg-shop-1 {
     -webkit-animation: shop-down 4s normal infinite;
     -o-animation: shop-down 4s normal infinite;
     animation: shop-down 4s normal infinite;
 }
 
-#shop:hover #svg-shop-2 {
+.card-services:hover > #svg-shop-2 {
     -webkit-animation: landing-right 4s normal infinite;
     -o-animation: landing-right 4s normal infinite;
     animation: landing-right 4s normal infinite;
 }
 
-#coop-site:hover #svg-coop {
+.card-services:hover > #svg-coop {
     -webkit-animation: landing-right 4s normal infinite;
     -o-animation: landing-right 4s normal infinite;
     animation: landing-right 4s normal infinite;
 }
 
-#landing:hover #svg-landing {
+.card-services:hover > #svg-landing {
     -webkit-animation: landing-right 4s normal infinite;
     -o-animation: landing-right 4s normal infinite;
     animation: landing-right 4s normal infinite;
 }
 
-#direct:hover #svg-direct {
+.card-services:hover > #svg-direct {
     -webkit-animation: lens-round 4s normal infinite;
     -o-animation: lens-round 4s normal infinite;
     animation: lens-round 4s normal infinite;
 }
 
-#seo:hover #svg-lens {
+.card-services:hover > #svg-lens {
     -webkit-animation: lens-round 4s normal infinite;
     -o-animation: lens-round 4s normal infinite;
     animation: lens-round 4s normal infinite;
 }
 
-#service-icon:hover #svg-website {
+.card-services:hover > #svg-website {
     -webkit-animation: website-down 4s normal infinite;
     -o-animation: website-down 4s normal infinite;
     animation: website-down 4s normal infinite;
