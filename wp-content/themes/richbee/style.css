@@ -1717,7 +1717,7 @@ p.new {
     text-transform: uppercase;
     padding: 18px 24px 18px 24px;
     margin-bottom: 53px;
-    min-width: 225px;
+    max-width: fit-content;
     border-color: #D8D8D8 !important;
 }
 
@@ -4326,6 +4326,7 @@ and (max-width: 575.7px) {
 
     .second-block-content__dev {
         min-width: unset;
+        max-width: unset;
     }
 
     .second-block-content__dev:not(:last-of-type) {
