@@ -37,7 +37,8 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin-ext');
+/*@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin-ext');*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic');
 /*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic');*/
 
 html {
@@ -45,7 +46,7 @@ html {
 }
 
 body {
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -4313,7 +4314,7 @@ and (max-width: 575.7px) {
     .portfolio-content__text p {
         font-weight: 300;
         font-size: 17px;
-        line-height: 22px;
+        line-height: 25px;
         color: #0F0F0F;
     }
 
@@ -4480,7 +4481,7 @@ and (max-width: 575.7px) {
         font-weight: 300;
         font-size: 17px;
         text-align: center;
-        line-height: 28px;
+        line-height: 19px;
     }
 
     .youtube-bg {
@@ -4501,7 +4502,7 @@ and (max-width: 575.7px) {
     }
 
     .video-bg {
-        padding: 80px 20px 80px 20px;
+        padding: 80px 0 80px 0;
     }
 
     .first-block__header {
@@ -4529,7 +4530,7 @@ and (max-width: 575.7px) {
 
     .first-block-card-header__link {
         display: block;
-        padding-right: 56px;
+        padding-right: 64px;
     }
 
     .second-block-content__dev {
@@ -4666,8 +4667,16 @@ and (max-width: 575.7px) {
     }
 
     .btn-see-all {
-        width: 100%;
+        margin-left: auto;
         padding: 22px 33px;
+        margin-right: auto;
+        display: table;
+    }
+
+    .prefooter-block-card__info{
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 25px;
     }
 
     .first-block__btn {
@@ -4833,7 +4842,7 @@ and (max-width: 575.7px) {
     }
 
     .prefooter-block-card-body {
-        padding: 30px 20px 45px 20px;
+        padding: 30px 20px 35px 20px;
     }
 
     .footer-btn{

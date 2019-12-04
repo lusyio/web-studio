@@ -52,27 +52,8 @@ Template Post Type: post, page, product
     </div>
 </div>
 
-<?php if (get_option('header_youtube_setting_youtubeid') != ''): ?>
-    </div></div>
-    <div class="video-bg">
-        <div class="container video-block">
-            <div class="row">
-                <div class="col-lg-6 col-12 position-relative">
-                    <img class="youtube-bg" src="<?= get_option('header_youtube_setting_youtubebg') ?>" alt="">
-                    <span class="youtube-start-btn" data-toggle="modal" data-target="#youtubeModal"></span>
-                </div>
-                <div class="col-lg-6 col-12 m-auto">
-                    <p class="video-block-header">Посмотрите, <span class="video-block-header__span">как проходит разработка в нашей студии</span>
-                    </p>
-                    <p class="video-block-content">Показываем процесс разработки сайта <a
-                                class="video-block-content__link"
-                                href="http://cherchen.ru/">cherchen.ru</a>
-                        для автора Александры Черчень (длительность - 2 минуты)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php endif; ?>
+<?php get_template_part( 'template-parts/youtube-block', 'youtube-block' ); ?>
+
 </div>
 </div>
 
