@@ -97,7 +97,7 @@ Template Post Type: post, page, product
                 <p class="partnership-footer__text">Как начать работу? Напиши нам в ВК чем ты занимаешься, и мы
                     решим,
                     чем можем быть полезны друг другу 😘</p>
-                <a href="#" class="partnership-footer__btn">Связаться в ВК</a>
+                <a href="https://vk.com/im?sel=26401046" class="partnership-footer__btn">Связаться в ВК</a>
             </div>
         </div>
     </div>
