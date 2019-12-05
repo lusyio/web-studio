@@ -19,7 +19,7 @@ Template Post Type: post, page, product
     <?php $portfolio_counter = 1; ?>
     <?php while ($catquery->have_posts()) :
         $catquery->the_post(); ?>
-        <div class="row <?php echo ($portfolio_counter !== 1) ? 'mt' : '' ?>">
+        <div class="row uslugi-row">
             <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
@@ -63,7 +63,7 @@ Template Post Type: post, page, product
     <?php $portfolio_counter = 1; ?>
     <?php while ($catquery->have_posts()) :
         $catquery->the_post(); ?>
-        <div class="row <?php echo ($portfolio_counter !== 1) ? 'mt' : '' ?>">
+        <div class="row uslugi-row">
             <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
                 <div class="card border-0">
                     <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">

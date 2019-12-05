@@ -2208,6 +2208,14 @@ ymaps {
     margin-top: 3.8rem;
 }
 
+.uslugi-row {
+    margin-bottom: 3.8rem;
+}
+
+.uslugi-row:last-of-type {
+    margin-bottom: 4.8rem;
+}
+
 .uslugi .mb {
     margin-bottom: 4.8rem;
 }
