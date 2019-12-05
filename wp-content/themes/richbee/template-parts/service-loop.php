@@ -62,7 +62,7 @@
                                 $catquery->the_post(); ?>
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3">
                                     <a class="text-decoration-none" href="<?php echo get_permalink(); ?>">
-                                        <div class="card border-0" id="coop-site">
+                                        <div class="card border-0 card-services">
                                             <div class="card-body">
                                                 <div class="second-block-card-body text-center">
                                                     <?php

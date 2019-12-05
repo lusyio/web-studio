@@ -15,189 +15,93 @@ Template Post Type: post, page, product
             </h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
-            <div class="card border-0">
-                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
-                <div class="card-body">
-                    <div class="card-body-primary text-center">
-                        <img src="/wp-content/themes/richbee/svg/browser.svg" alt="">
+    <?php $catquery = new WP_Query('cat=36&posts_per_page=5'); // portfolio  ?>
+    <?php $portfolio_counter = 1; ?>
+    <?php while ($catquery->have_posts()) :
+        $catquery->the_post(); ?>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
+                <div class="card border-0">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
+                    <div class="card-body">
+                        <div class="card-body-primary text-center">
+                            <?php
+                            $svg = get_post_meta($post->ID, 'service-svg', true);
+                            echo $svg;
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
+                <h2 class="uslugi-h2">
+                    <?php
+                    $title = get_the_title();
+                    $tit = preg_split('~\(:\)~', $title, 2);
+                    echo $tit[1]; ?>
+                </h2>
+                <p>
+                    <?php
+                    $text = get_the_content();
+                    $txt = preg_split('~\(:\)~', $text, 2);
+                    echo $txt[1]; ?>
+                </p>
+                <p>
+                    <?php
+                    echo $txt[0]; ?>
+                </p>
+            </div>
+            <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
+                <a href="<?php echo get_permalink(); ?>">Подробнее</a>
+            </div>
         </div>
-        <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
-            <h2 class="uslugi-h2">
-                Разработка сервисов
-            </h2>
-            <p>
-                от 200.000 рублей
-            </p>
-            <p>
-                Разработаем решение под вашу бизнес задачу. Автоматизация любых бизнес процессов
-            </p>
-        </div>
-        <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="разработку сервисов">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
-        </div>
-    </div>
-    <div class="row mt">
-        <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
-            <div class="card border-0">
-                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
-                <div class="card-body">
-                    <div class="card-body-primary text-center">
-                        <img src="/wp-content/themes/richbee/svg/website.svg" alt="">
+        <?php $portfolio_counter++; ?>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+
+    <?php $catquery = new WP_Query('cat=37&posts_per_page=4'); // portfolio  ?>
+    <?php $portfolio_counter = 1; ?>
+    <?php while ($catquery->have_posts()) :
+        $catquery->the_post(); ?>
+        <div class="row mt mb">
+            <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
+                <div class="card border-0">
+                    <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
+                    <div class="card-body">
+                        <div class="card-body-warning text-center">
+                            <?php
+                            $svg = get_post_meta($post->ID, 'service-svg', true);
+                            echo $svg;
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
-            <h2 class="uslugi-h2">
-                Квиз-лендинг
-            </h2>
-            <p>
-                от 15.000 рублей
-            </p>
-            <p>
-                Увеличьте количество заявок до 400% уже через несколько дней после заказа
-            </p>
-        </div>
-        <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="квиз-лендинг">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
-        </div>
-    </div>
-    <div class="row mt">
-        <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
-            <div class="card border-0">
-                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
-                <div class="card-body">
-                    <div class="card-body-primary text-center">
-                        <img src="/wp-content/themes/richbee/svg/landing-page.svg" alt="">
-                    </div>
-                </div>
+            <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
+                <h2 class="uslugi-h2">
+                    <?php
+                    $title = get_the_title();
+                    $tit = preg_split('~\(:\)~', $title, 2);
+                    echo $tit[1]; ?>
+                </h2>
+                <p>
+                    <?php
+                    $text = get_the_content();
+                    $txt = preg_split('~\(:\)~', $text, 2);
+                    echo $txt[1]; ?>
+                </p>
+                <p>
+                    <?php
+                    echo $txt[0]; ?>
+                </p>
+            </div>
+            <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
+                <a href="<?php echo get_permalink(); ?>">Подробнее</a>
             </div>
         </div>
-        <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
-            <h2 class="uslugi-h2">
-                Лендинг
-            </h2>
-            <p>
-                от 50.000 рублей
-            </p>
-            <p>
-                Сделаем Landing Page, который увеличит количество заявок до 267%
-            </p>
-        </div>
-        <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="лендинг">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
-        </div>
-    </div>
-    <div class="row mt">
-        <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
-            <div class="card border-0">
-                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
-                <div class="card-body">
-                    <div class="card-body-primary text-center">
-                        <img src="/wp-content/themes/richbee/svg/browser.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
-            <h2 class="uslugi-h2">
-                Корпоративный сайт
-            </h2>
-            <p>
-                от 110.000 рублей
-            </p>
-            <p>
-                Разработаем современный сайт с уникальным дизайном, готовый к SEO продвижению
-            </p>
-        </div>
-        <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="корпоративный сайт">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
-        </div>
-    </div>
-    <div class="row mt">
-        <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
-            <div class="card border-0">
-                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.2.png" alt="">
-                <div class="card-body">
-                    <div class="card-body-primary text-center">
-                        <img src="/wp-content/themes/richbee/svg/shopping.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
-            <h2 class="uslugi-h2">
-                Интернет магазин
-            </h2>
-            <p>
-                от 150.000 рублей
-            </p>
-            <p>
-                Получите современный интернет-магазин, готовый к интеграциям с любыми сервисами
-            </p>
-        </div>
-        <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="интернет магазин">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
-        </div>
-    </div>
-    <div class="row mt">
-        <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
-            <div class="card border-0">
-                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
-                <div class="card-body">
-                    <div class="card-body-warning text-center">
-                        <img src="/wp-content/themes/richbee/svg/analysis.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
-            <h2 class="uslugi-h2">
-                SEO оптимизация
-            </h2>
-            <p>
-                от 10.000 рублей
-            </p>
-            <p>
-                Начнем выводить сайт в ТОП и увеличим трафик
-            </p>
-        </div>
-        <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="SEO оптимизацию">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
-        </div>
-    </div>
-    <div class="row mt mb">
-        <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-lg-3">
-            <div class="card border-0">
-                <img class="bg-ellipse" src="/wp-content/themes/richbee/images/Group%203.1.png" alt="">
-                <div class="card-body">
-                    <div class="card-body-warning text-center">
-                        <img src="/wp-content/themes/richbee/svg/analysis.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-11 col-sm-11 col-md-5 col-lg-5 col-xl-5 offset-1 offset-md-0 offset-xl-1">
-            <h2 class="uslugi-h2">
-                Яндекс Директ
-            </h2>
-            <p>
-                от 25.000 рублей
-            </p>
-            <p>
-                Настроим рекламную компанию в Поиске и РСЯ. Первый месяц ведения - бесплатно. Далее от 10.000 рублей в
-                месяц
-            </p>
-        </div>
-        <div class="col-11 col-sm-11 col-md-3 col-lg-3 col-xl-2 offset-1 offset-md-0 offset-xl-1">
-            <a href="#" data-toggle="modal" data-target="#uslugiModal" data-whatever="Яндекс Директ">Заказать<img src="/wp-content/themes/richbee/images/back.png" alt=""></a>
-        </div>
-    </div>
+        <?php $portfolio_counter++; ?>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
 </div>
 
 <?php get_footer(); ?>
