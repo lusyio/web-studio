@@ -2807,7 +2807,7 @@ body {
     border-radius: 20px;
 }
 
-.card-body-primary svg, .card-body-primary svg {
+.card-body-primary svg, .card-body-warning svg {
     width: 64px !important;
     height: 64px !important;
 }
