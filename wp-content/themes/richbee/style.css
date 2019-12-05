@@ -2807,12 +2807,12 @@ body {
     border-radius: 20px;
 }
 
-.card-body-primary svg{
+.card-body-primary svg, .card-body-primary svg {
     width: 64px !important;
     height: 64px !important;
 }
 
-.card-body-primary path {
+.card-body-primary path, .card-body-warning path {
     fill: white;
 }
 
@@ -4564,11 +4564,11 @@ and (max-width: 767.8px) {
 @media screen
 and (max-width: 575.7px) {
 
-    .partnership-header__text{
+    .partnership-header__text {
         padding: 0;
     }
 
-    .partnership-card-body{
+    .partnership-card-body {
         padding: 45px 25px;
     }
 
@@ -5122,16 +5122,16 @@ and (max-width: 575.7px) {
 @media screen
 and (max-width: 320px) {
 
-    .partnership-header__text{
+    .partnership-header__text {
         font-size: 2.5rem;
         line-height: 49px;
     }
 
-    .partnership-card__btn{
+    .partnership-card__btn {
         padding: 16px 40px;
     }
 
-    .partnership-card-body{
+    .partnership-card-body {
         padding: 30px 10px;
     }
 
